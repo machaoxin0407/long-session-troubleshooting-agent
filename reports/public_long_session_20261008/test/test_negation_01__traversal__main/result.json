@@ -1,0 +1,511 @@
+{
+  "schema": 1,
+  "task_id": "test_negation_01__traversal__main",
+  "case": "test_negation_01",
+  "case_sha256": "83714d46543012ec657ea0feaff98da38bd525545f1fbfcbf2f2d9b078c701e5",
+  "category": "negation",
+  "split": "test",
+  "turns": 40,
+  "strategy": "traversal",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2520,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 7656.891299993731,
+  "query_ms": 751.2436999822967,
+  "qa_ms": 1647.817999997642,
+  "context_plus_answer_ms": 2399.0616999799386,
+  "cold_context_plus_answer_ms": 9576.971500006039,
+  "shared_tree_build": {
+    "elapsed_ms": 7177.9098000261,
+    "attempts": 7,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "ValueError",
+        "reason": "tree critical fact absent from selected quotes"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "4c31eb1207829c8644ee3be3",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5111，尚待核实。\n[中间内容已省略]\n[turn=31; user] 请按本次实际情况登记2：我已经更换主板，连接线没有更换。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=17; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=18; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "5be695812b0267e98fcac76f",
+                  "quote": "邻居设备曾出现 ERR-5121，不是我的故障记录。",
+                  "turn_id": 35,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "2d724886b8a3ee5262567282",
+                  "quote": "最早填过的设备型号是 DEV-5111，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                  "quote": "用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                  "quote": "第37次补充，说明书封面有磨损。备用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "3d83160b5a172e000586105d",
+                  "quote": "件地点暂定单位前台。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "3d83160b5a172e000586105d",
+                  "quote": "第36次补充，需要先确认配件库存。收件地点暂定单位前台。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "931c1fa3befca95d23c045f9",
+                  "quote": "。说明书封面有磨损。本条没有新增排障执行结果。",
+                  "turn_id": 34,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "931c1fa3befca95d23c045f9",
+                  "quote": "第34次补充，收件地点暂定单位前台。说明书封面有磨损。本条没有新增排障执行结果。",
+                  "turn_id": 34,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 129,
+          "prompt_tokens": 1232,
+          "total_tokens": 1361
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "4c31eb1207829c8644ee3be3",
+              "text": "用户称已更换主板，未换连接线。型号DEV-5111待核实。",
+              "sources": [
+                {
+                  "leaf_id": "2d724886b8a3ee5262567282",
+                  "quote": "最早填过的设备型号是 DEV-5111，尚待核实。"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4458,
+            "input_estimate": 4458,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1668.3368000085466
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 7177.9098000261,
+    "attempts": 7,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "ValueError",
+        "reason": "tree critical fact absent from selected quotes"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "4c31eb1207829c8644ee3be3",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5111，尚待核实。\n[中间内容已省略]\n[turn=31; user] 请按本次实际情况登记2：我已经更换主板，连接线没有更换。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=17; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=18; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "5be695812b0267e98fcac76f",
+                  "quote": "邻居设备曾出现 ERR-5121，不是我的故障记录。",
+                  "turn_id": 35,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "2d724886b8a3ee5262567282",
+                  "quote": "最早填过的设备型号是 DEV-5111，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                  "quote": "用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                  "quote": "第37次补充，说明书封面有磨损。备用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "3d83160b5a172e000586105d",
+                  "quote": "件地点暂定单位前台。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "3d83160b5a172e000586105d",
+                  "quote": "第36次补充，需要先确认配件库存。收件地点暂定单位前台。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "931c1fa3befca95d23c045f9",
+                  "quote": "。说明书封面有磨损。本条没有新增排障执行结果。",
+                  "turn_id": 34,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "931c1fa3befca95d23c045f9",
+                  "quote": "第34次补充，收件地点暂定单位前台。说明书封面有磨损。本条没有新增排障执行结果。",
+                  "turn_id": 34,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 129,
+          "prompt_tokens": 1232,
+          "total_tokens": 1361
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "4c31eb1207829c8644ee3be3",
+              "text": "用户称已更换主板，未换连接线。型号DEV-5111待核实。",
+              "sources": [
+                {
+                  "leaf_id": "2d724886b8a3ee5262567282",
+                  "quote": "最早填过的设备型号是 DEV-5111，尚待核实。"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4458,
+            "input_estimate": 4458,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1668.3368000085466
+      }
+    ]
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 7,
+  "query_attempts": 1,
+  "total_attempts_this_task": 9,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "ValueError",
+      "reason": "tree critical fact absent from selected quotes"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "tree_summary",
+      "input": {
+        "groups": [
+          {
+            "id": "4c31eb1207829c8644ee3be3",
+            "children": [
+              {
+                "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5111，尚待核实。\n[中间内容已省略]\n[turn=31; user] 请按本次实际情况登记2：我已经更换主板，连接线没有更换。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+              },
+              {
+                "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=17; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=18; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+              }
+            ],
+            "evidence": [
+              {
+                "leaf_id": "5be695812b0267e98fcac76f",
+                "quote": "邻居设备曾出现 ERR-5121，不是我的故障记录。",
+                "turn_id": 35,
+                "role": "user"
+              },
+              {
+                "leaf_id": "2d724886b8a3ee5262567282",
+                "quote": "最早填过的设备型号是 DEV-5111，尚待核实。",
+                "turn_id": 1,
+                "role": "user"
+              },
+              {
+                "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                "quote": "用设备在另一处房间。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                "quote": "第37次补充，说明书封面有磨损。备用设备在另一处房间。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "3d83160b5a172e000586105d",
+                "quote": "件地点暂定单位前台。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              },
+              {
+                "leaf_id": "3d83160b5a172e000586105d",
+                "quote": "第36次补充，需要先确认配件库存。收件地点暂定单位前台。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              },
+              {
+                "leaf_id": "931c1fa3befca95d23c045f9",
+                "quote": "。说明书封面有磨损。本条没有新增排障执行结果。",
+                "turn_id": 34,
+                "role": "user"
+              },
+              {
+                "leaf_id": "931c1fa3befca95d23c045f9",
+                "quote": "第34次补充，收件地点暂定单位前台。说明书封面有磨损。本条没有新增排障执行结果。",
+                "turn_id": 34,
+                "role": "user"
+              }
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 129,
+        "prompt_tokens": 1232,
+        "total_tokens": 1361
+      },
+      "output": {
+        "nodes": [
+          {
+            "id": "4c31eb1207829c8644ee3be3",
+            "text": "用户称已更换主板，未换连接线。型号DEV-5111待核实。",
+            "sources": [
+              {
+                "leaf_id": "2d724886b8a3ee5262567282",
+                "quote": "最早填过的设备型号是 DEV-5111，尚待核实。"
+              }
+            ]
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 4458,
+          "input_estimate": 4458,
+          "output_reserved": 1200,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1668.3368000085466
+    },
+    {
+      "kind": "qa",
+      "input": {
+        "question": "我实际更换了哪个部件，另一个部件动过吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=40f03a121223b203dd4eda41; level=0; original]\n[turn=31; user; leaf=40f03a121223b203dd4eda41] ：我已经更换主板，连接线没有更换。\n[turn=31; user; leaf=40f03a121223b203dd4eda41] 请按本次实际情况登记2：我已经更换主板，连接线没有更换。\n请按本次实际情况登记2：我已经更换主板，连接线没有更换。\n[node=8a6263953110ad426b179d56; level=0; original]\n[turn=30; assistant未核验; leaf=8a6263953110ad426b179d56] 建议先断电重连，再决定是否更换部件。\n建议先断电重连，再决定是否更换部件。\n[node=a988b7bc687647f47106a374; level=1; rule_fallback]\n\n[中间内容已省略]\n\n[turn=31; user] 请按本次实际情况登记2：我已经更换主板，连接线没有更换。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=31; user] 请按本次实际情况登记2：我已经更换主板，连接线没有更换。\n[turn=31; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=37; user] 备用设备在另一处房间。\n[turn=37; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，说明书封面有磨损。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，运输时会用泡沫保护边角。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，说明书封面有磨损。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 971,
+        "total_tokens": 1031
+      },
+      "output": {
+        "answer": "实际更换了主板，连接线没有动过。",
+        "sources": [
+          {
+            "turn_id": 31,
+            "role": "user",
+            "quote": "我已经更换主板，连接线没有更换。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3465,
+          "input_estimate": 3465,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1647.665099997539
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 129,
+      "prompt_tokens": 1232,
+      "total_tokens": 1361
+    },
+    {
+      "completion_tokens": 60,
+      "prompt_tokens": 971,
+      "total_tokens": 1031
+    }
+  ],
+  "answer": {
+    "answer": "实际更换了主板，连接线没有动过。",
+    "sources": [
+      {
+        "turn_id": 31,
+        "role": "user",
+        "quote": "我已经更换主板，连接线没有更换。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=5a7294b6964abeb8101f3b4c; level=0; original]\n[turn=2; assistant未核验; leaf=5a7294b6964abeb8101f3b4c] 您没有恢复出厂设置。\n[turn=2; assistant未核验; leaf=5a7294b6964abeb8101f3b4c] 您没有恢复出厂设置。\n您没有恢复出厂设置。\n[node=8ae6f438d785f1b1d05ad1d2; level=0; original]\n[turn=3; user; leaf=8ae6f438d785f1b1d05ad1d2] 已经恢复出厂设置，但故障没有消失。\n[turn=3; user; leaf=8ae6f438d785f1b1d05ad1d2] 请按本次实际情况登记2：我确实已经恢复出厂设置，但故障没有消失。\n请按本次实际情况登记2：我确实已经恢复出厂设置，但故障没有消失。\n[node=416628e6fefa637497ca3250; level=1; rule_fallback]\n[turn=3; user; leaf=8ae6f438d785f1b1d05ad1d2] 已经恢复出厂设置，但故障没有消失。\n\n[中间内容已省略]\n\n[turn=3; user] 请按本次实际情况登记2：我确实已经恢复出厂设置，但故障没有消失。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=2; user] 第2次补充，收件地点暂定单位前台。工作日晚上有人接电话。本条没有新增排障执行结果。\n[turn=2; assistant未核验] 您没有恢复出厂设置。\n[turn=3; user] 请按本次实际情况登记2：我确实已经恢复出厂设置，但故障没有消失。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，工作日晚上有人接电话。请把费用明细单独列出。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，收件地点暂定单位前台。请把费用明细单独列出。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

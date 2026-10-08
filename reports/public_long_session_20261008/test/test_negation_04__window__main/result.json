@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "task_id": "test_negation_04__window__main",
+  "case": "test_negation_04",
+  "case_sha256": "93abb97a0b2312ab571a5cc87eb90c789c74b81a1e2123a922c824200f045f27",
+  "category": "negation",
+  "split": "test",
+  "turns": 80,
+  "strategy": "window",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 5011,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 0.8087999885901809,
+  "query_ms": 0.9559000027365983,
+  "qa_ms": 1549.481800000649,
+  "context_plus_answer_ms": 1550.4377000033855,
+  "cold_context_plus_answer_ms": 1551.2464999919757,
+  "shared_tree_build": null,
+  "shared_build": null,
+  "build_performed_this_task": true,
+  "vector_method": null,
+  "tree_model_nodes": null,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "我实际更换了哪个部件，另一个部件动过吗？",
+        "history": [
+          {
+            "role": "user",
+            "content": "第68次补充，收件地点暂定单位前台。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=68; unix=1000.000]",
+            "turn_id": 68
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=68; unix=1000.000]",
+            "turn_id": 68
+          },
+          {
+            "role": "user",
+            "content": "第69次补充，运输时会用泡沫保护边角。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=69; unix=1000.000]",
+            "turn_id": 69
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=69; unix=1000.000]",
+            "turn_id": 69
+          },
+          {
+            "role": "user",
+            "content": "第70次补充，工作日晚上有人接电话。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=70; unix=1000.000]",
+            "turn_id": 70
+          },
+          {
+            "role": "assistant",
+            "content": "建议先断电重连，再决定是否更换部件。",
+            "source": " [turn=70; unix=1000.000]",
+            "turn_id": 70
+          },
+          {
+            "role": "user",
+            "content": "请按本次实际情况登记5：我没有更换主板，只更换了连接线。",
+            "source": " [turn=71; unix=1000.000]",
+            "turn_id": 71
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=71; unix=1000.000]",
+            "turn_id": 71
+          },
+          {
+            "role": "user",
+            "content": "第72次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=72; unix=1000.000]",
+            "turn_id": 72
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=72; unix=1000.000]",
+            "turn_id": 72
+          },
+          {
+            "role": "user",
+            "content": "第73次补充，今天暂不安排上门。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=73; unix=1000.000]",
+            "turn_id": 73
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=73; unix=1000.000]",
+            "turn_id": 73
+          },
+          {
+            "role": "user",
+            "content": "第74次补充，收件地点暂定单位前台。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=74; unix=1000.000]",
+            "turn_id": 74
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=74; unix=1000.000]",
+            "turn_id": 74
+          },
+          {
+            "role": "user",
+            "content": "邻居设备曾出现 ERR-5124，不是我的故障记录。",
+            "source": " [turn=75; unix=1000.000]",
+            "turn_id": 75
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=75; unix=1000.000]",
+            "turn_id": 75
+          },
+          {
+            "role": "user",
+            "content": "第76次补充，备用设备在另一处房间。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=76; unix=1000.000]",
+            "turn_id": 76
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=76; unix=1000.000]",
+            "turn_id": 76
+          },
+          {
+            "role": "user",
+            "content": "第77次补充，工作日晚上有人接电话。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=77; unix=1000.000]",
+            "turn_id": 77
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=77; unix=1000.000]",
+            "turn_id": 77
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，需要先确认配件库存。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，需要先确认配件库存。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，运输时会用泡沫保护边角。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1770,
+        "total_tokens": 1830
+      },
+      "output": {
+        "answer": "实际更换了连接线，没有更换主板。",
+        "sources": [
+          {
+            "turn_id": 71,
+            "role": "user",
+            "quote": "我没有更换主板，只更换了连接线。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 6201,
+          "input_estimate": 6201,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1549.277100013569
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 60,
+      "prompt_tokens": 1770,
+      "total_tokens": 1830
+    }
+  ],
+  "answer": {
+    "answer": "实际更换了连接线，没有更换主板。",
+    "sources": [
+      {
+        "turn_id": 71,
+        "role": "user",
+        "quote": "我没有更换主板，只更换了连接线。"
+      }
+    ]
+  }
+}

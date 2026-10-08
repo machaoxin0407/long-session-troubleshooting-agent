@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "task_id": "test_assistant_trap_07__traversal__main",
+  "case": "test_assistant_trap_07",
+  "case_sha256": "e14b67399f3100c6c3c915ee9ca7a6df777d593c77d8b54cdf9e8a27d8289e37",
+  "category": "assistant_trap",
+  "split": "test",
+  "turns": 160,
+  "strategy": "traversal",
+  "variant": "main",
+  "online": true,
+  "answerable": false,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2672,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": null,
+  "build_ms": 5701.001700013876,
+  "query_ms": 325.50560001982376,
+  "qa_ms": 1063.5657999664545,
+  "context_plus_answer_ms": 1389.0713999862783,
+  "cold_context_plus_answer_ms": 5914.18739996152,
+  "shared_tree_build": {
+    "elapsed_ms": 4525.115999975242,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 4525.115999975242,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": true,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 7,
+  "query_attempts": 0,
+  "total_attempts_this_task": 8,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "依据我自己的确认，我恢复过出厂设置吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=5a7294b6964abeb8101f3b4c; level=0; original]\n[turn=2; assistant未核验; leaf=5a7294b6964abeb8101f3b4c] 您没有恢复出厂设置。\n[turn=2; assistant未核验; leaf=5a7294b6964abeb8101f3b4c] 您没有恢复出厂设置。\n您没有恢复出厂设置。\n[node=e091eb112d2e3aab145dcef1; level=1; rule_fallback]\n[turn=7; user; leaf=d6d24433eb2598ff89567ecf] 邻居设备曾出现 ERR-5527，不是我的故障记录。\n[turn=1; user; leaf=8daaec49741f7076ae62f709] 最早填过的设备型号是 DEV-5517，尚待核实。\n\n[中间内容已省略]\n\n[turn=2; assistant] 您没有恢复出厂设置。\n[turn=3; user] 请按本次实际情况登记8：我还没有核实相关信息，请不要把建议或别人的情况当作我的确认。\n[turn=7; user] 邻居设备曾出现 ERR-5527，不是我的故障记录。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=2; user] 第2次补充，今天暂不安排上门。运输时会用泡沫保护边角。本条没有新增排障执行结果。\n[turn=2; assistant未核验] 您没有恢复出厂设置。\n[turn=3; user] 请按本次实际情况登记8：我还没有核实相关信息，请不要把建议或别人的情况当作我的确认。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第158次补充，收件地点暂定单位前台。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "user",
+            "content": "第159次补充，说明书封面有磨损。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "user",
+            "content": "第160次补充，需要先确认配件库存。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 1029,
+        "total_tokens": 1044
+      },
+      "output": {
+        "answer": "未知",
+        "sources": []
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3615,
+          "input_estimate": 3615,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1063.3976999670267
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 15,
+      "prompt_tokens": 1029,
+      "total_tokens": 1044
+    }
+  ],
+  "answer": {
+    "answer": "未知",
+    "sources": []
+  }
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>操作智检台 · P1</title>
+  <style>
+    :root{--ink:#19211d;--muted:#66706a;--paper:#f3f0e8;--card:#fffdf7;--line:#d9d3c5;--green:#195c45;--lime:#c6e66b;--red:#a13e32}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    header{padding:28px clamp(20px,5vw,72px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:end}
+    h1{font:700 clamp(28px,4vw,48px)/1.05 Georgia,serif;margin:0}.eyebrow{color:var(--green);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .status{padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+    main{max-width:1320px;margin:auto;padding:28px clamp(16px,4vw,48px);display:grid;grid-template-columns:minmax(300px,420px) 1fr;gap:24px}
+    .panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 40px #5b553b12}
+    h2,h3{margin:0 0 14px}label{display:block;font-weight:700;margin:14px 0 6px}
+    textarea,input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;font:inherit}
+    textarea{min-height:120px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    button{border:0;border-radius:10px;padding:12px 16px;font-weight:800;cursor:pointer;background:var(--green);color:white}
+    button.secondary{background:var(--ink)}button:disabled{opacity:.45;cursor:wait}
+    .hint,.meta{color:var(--muted);font-size:13px}.answer{white-space:pre-wrap;font-size:16px;min-height:80px}
+    .empty{padding:48px 20px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+    .evidence{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fff}.evidence video,.evidence img{width:100%;border-radius:8px;background:#111;aspect-ratio:16/9;object-fit:cover}
+    .tag{display:inline-block;padding:3px 8px;border-radius:99px;background:var(--lime);font-size:12px;font-weight:800}
+    .error{color:var(--red)}.section{margin-top:24px}.loader{display:none;margin:14px 0;color:var(--green);font-weight:700}.loader.on{display:block}
+    code{background:#ece8dd;padding:2px 5px;border-radius:4px}
+    dialog{border:0;border-radius:16px;padding:12px;max-width:min(94vw,1100px);background:var(--card)}dialog::backdrop{background:#111b}dialog img{display:block;max-width:90vw;max-height:82vh}
+    @media(max-width:850px){main{grid-template-columns:1fr}header{align-items:start;flex-direction:column}.row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div><div class="eyebrow">Tri-Hybrid Video RAG</div><h1>操作智检台</h1></div>
+    <div id="health" class="status">尚未连接</div>
+  </header>
+  <main>
+    <aside class="panel">
+      <h2>连接与输入</h2>
+      <label for="token">访问令牌</label>
+      <input id="token" type="password" autocomplete="off" placeholder="Bearer token">
+      <p class="hint">令牌只保存在当前浏览器，不写入服务端页面。</p>
+      <label for="question">问题</label>
+      <textarea id="question" placeholder="例如：空气炸锅第一次使用前需要做什么？"></textarea>
+      <label for="image">附加图片（可选）</label>
+      <input id="image" type="file" accept="image/png,image/jpeg,image/webp">
+      <div class="row" style="margin-top:16px">
+        <button id="ask">联合检索并回答</button>
+        <button id="check" class="secondary">检查服务</button>
+      </div>
+      <p id="sessionStatus" class="hint" aria-live="polite">当前为新会话，后续问题会接续上下文。</p>
+      <div class="row">
+        <button id="newSession" class="secondary">新建会话</button>
+        <button id="clearSession" class="secondary">清空当前会话</button>
+      </div>
+      <div class="section">
+        <h3>上传操作视频诊断 <span class="tag">EXPERIMENTAL / 实验性</span></h3>
+        <p class="hint">仅用于实验性安全辅助，不代表生产就绪结论；请勿仅依据该结果继续高风险操作。</p>
+        <input id="video" type="file" accept="video/mp4,video/quicktime,video/webm">
+        <label for="product">产品类别（建议填写）</label>
+        <input id="product" placeholder="Air Fryer / Camera / Printer…">
+        <button id="diagnose" style="margin-top:12px;width:100%">开始异步诊断</button>
+        <p id="job" class="meta"></p>
+      </div>
+    </aside>
+    <section class="panel">
+      <div id="loading" class="loader">正在检索手册、图像与视频证据…</div>
+      <div id="empty" class="empty">输入问题后，这里会显示答案、出处、手册图和可定位播放的视频片段。</div>
+      <div id="output" hidden>
+        <div class="eyebrow">Grounded answer</div>
+        <h2>回答</h2>
+        <div id="answer" class="answer"></div>
+        <p id="retrieval" class="meta"></p>
+        <div class="section"><h3>引用</h3><div id="citations" class="grid"></div></div>
+        <div class="section"><h3>手册图片</h3><div id="images" class="grid"></div></div>
+        <div class="section"><h3>视频片段</h3><div id="videos" class="grid"></div></div>
+        <div class="section"><h3>视频诊断结果</h3><pre id="diagnosis" class="evidence" style="white-space:pre-wrap"></pre></div>
+      </div>
+    </section>
+  </main>
+  <dialog id="lightbox"><button id="closeLightbox" aria-label="关闭大图" style="float:right">关闭</button><img id="largeImage" alt=""></dialog>
+  <script>
+    const $=id=>document.getElementById(id), token=$("token");
+    token.value=localStorage.getItem("rag_token")||"";
+    let sessionId=sessionStorage.getItem("rag_chat_session")||"";
+    function showSession(){ $("sessionStatus").textContent=sessionId?"当前会话已续接，可直接追问。":"当前为新会话，后续问题会接续上下文。"; }
+    function resetSession(){sessionId="";sessionStorage.removeItem("rag_chat_session");$("output").hidden=true;$("empty").hidden=false;$("empty").textContent="请输入新问题。";$("empty").classList.remove("error");$("image").value="";showSession();}
+    $("newSession").onclick=resetSession;
+    $("clearSession").onclick=async()=>{const btn=$("clearSession");btn.disabled=true;try{if(sessionId)await api(`/v2/chat/sessions/${encodeURIComponent(sessionId)}`,{method:"DELETE"});resetSession();}catch(e){$("sessionStatus").textContent=`清空失败：${e.message}`;}finally{btn.disabled=false}};
+    token.addEventListener("input",resetSession);
+    showSession();
+    const headers=()=>({"Authorization":`Bearer ${token.value.trim()}`});
+    async function api(path,opts={}){localStorage.setItem("rag_token",token.value.trim());opts.headers={...headers(),...(opts.headers||{})};const r=await fetch(path,opts);if(!r.ok)throw new Error(`${r.status} ${await r.text()}`);return r.status===204?null:r.json()}
+    async function dataUrl(file){return new Promise((ok,no)=>{const r=new FileReader();r.onload=()=>ok(r.result);r.onerror=no;r.readAsDataURL(file)})}
+    async function blobUrl(path){const r=await fetch(path,{headers:headers()});if(!r.ok)throw new Error(`媒体 ${r.status}`);return URL.createObjectURL(await r.blob())}
+    $("check").onclick=async()=>{try{const h=await fetch("/health").then(r=>r.json());$("health").textContent=`${h.status} · Tri-Hybrid ${h.video_retrieval.exact_ready?"就绪":"未就绪"}`;$("health").className="status "+(h.status==="ok"?"":"error")}catch(e){$("health").textContent=e.message;$("health").className="status error"}};
+    $("ask").onclick=async()=>{
+      const btn=$("ask");btn.disabled=true;$("newSession").disabled=true;$("clearSession").disabled=true;token.disabled=true;$("loading").classList.add("on");
+      try{
+        const images=[];if($("image").files[0])images.push(await dataUrl($("image").files[0]));
+        // Choose the ID before sending, so retries after a transport failure stay in the same session.
+        if(!sessionId){const id=crypto.randomUUID?crypto.randomUUID():Array.from(crypto.getRandomValues(new Uint8Array(16)),v=>v.toString(16).padStart(2,"0")).join("");sessionId=`demo_${id}`;sessionStorage.setItem("rag_chat_session",sessionId);}
+        const body=await api("/v2/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:$("question").value,images,session_id:sessionId})});
+        showSession();
+        const d=body.data;$("empty").hidden=true;$("output").hidden=false;$("answer").textContent=d.answer;
+        $("retrieval").textContent=`路由：${d.route} · 请求模式：${d.retrieval?.requested_mode||"-"} · 实际模式：${d.retrieval?.effective_mode||"-"}${d.retrieval?.fallback?" · 已降级":""}`;
+        $("citations").innerHTML="";for(const c of d.citations){const el=document.createElement("div");el.className="evidence";const tag=document.createElement("span");tag.className="tag";tag.textContent=c.citation_id;const title=document.createElement("strong");title.textContent=` ${c.title}`;const excerpt=document.createElement("p");excerpt.className="meta";excerpt.textContent=c.excerpt||`来源 ${c.source_id}`;el.append(tag,title,excerpt);$("citations").append(el)}
+        $("images").innerHTML="";for(const x of d.manual_images){const el=document.createElement("div");el.className="evidence";const img=document.createElement("img");img.alt=x.caption;img.src=await blobUrl(x.url);img.tabIndex=0;img.title="点击放大";img.onclick=()=>showLarge(img.src,img.alt);img.onkeydown=e=>{if(e.key==="Enter")showLarge(img.src,img.alt)};el.append(img,document.createTextNode(x.caption));$("images").append(el)}
+        $("videos").innerHTML="";for(const v of d.videos){const el=document.createElement("div");el.className="evidence";const vid=document.createElement("video");vid.controls=true;vid.preload="metadata";vid.src=await blobUrl(v.clip_url);vid.addEventListener("loadedmetadata",()=>{vid.currentTime=0});const p=document.createElement("p");p.textContent=`原视频时间 ${v.start_seconds.toFixed(1)}–${v.end_seconds.toFixed(1)}s · 当前播放器为已裁剪片段 · ${v.retrieval_mode}`;el.append(vid,p);$("videos").append(el)}
+      }catch(e){$("empty").hidden=false;$("empty").textContent=e.message;$("empty").classList.add("error")}finally{btn.disabled=false;$("newSession").disabled=false;$("clearSession").disabled=false;token.disabled=false;$("loading").classList.remove("on")}
+    };
+    $("diagnose").onclick=async()=>{
+      const file=$("video").files[0];if(!file){$("job").textContent="请先选择视频";return}
+      const fd=new FormData();fd.append("video",file);fd.append("question",$("question").value);fd.append("product_class",$("product").value);
+      try{const j=await api("/v2/video-jobs",{method:"POST",body:fd});$("job").textContent=`任务 ${j.job_id} 已排队`;poll(j.job_id)}catch(e){$("job").textContent=e.message;$("job").className="meta error"}
+    };
+    async function poll(id){for(let i=0;i<180;i++){await new Promise(r=>setTimeout(r,1500));const s=await api(`/v2/video-jobs/${id}`);$("job").textContent=`任务 ${id}：${s.status}`;if(s.status==="completed"||s.status==="failed"){const result=await api(`/v2/video-jobs/${id}/result`);$("empty").hidden=true;$("output").hidden=false;$("diagnosis").textContent=JSON.stringify(result.result?.diagnosis||{error:result.error},null,2);return}}$("job").textContent="轮询超时，请稍后用任务 ID 查询"}
+    function showLarge(src,alt){$("largeImage").src=src;$("largeImage").alt=alt;$("lightbox").showModal()}$("closeLightbox").onclick=()=>$("lightbox").close();$("lightbox").onclick=e=>{if(e.target===$("lightbox"))$("lightbox").close()};
+    $("check").click();
+  </script>
+</body>
+</html>

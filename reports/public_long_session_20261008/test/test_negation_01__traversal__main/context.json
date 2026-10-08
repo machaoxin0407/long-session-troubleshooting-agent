@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=40f03a121223b203dd4eda41; level=0; original]\n[turn=31; user; leaf=40f03a121223b203dd4eda41] ：我已经更换主板，连接线没有更换。\n[turn=31; user; leaf=40f03a121223b203dd4eda41] 请按本次实际情况登记2：我已经更换主板，连接线没有更换。\n请按本次实际情况登记2：我已经更换主板，连接线没有更换。\n[node=8a6263953110ad426b179d56; level=0; original]\n[turn=30; assistant未核验; leaf=8a6263953110ad426b179d56] 建议先断电重连，再决定是否更换部件。\n建议先断电重连，再决定是否更换部件。\n[node=a988b7bc687647f47106a374; level=1; rule_fallback]\n\n[中间内容已省略]\n\n[turn=31; user] 请按本次实际情况登记2：我已经更换主板，连接线没有更换。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=31; user] 请按本次实际情况登记2：我已经更换主板，连接线没有更换。\n[turn=31; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=37; user] 备用设备在另一处房间。\n[turn=37; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，说明书封面有磨损。请把费用明细单独列出。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，运输时会用泡沫保护边角。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，说明书封面有磨损。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

@@ -1,0 +1,489 @@
+{
+  "schema": 1,
+  "task_id": "test_middle_of_long_turn_01__collapsed__main",
+  "case": "test_middle_of_long_turn_01",
+  "case_sha256": "851f21f509fc21d50da8dccc3810bc06762ff9fae2d7aac7381bdae5ed30e9b9",
+  "category": "middle_of_long_turn",
+  "split": "test",
+  "turns": 40,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2852,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 8374.068499950226,
+  "query_ms": 634.1703999787569,
+  "qa_ms": 1741.9030999881215,
+  "context_plus_answer_ms": 2376.0734999668784,
+  "cold_context_plus_answer_ms": 10209.258499962743,
+  "shared_tree_build": {
+    "elapsed_ms": 7833.184999995865,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 1,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "5a34d9a10cd7e45b3c1ba602",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5411，尚待核实。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[turn=35; user] 邻居设备曾出现 ERR-5421，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=9; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "7b4a9b4a199094a283385d37",
+                  "quote": "邻居设备曾出现 ERR-5421，不是我的故障记录。",
+                  "turn_id": 35,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "1cc4f581cb48f88b0411da5e",
+                  "quote": "和预约安排仍待确认。关键错误码 ERR-5401，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和",
+                  "turn_id": 31,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "1cc4f581cb48f88b0411da5e",
+                  "quote": "外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。关键错误码 ERR-5401，仅在启动时出现。配件库存和",
+                  "turn_id": 31,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "2ef74a056ef2622166e0f417",
+                  "quote": "最早填过的设备型号是 DEV-5411，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "72ddd32d9b533039df34df44",
+                  "quote": "。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "72ddd32d9b533039df34df44",
+                  "quote": "第37次补充，需要先确认配件库存。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7c860f59f3fd19b02558619b",
+                  "quote": "用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7c860f59f3fd19b02558619b",
+                  "quote": "第36次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 138,
+          "prompt_tokens": 1304,
+          "total_tokens": 1442
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "5a34d9a10cd7e45b3c1ba602",
+              "text": "用户称邻居设备出现ERR-5421非己故障，暂不安排上门。",
+              "sources": [
+                {
+                  "leaf_id": "7b4a9b4a199094a283385d37",
+                  "quote": "邻居设备曾出现 ERR-5421"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4739,
+            "input_estimate": 4739,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 2054.981700028293
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 7833.184999995865,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 1,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "5a34d9a10cd7e45b3c1ba602",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5411，尚待核实。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[turn=35; user] 邻居设备曾出现 ERR-5421，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=9; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "7b4a9b4a199094a283385d37",
+                  "quote": "邻居设备曾出现 ERR-5421，不是我的故障记录。",
+                  "turn_id": 35,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "1cc4f581cb48f88b0411da5e",
+                  "quote": "和预约安排仍待确认。关键错误码 ERR-5401，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和",
+                  "turn_id": 31,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "1cc4f581cb48f88b0411da5e",
+                  "quote": "外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。关键错误码 ERR-5401，仅在启动时出现。配件库存和",
+                  "turn_id": 31,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "2ef74a056ef2622166e0f417",
+                  "quote": "最早填过的设备型号是 DEV-5411，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "72ddd32d9b533039df34df44",
+                  "quote": "。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "72ddd32d9b533039df34df44",
+                  "quote": "第37次补充，需要先确认配件库存。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7c860f59f3fd19b02558619b",
+                  "quote": "用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7c860f59f3fd19b02558619b",
+                  "quote": "第36次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 138,
+          "prompt_tokens": 1304,
+          "total_tokens": 1442
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "5a34d9a10cd7e45b3c1ba602",
+              "text": "用户称邻居设备出现ERR-5421非己故障，暂不安排上门。",
+              "sources": [
+                {
+                  "leaf_id": "7b4a9b4a199094a283385d37",
+                  "quote": "邻居设备曾出现 ERR-5421"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4739,
+            "input_estimate": 4739,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 2054.981700028293
+      }
+    ]
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 1,
+  "build_attempts": 9,
+  "query_attempts": 1,
+  "total_attempts_this_task": 11,
+  "fallbacks": [],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "tree_summary",
+      "input": {
+        "groups": [
+          {
+            "id": "5a34d9a10cd7e45b3c1ba602",
+            "children": [
+              {
+                "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5411，尚待核实。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[turn=35; user] 邻居设备曾出现 ERR-5421，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+              },
+              {
+                "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=9; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+              }
+            ],
+            "evidence": [
+              {
+                "leaf_id": "7b4a9b4a199094a283385d37",
+                "quote": "邻居设备曾出现 ERR-5421，不是我的故障记录。",
+                "turn_id": 35,
+                "role": "user"
+              },
+              {
+                "leaf_id": "1cc4f581cb48f88b0411da5e",
+                "quote": "和预约安排仍待确认。关键错误码 ERR-5401，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和",
+                "turn_id": 31,
+                "role": "user"
+              },
+              {
+                "leaf_id": "1cc4f581cb48f88b0411da5e",
+                "quote": "外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。关键错误码 ERR-5401，仅在启动时出现。配件库存和",
+                "turn_id": 31,
+                "role": "user"
+              },
+              {
+                "leaf_id": "2ef74a056ef2622166e0f417",
+                "quote": "最早填过的设备型号是 DEV-5411，尚待核实。",
+                "turn_id": 1,
+                "role": "user"
+              },
+              {
+                "leaf_id": "72ddd32d9b533039df34df44",
+                "quote": "。今天暂不安排上门。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "72ddd32d9b533039df34df44",
+                "quote": "第37次补充，需要先确认配件库存。今天暂不安排上门。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "7c860f59f3fd19b02558619b",
+                "quote": "用设备在另一处房间。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              },
+              {
+                "leaf_id": "7c860f59f3fd19b02558619b",
+                "quote": "第36次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              }
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 138,
+        "prompt_tokens": 1304,
+        "total_tokens": 1442
+      },
+      "output": {
+        "nodes": [
+          {
+            "id": "5a34d9a10cd7e45b3c1ba602",
+            "text": "用户称邻居设备出现ERR-5421非己故障，暂不安排上门。",
+            "sources": [
+              {
+                "leaf_id": "7b4a9b4a199094a283385d37",
+                "quote": "邻居设备曾出现 ERR-5421"
+              }
+            ]
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 4739,
+          "input_estimate": 4739,
+          "output_reserved": 1200,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 2054.981700028293
+    },
+    {
+      "kind": "qa",
+      "input": {
+        "question": "仅在启动时出现的那个错误码是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=c5922361b3fb4aa61ad20e53; level=1; rule_fallback]\n[turn=31; user; leaf=1cc4f581cb48f88b0411da5e] 和预约安排仍待确认。关键错误码 ERR-5401，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和\n[turn=31; user; leaf=1cc4f581cb48f88b0411da5e] 外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。关键错误码 ERR-5401，仅在启动时出现。配件库存和\n\n[中间内容已省略]\n[turn=25; user] 第25次补充，收件地点暂定单位前台。\n[中间内容已省略]\n备用设备在另一处房间。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n外包装和预约安排仍待确认。\n[中间内容已省略]\n关键错误码 ERR-5401，仅在启动时出现。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=31; user] 关键错误码 ERR-5401，仅在启动时出现。\n[turn=31; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=35; user] 邻居设备曾出现 ERR-5421，不是我的故障记录。\n[turn=35; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，备用设备在另一处房间。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，需要先确认配件库存。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，运输时会用泡沫保护边角。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 63,
+        "prompt_tokens": 1018,
+        "total_tokens": 1081
+      },
+      "output": {
+        "answer": "ERR-5401",
+        "sources": [
+          {
+            "turn_id": 31,
+            "role": "user",
+            "quote": "关键错误码 ERR-5401，仅在启动时出现。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3794,
+          "input_estimate": 3794,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1741.6981999995187
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 138,
+      "prompt_tokens": 1304,
+      "total_tokens": 1442
+    },
+    {
+      "completion_tokens": 63,
+      "prompt_tokens": 1018,
+      "total_tokens": 1081
+    }
+  ],
+  "answer": {
+    "answer": "ERR-5401",
+    "sources": [
+      {
+        "turn_id": 31,
+        "role": "user",
+        "quote": "关键错误码 ERR-5401，仅在启动时出现。"
+      }
+    ]
+  }
+}

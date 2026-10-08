@@ -1,0 +1,43 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=b6bffd375eb375678fdafdc4; level=0; original]\n[turn=79; assistant未核验; leaf=b6bffd375eb375678fdafdc4] 您没有恢复出厂设置。\n[turn=79; assistant未核验; leaf=b6bffd375eb375678fdafdc4] 您没有恢复出厂设置。\n您没有恢复出厂设置。\n[node=74c68949128ea116a6ba4226; level=0; original]\n[turn=80; user; leaf=74c68949128ea116a6ba4226] 已经恢复出厂设置，但故障没有消失。\n[turn=80; user; leaf=74c68949128ea116a6ba4226] 我把上次不清楚的地方说明一下6：我确实已经恢复出厂设置，但故障没有消失。\n我把上次不清楚的地方说明一下6：我确实已经恢复出厂设置，但故障没有消失。\n[node=303b590920ad6cfb971209a5; level=1; rule_fallback]\n\n[中间内容已省略]\n\n[turn=84; user] 邻居设备曾出现 ERR-5525，不是我的故障记录。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "user",
+    "content": "第158次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "user",
+    "content": "第159次补充，收件地点暂定单位前台。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "user",
+    "content": "第160次补充，今天暂不安排上门。请把费用明细单独列出。本条没有新增排障执行结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=72f9202d4713ad9dc8b635e1; level=0; original]\n[turn=3; user; leaf=72f9202d4713ad9dc8b635e1] 清楚的地方说明一下3：我没有更换主板，只更换了连接线。\n[turn=3; user; leaf=72f9202d4713ad9dc8b635e1] 我把上次不清楚的地方说明一下3：我没有更换主板，只更换了连接线。\n我把上次不清楚的地方说明一下3：我没有更换主板，只更换了连接线。\n[node=9e23cf4cedf024b58a025edf; level=3; rule_fallback]\n[turn=77; user; leaf=c297daacafbcdf746e77d73b] 需要先确认配件库存。本条没有新增排障执行结果。\n\n[中间内容已省略]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n\n[node=977476297e8bc736199b5af3; le\n[中间内容已省略]\n\n[中间内容已省略]\n",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=3; user] 我把上次不清楚的地方说明一下3：我没有更换主板，只更换了连接线。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=77; user] 第77次补充，备用设备在另一处房间。\n[turn=77; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第78次补充，需要先确认配件库存。说明书封面有磨损。本条没有新增排障执行结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "user",
+    "content": "第79次补充，运输时会用泡沫保护边角。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "user",
+    "content": "第80次补充，需要先确认配件库存。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  }
+]

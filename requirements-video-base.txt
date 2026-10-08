@@ -1,0 +1,4 @@
+-r requirements.txt
+
+# User-space FFmpeg binary for video preprocessing without system packages.
+imageio-ffmpeg>=0.6,<1

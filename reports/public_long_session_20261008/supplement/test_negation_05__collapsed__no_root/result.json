@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "task_id": "test_negation_05__collapsed__no_root",
+  "case": "test_negation_05",
+  "case_sha256": "aea61e1d658cf165a0f90f139007395c400a70ec53cde4f42ce59dbc7f926725",
+  "category": "negation",
+  "split": "test",
+  "turns": 160,
+  "strategy": "collapsed",
+  "variant": "no_root",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2567,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": false,
+  "build_ms": 254.6155999880284,
+  "query_ms": 336.4908000221476,
+  "qa_ms": 1463.8599999598227,
+  "context_plus_answer_ms": 1800.3507999819703,
+  "cold_context_plus_answer_ms": 6490.544000000227,
+  "shared_tree_build": {
+    "elapsed_ms": 4690.193200018257,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 4690.193200018257,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": false,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    }
+  ],
+  "root_removal_applied": false,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": false,
+    "citation_check": false,
+    "passed": false,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "我实际更换了哪个部件，另一个部件动过吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=cd3301462a884b3d40306a2d; level=0; original]\n[turn=2; assistant未核验; leaf=cd3301462a884b3d40306a2d] 建议先断电重连，再决定是否更换部件。\n建议先断电重连，再决定是否更换部件。\n[node=e3b2112ec707b9e9e41b0673; level=1; rule_fallback]\n[turn=154; user; leaf=433563f47c857f5777616cd0] 时会用泡沫保护边角。本条没有新增排障执行结果。\n[turn=154; user; leaf=433563f47c857f5777616cd0] 第154次补充，请把费用明细单独列出。运输时会用泡沫保护边角。本条没有新增排障执行结果。\n\n[中间内容已省略]\n备用设备在另一处房间。本条没有新增排障执行结果。\n[turn=154; user] 第154次补充，请把费用明细单独列出。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=149; user] 备用设备在另一处房间。\n[turn=149; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=155; user] 第155次补充，备用设备在另一处房间。\n[turn=155; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第158次补充，工作日晚上有人接电话。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "user",
+            "content": "第159次补充，需要先确认配件库存。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "user",
+            "content": "第160次补充，备用设备在另一处房间。需要先确认配件库存。本条没有新增排障执行结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 1005,
+        "total_tokens": 1020
+      },
+      "output": {
+        "answer": "未知",
+        "sources": []
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3510,
+          "input_estimate": 3510,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1463.6921999626793
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 15,
+      "prompt_tokens": 1005,
+      "total_tokens": 1020
+    }
+  ],
+  "answer": {
+    "answer": "未知",
+    "sources": []
+  }
+}

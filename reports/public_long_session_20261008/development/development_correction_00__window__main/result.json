@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "task_id": "development_correction_00__window__main",
+  "case": "development_correction_00",
+  "case_sha256": "e09a370f5d220fa997116cf8c815c7465855d035df7d90a2b940443b167d648c",
+  "category": "correction",
+  "split": "development",
+  "turns": 40,
+  "strategy": "window",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 5068,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": false,
+  "build_ms": 0.6173999863676727,
+  "query_ms": 0.6909000221639872,
+  "qa_ms": 914.8521000170149,
+  "context_plus_answer_ms": 915.5430000391789,
+  "cold_context_plus_answer_ms": 916.1604000255466,
+  "shared_tree_build": null,
+  "shared_build": null,
+  "build_performed_this_task": true,
+  "vector_method": null,
+  "tree_model_nodes": null,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": false,
+    "citation_check": false,
+    "passed": false,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "我后来确认的实际设备型号是什么？",
+        "history": [
+          {
+            "role": "user",
+            "content": "第28次补充，外壳有轻微划痕。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=28; unix=1000.000]",
+            "turn_id": 28
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=28; unix=1000.000]",
+            "turn_id": 28
+          },
+          {
+            "role": "user",
+            "content": "第29次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=29; unix=1000.000]",
+            "turn_id": 29
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=29; unix=1000.000]",
+            "turn_id": 29
+          },
+          {
+            "role": "user",
+            "content": "第30次补充，外壳有轻微划痕。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=30; unix=1000.000]",
+            "turn_id": 30
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=30; unix=1000.000]",
+            "turn_id": 30
+          },
+          {
+            "role": "user",
+            "content": "第31次补充，预约时间需要改到周末。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=31; unix=1000.000]",
+            "turn_id": 31
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=31; unix=1000.000]",
+            "turn_id": 31
+          },
+          {
+            "role": "user",
+            "content": "第32次补充，外壳有轻微划痕。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=32; unix=1000.000]",
+            "turn_id": 32
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=32; unix=1000.000]",
+            "turn_id": 32
+          },
+          {
+            "role": "user",
+            "content": "第33次补充，预约时间需要改到周末。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=33; unix=1000.000]",
+            "turn_id": 33
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=33; unix=1000.000]",
+            "turn_id": 33
+          },
+          {
+            "role": "user",
+            "content": "第34次补充，预约时间需要改到周末。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=34; unix=1000.000]",
+            "turn_id": 34
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=34; unix=1000.000]",
+            "turn_id": 34
+          },
+          {
+            "role": "user",
+            "content": "第35次补充，外壳有轻微划痕。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=35; unix=1000.000]",
+            "turn_id": 35
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=35; unix=1000.000]",
+            "turn_id": 35
+          },
+          {
+            "role": "user",
+            "content": "第36次补充，预约时间需要改到周末。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=36; unix=1000.000]",
+            "turn_id": 36
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=36; unix=1000.000]",
+            "turn_id": 36
+          },
+          {
+            "role": "user",
+            "content": "第37次补充，包装盒放在储物间。外壳有轻微划痕。本条没有新增排障执行结果。",
+            "source": " [turn=37; unix=1000.000]",
+            "turn_id": 37
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=37; unix=1000.000]",
+            "turn_id": 37
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，外壳有轻微划痕。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，还在寻找购机凭证。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，还在寻找购机凭证。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 1791,
+        "total_tokens": 1806
+      },
+      "output": {
+        "answer": "未知",
+        "sources": []
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 6246,
+          "input_estimate": 6246,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 914.6416999865323
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 15,
+      "prompt_tokens": 1791,
+      "total_tokens": 1806
+    }
+  ],
+  "answer": {
+    "answer": "未知",
+    "sources": []
+  }
+}

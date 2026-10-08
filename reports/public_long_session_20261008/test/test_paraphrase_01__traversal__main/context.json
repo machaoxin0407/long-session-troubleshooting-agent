@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=bd8d15991e2657a859c01acf; level=0; original]\n[turn=20; user; leaf=bd8d15991e2657a859c01acf] 法蓄电，充电后很快耗尽，型号 PACK-5601。\n[turn=20; user; leaf=bd8d15991e2657a859c01acf] 请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。\n请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。\n[node=c2f459b235b1ae634a80793d; level=1; rule_fallback]\n[turn=20; user; leaf=bd8d15991e2657a859c01acf] 法蓄电，充电后很快耗尽，型号 PACK-5601。\n\n[中间内容已省略]\n运输时会用泡沫保护边角。本条没有新增排障执行结果。\n[turn=20; user] 请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=1; user] 最早填过的设备型号是 DEV-5611，尚待核实。\n[turn=1; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=20; user] 请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。\n[turn=20; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，请把费用明细单独列出。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，工作日晚上有人接电话。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

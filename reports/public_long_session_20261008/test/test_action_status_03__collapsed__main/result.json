@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "task_id": "test_action_status_03__collapsed__main",
+  "case": "test_action_status_03",
+  "case_sha256": "a8ba55e2248b721081b82d0c265f156d13208f2ed91de9a57f0c56eae8560a46",
+  "category": "action_status",
+  "split": "test",
+  "turns": 80,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2592,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 76.77579997107387,
+  "query_ms": 296.43580003175884,
+  "qa_ms": 1379.2552999802865,
+  "context_plus_answer_ms": 1675.6911000120454,
+  "cold_context_plus_answer_ms": 9768.762700026855,
+  "shared_tree_build": {
+    "elapsed_ms": 8093.0716000148095,
+    "attempts": 8,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 8093.0716000148095,
+    "attempts": 8,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": false,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": false,
+    "citation_check": true,
+    "passed": false,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "建议的断电操作我到底执行过了吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=ecb214cbde0a5039aefc7598; level=0; original]\n[turn=71; user; leaf=ecb214cbde0a5039aefc7598] 现场复核记录4：我已经执行断电操作，重连后问题仍然存在。\n现场复核记录4：我已经执行断电操作，重连后问题仍然存在。\n[node=1260c04046c9143931ac4cdd; level=1; rule_fallback]\n[turn=71; user; leaf=ecb214cbde0a5039aefc7598] 现场复核记录4：我已经执行断电操作，重连后问题仍然存在。\n[turn=70; assistant未核验; leaf=37b7efefedee97a319af7cca] 建议先断电重连，再决定是否更换部件。\n[turn=70; assistant] 建议先断电重连，再决定是否更换部件。\n[turn=71; user] 现场复核记录4：我已经执行断电操作，重连后问题仍然存在。\n[node=9e7196ea1a18100b7431f1b8; level=2; rule_fallback]\n\n[中间内容已省略]\n\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=70; user] 本条没有新增排障执行结果。\n[turn=70; assistant未核验] 建议先断电重连，再决定是否更换部件。\n[turn=71; user] 现场复核记录4：我已经执行断电操作，重连后问题仍然存在。\n[turn=71; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，需要先确认配件库存。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，备用设备在另一处房间。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，收件地点暂定单位前台。需要先确认配件库存。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 991,
+        "total_tokens": 1051
+      },
+      "output": {
+        "answer": "已执行",
+        "sources": [
+          {
+            "turn_id": 71,
+            "role": "user",
+            "quote": "现场复核记录4：我已经执行断电操作，重连后问题仍然存在。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3527,
+          "input_estimate": 3527,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1379.0741999982856
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 60,
+      "prompt_tokens": 991,
+      "total_tokens": 1051
+    }
+  ],
+  "answer": {
+    "answer": "已执行",
+    "sources": [
+      {
+        "turn_id": 71,
+        "role": "user",
+        "quote": "现场复核记录4：我已经执行断电操作，重连后问题仍然存在。"
+      }
+    ]
+  }
+}

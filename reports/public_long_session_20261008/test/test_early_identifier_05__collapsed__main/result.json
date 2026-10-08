@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "task_id": "test_early_identifier_05__collapsed__main",
+  "case": "test_early_identifier_05",
+  "case_sha256": "7b870ad29b31f5972f5e227934f11664fc791538ebdcb0c088985c35f53eae85",
+  "category": "early_identifier",
+  "split": "test",
+  "turns": 160,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2734,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 5717.38170000026,
+  "query_ms": 369.0031000296585,
+  "qa_ms": 1697.525300027337,
+  "context_plus_answer_ms": 2066.5284000569955,
+  "cold_context_plus_answer_ms": 6625.449900049716,
+  "shared_tree_build": {
+    "elapsed_ms": 4558.921499992721,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 4558.921499992721,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": true,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 7,
+  "query_attempts": 0,
+  "total_attempts_this_task": 8,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "之前登记的维修单编号是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=26a1663606d4ced30e06b246; level=1; rule_fallback]\n[turn=8; user; leaf=8d554aad916cba52a65fa883] 快递单号 LOG-5305，不是维修单号。\n[turn=145; user; leaf=4a4e89e480e7026363282b0b] 时会用泡沫保护边角。本条没有新增排障执行结果。\n[turn=145; user; leaf=4a4e89e480e7026363282b0b] 第145次补充，说明书封面有磨损。运输时会用泡沫保护边角。本条没有新增排障执行结果。\n[turn=137; user; leaf=391b5e8204294c6d3e5a9090] 需要先确认配件库存。\n[中间内容已省略]\n运输时会用泡沫保护边角。本条没有新增排障执行结果。\n[turn=137; user] 第137次补充，运输时会用泡沫保护边角。需要先确认配件库存。本条没有新增排障执行结果。\n[turn=145; user] 第145次补充，说明书封面有磨损。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=5; user] 我把上次不清楚的地方说明一下6：维修单编号 CASE-5305，约定下周送检。\n[turn=5; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=8; user] 快递单号 LOG-5305，不是维修单号。\n[turn=8; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第158次补充，请把费用明细单独列出。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "user",
+            "content": "第159次补充，备用设备在另一处房间。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "user",
+            "content": "第160次补充，今天暂不安排上门。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 62,
+        "prompt_tokens": 1052,
+        "total_tokens": 1114
+      },
+      "output": {
+        "answer": "CASE-5305",
+        "sources": [
+          {
+            "turn_id": 5,
+            "role": "user",
+            "quote": "维修单编号 CASE-5305，约定下周送检。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3658,
+          "input_estimate": 3658,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1697.3342999699526
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 62,
+      "prompt_tokens": 1052,
+      "total_tokens": 1114
+    }
+  ],
+  "answer": {
+    "answer": "CASE-5305",
+    "sources": [
+      {
+        "turn_id": 5,
+        "role": "user",
+        "quote": "维修单编号 CASE-5305，约定下周送检。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "status": "automatic_evaluation_complete_with_limitations",
+  "policy": {
+    "schema": 1,
+    "date": "2026-10-08",
+    "completion_basis": "automatic_frozen_rules_and_cost",
+    "completion_gate_changed_after_results": true,
+    "human_answer_review_required": false,
+    "human_answer_review_optional": true,
+    "independent_human_answer_reviews": 0,
+    "gold_review_confirmed_cases": 70,
+    "frozen_data_prompts_models_and_scorer_changed": false,
+    "original_human_primary_protocol_completed": false,
+    "semantic_accuracy_claim": false,
+    "new_external_requests": 0,
+    "production_config_changed": false,
+    "note": "User changed the closeout requirement after seeing results. This is an automatic-only engineering conclusion, not completion of the original independent-human semantic acceptance."
+  },
+  "recommendation_type": "provisional_engineering_from_rules_and_cost",
+  "recommended_strategy": "structured_recall",
+  "selection_rule": "complexity order; advance only for a positive independent-case paired rule interval; no human critical-error constraint can be verified",
+  "selection_steps": [
+    {
+      "candidate": "rolling",
+      "reference": "window",
+      "rule_only_interval": {
+        "n": 56,
+        "delta": -0.05357142857142857,
+        "ci95": [
+          -0.14285714285714285,
+          0.03571428571428571
+        ],
+        "supports_positive_gain": false
+      }
+    },
+    {
+      "candidate": "structured_recall",
+      "reference": "window",
+      "rule_only_interval": {
+        "n": 56,
+        "delta": 0.5357142857142857,
+        "ci95": [
+          0.4107142857142857,
+          0.6607142857142857
+        ],
+        "supports_positive_gain": true
+      }
+    },
+    {
+      "candidate": "collapsed",
+      "reference": "structured_recall",
+      "rule_only_interval": {
+        "n": 56,
+        "delta": 0.017857142857142856,
+        "ci95": [
+          -0.07142857142857142,
+          0.10714285714285714
+        ],
+        "supports_positive_gain": false
+      }
+    },
+    {
+      "candidate": "traversal",
+      "reference": "structured_recall",
+      "rule_only_interval": {
+        "n": 56,
+        "delta": 0.03571428571428571,
+        "ci95": [
+          -0.05357142857142857,
+          0.125
+        ],
+        "supports_positive_gain": false
+      }
+    }
+  ],
+  "source_comparison_sha256": "76d4209a30dc77a7103099aebd6cb10ffd9bdd679e4556a996eae1383698e37e",
+  "dataset_sha256": "45a8f3f56f692730ae4d448a265473b6171973adb0c404112851e6aa375b4900",
+  "input_hashes": {
+    "dataset.json": "0a365204372e24485591b8a28db4cf5d4a6e2ebae97bdedb3354445d73641a6b",
+    "freeze.json": "e1635f87789a95a30f47664eeaf054da82505f018951d533ccfe492ec69b95ea",
+    "gold_review.json": "fbf4219cf4150379a28953cc99f02e83b5f7ae7b72e29737ebb3135d2e7192bd",
+    "human_review.json": "2d2060a85107da246c282e10feeb2e9c2e65abe852c875f103104c8c24c319da",
+    "comparison.json": "76d4209a30dc77a7103099aebd6cb10ffd9bdd679e4556a996eae1383698e37e",
+    "cost_and_path_audit.json": "8c38c1646b483b9d20c1176c6929b94edd33bff7ab4528abbce4f1c9ad3dd858",
+    "retrieval_evidence_audit.json": "60acbda7e55e0a13cc034b6ae543588752b2f6453fefa731ef6f2c15eb44e57e",
+    "ledger_development.json": "c6fd15dcd92c2456d414d2d4c8891818b86c6f56638d2c13f55a8eead2822bdc",
+    "ledger_test.json": "ae0051dce8d1ce5bcfb40da3428ce409e0600ec037e8e2d0785b53f21db4151a",
+    "ledger_supplement.json": "d22ea08c4025989064f103d98c2df6bdb8dcccd264d4003ddaad28796b3a7d6d",
+    "ledger_api.json": "31794c9ecd57483e9111f017e8ffd7dd97ace3e283c874741361f4ce77166da2",
+    "ledger_reserve.json": "31794c9ecd57483e9111f017e8ffd7dd97ace3e283c874741361f4ce77166da2"
+  },
+  "critical_semantic_errors_independently_verified": false,
+  "external_attempts": 1273,
+  "external_limit": 2000
+}

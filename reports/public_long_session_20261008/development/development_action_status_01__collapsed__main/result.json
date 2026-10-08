@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "task_id": "development_action_status_01__collapsed__main",
+  "case": "development_action_status_01",
+  "case_sha256": "a12d0fbf922db760e0c10d5a13e27f9ef9c8f1480331ca683a15b274c53d79bd",
+  "category": "action_status",
+  "split": "development",
+  "turns": 80,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2611,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 8838.604899996426,
+  "query_ms": 831.840300001204,
+  "qa_ms": 1874.0528000053018,
+  "context_plus_answer_ms": 2705.893100006506,
+  "cold_context_plus_answer_ms": 10601.37799999211,
+  "shared_tree_build": {
+    "elapsed_ms": 7895.484899985604,
+    "attempts": 8,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 7895.484899985604,
+    "attempts": 8,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 8,
+  "query_attempts": 1,
+  "total_attempts_this_task": 10,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": false,
+    "citation_check": true,
+    "passed": false,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "建议的断电操作我到底执行过了吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=061c2d2dd8779587319fef37; level=0; original]\n[turn=3; user; leaf=061c2d2dd8779587319fef37] 补充第2份现场记录：我已经执行断电操作，重连后问题仍然存在。\n补充第2份现场记录：我已经执行断电操作，重连后问题仍然存在。\n[node=cd3301462a884b3d40306a2d; level=0; original]\n[turn=2; assistant未核验; leaf=cd3301462a884b3d40306a2d] 建议先断电重连，再决定是否更换部件。\n建议先断电重连，再决定是否更换部件。\n[node=a9ed12f6ba80cba63007f2d2; level=3; rule_fallback]\n[turn=7; user; leaf=0d9e6168e667315a85575d0b] 邻居设备曾出现 ERR-1221，不是我的故障记录。\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=2; user] 本条没有新增排障执行结果。\n[turn=2; assistant未核验] 建议先断电重连，再决定是否更换部件。\n[turn=3; user] 补充第2份现场记录：我已经执行断电操作，重连后问题仍然存在。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，预约时间需要改到周末。外壳有轻微划痕。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，预约时间需要改到周末。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 1006,
+        "total_tokens": 1067
+      },
+      "output": {
+        "answer": "已执行",
+        "sources": [
+          {
+            "turn_id": 3,
+            "role": "user",
+            "quote": "补充第2份现场记录：我已经执行断电操作，重连后问题仍然存在。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3549,
+          "input_estimate": 3549,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1873.8884000340477
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 61,
+      "prompt_tokens": 1006,
+      "total_tokens": 1067
+    }
+  ],
+  "answer": {
+    "answer": "已执行",
+    "sources": [
+      {
+        "turn_id": 3,
+        "role": "user",
+        "quote": "补充第2份现场记录：我已经执行断电操作，重连后问题仍然存在。"
+      }
+    ]
+  }
+}

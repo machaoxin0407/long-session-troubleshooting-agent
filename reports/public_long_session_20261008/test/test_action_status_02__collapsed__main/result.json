@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "task_id": "test_action_status_02__collapsed__main",
+  "case": "test_action_status_02",
+  "case_sha256": "c6aef536360b94ba5005c486fcabccdb84bf30c5030a58f1114aa089fd721ce0",
+  "category": "action_status",
+  "split": "test",
+  "turns": 80,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2635,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 8676.794600032736,
+  "query_ms": 294.884099974297,
+  "qa_ms": 1468.5518000042066,
+  "context_plus_answer_ms": 1763.4358999785036,
+  "cold_context_plus_answer_ms": 9860.63449998619,
+  "shared_tree_build": {
+    "elapsed_ms": 8097.198600007687,
+    "attempts": 9,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 8097.198600007687,
+    "attempts": 9,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": true,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 9,
+  "query_attempts": 0,
+  "total_attempts_this_task": 10,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": false,
+    "citation_check": true,
+    "passed": false,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "建议的断电操作我到底执行过了吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=e45cd0b0165e2aa96e304046; level=0; original]\n[turn=40; user; leaf=e45cd0b0165e2aa96e304046] 清楚的地方说明一下3：我尚未执行断电操作，只记录了建议。\n[turn=40; user; leaf=e45cd0b0165e2aa96e304046] 我把上次不清楚的地方说明一下3：我尚未执行断电操作，只记录了建议。\n我把上次不清楚的地方说明一下3：我尚未执行断电操作，只记录了建议。\n[node=187e1a843604facb04d64fb5; level=4; rule_fallback]\n[turn=44; user; leaf=73bd98c3b8005aa0aacfee06] 邻居设备曾出现 ERR-5222，不是我的故障记录。\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=39; user] 本条没有新增排障执行结果。\n[turn=39; assistant未核验] 建议先断电重连，再决定是否更换部件。\n[turn=40; user] 我把上次不清楚的地方说明一下3：我尚未执行断电操作，只记录了建议。\n[turn=40; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，今天暂不安排上门。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 62,
+        "prompt_tokens": 986,
+        "total_tokens": 1048
+      },
+      "output": {
+        "answer": "未执行",
+        "sources": [
+          {
+            "turn_id": 40,
+            "role": "user",
+            "quote": "我把上次不清楚的地方说明一下3：我尚未执行断电操作，只记录了建议。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3573,
+          "input_estimate": 3573,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1468.38310000021
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 62,
+      "prompt_tokens": 986,
+      "total_tokens": 1048
+    }
+  ],
+  "answer": {
+    "answer": "未执行",
+    "sources": [
+      {
+        "turn_id": 40,
+        "role": "user",
+        "quote": "我把上次不清楚的地方说明一下3：我尚未执行断电操作，只记录了建议。"
+      }
+    ]
+  }
+}

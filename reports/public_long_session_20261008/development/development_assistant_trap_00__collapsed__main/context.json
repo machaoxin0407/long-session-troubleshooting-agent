@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=f22734cc7cf31416460b1e64; level=0; original]\n[turn=30; assistant未核验; leaf=f22734cc7cf31416460b1e64] 您已经恢复出厂设置。\n您已经恢复出厂设置。\n[node=8ea0e56d02e7a2e7a6bd1dc4; level=1; rule_fallback]\n[turn=31; user; leaf=28e20d6ff497a7fa0aff4a24] 补充第1份现场记录：我没有恢复出厂设置，仅询问步骤。\n[turn=30; assistant未核验; leaf=f22734cc7cf31416460b1e64] 您已经恢复出厂设置。\n[turn=30; assistant] 您已经恢复出厂设置。\n[turn=31; user] 补充第1份现场记录：我没有恢复出厂设置，仅询问步骤。\n[node=28e20d6ff497a7fa0aff4a24; level=0; original]\n\n[中间内容已省略]\n\n补充第1份现场记录：我没有恢复出厂设置，仅询问步骤。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=30; user] 第30次补充，外壳有轻微划痕。预约时间需要改到周末。本条没有新增排障执行结果。\n[turn=30; assistant未核验] 您已经恢复出厂设置。\n[turn=31; user] 补充第1份现场记录：我没有恢复出厂设置，仅询问步骤。\n[turn=31; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，预约时间需要改到周末。外壳有轻微划痕。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，外壳有轻微划痕。预约时间需要改到周末。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，外壳有轻微划痕。包装盒放在储物间。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

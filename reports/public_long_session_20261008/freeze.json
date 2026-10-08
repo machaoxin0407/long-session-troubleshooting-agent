@@ -1,0 +1,61 @@
+{
+  "dataset_sha256": "45a8f3f56f692730ae4d448a265473b6171973adb0c404112851e6aa375b4900",
+  "contract": {
+    "scorer": "long-session-rules-v1",
+    "strategies": [
+      "window",
+      "rolling",
+      "structured_recall",
+      "collapsed",
+      "traversal"
+    ],
+    "history_limit": 5232,
+    "seed": 20261008,
+    "memory_config": {
+      "context_tokens": 6000,
+      "recent_tokens": 2800,
+      "summary_tokens": 1400,
+      "recall_tokens": 800
+    },
+    "request_window": 32768,
+    "request_safety": 1024,
+    "qa_timeout_s": 40,
+    "summary_timeout_s": 4,
+    "tree_settings": {
+      "chunk_tokens": 800,
+      "max_leaves": 512,
+      "branch_size": 4,
+      "max_levels": 8,
+      "node_tokens": 700,
+      "input_tokens": 16000,
+      "model_calls": 3,
+      "build_timeout_s": 8.0,
+      "top_k": 3
+    },
+    "qa_prompt_sha256": "a7c8f945656277e3e36d6ef758f2ff7fb47e14f0b3a682e279b41d43093c1725",
+    "rolling_prompt_sha256": "cbe72ac59f001ac6ae969387e09b6f490689314f1def6aecc07f5a181b3cdd03",
+    "embedding_cache": "case-local exact-text; shared tree/query vectors",
+    "summary_model": "qwen3.7-flash",
+    "embedding_model": "qwen3.7-text-embedding",
+    "answer_model": "qwen3.8-flash"
+  },
+  "sources": {
+    "benchmark_session_memory.py": "5d07f22b71729ef3ca0ace34f47d68a954d7369b96414af8b19e2a8ce38eb22b",
+    "session_experiment.py": "ef2410892a6ca58122d52e5d012969291c0ee65e1f903228460483888eddb6e5",
+    "session_experiment_data.py": "4968ccf5352a6ff0059b42b44c38731364950593aebb99c67253e3d60e4d0eda",
+    "session_experiment_report.py": "376d12192993babb7c7dd7898d905a5e48b661cf85ac350d51109cefc5b8dc2d",
+    "session_context.py": "3cd970501ac094e8bc44ea7159c5755a692d85ffe45edef0c114665c02145286",
+    "session_memory.py": "ba03d025c9febbcc7e4d4263e7d9357d4adf9288f0d25efe9484b594b38117f8",
+    "session_tree.py": "03a38920e0231ad7c2fcce7743ae10ea67bd77cec1d5eee05ea9922840bfafee",
+    "session_embeddings.py": "26d5554f06f40d5e8ee5fb81ca143d5f10d6ff159832b6b98101f0c627c406f7",
+    "session_summarizer.py": "caf827ffdef1bb101b7a60877da5f3171a3f2821a4bfdeb23355d1b488463818",
+    "model_attempts.py": "e2d369438de5d937a72a0ad13ec02f06e627b304974c17562fa5ee010ee693c7",
+    "request_context.py": "46992974bee168c1c845d29283b19b7a608ea1b3c1c479e2a0aef09be8b0fecc",
+    "llm_router.py": "51d94af565cd8df811c1d534b703f3054f17e3e5a7c7a20cbcf84437bd7752cb",
+    "deploy/run_long_session_experiment.py": "1c03792b2bc1623e64888adf5023813fac04e2e18d540840618dcca79c8c1c95",
+    "tests/test_session_experiment.py": "9cc9aa23efbadd2e4079039fbbc4aa256bcce611cb855535deab3016aa71ce01"
+  },
+  "gold_review_sha256": "884d4f85423c73484497eddd25c91470a4196e233dd4922d40ed24d2ed960831",
+  "development_results_sha256": "e5eb6bbf9ebfb57864f861582f0af3e61c1f019b9c88a3849bd18b1e91fc15b3",
+  "seed": 20261008
+}

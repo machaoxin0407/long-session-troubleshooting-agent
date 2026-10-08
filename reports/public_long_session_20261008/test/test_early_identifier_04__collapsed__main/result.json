@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "task_id": "test_early_identifier_04__collapsed__main",
+  "case": "test_early_identifier_04",
+  "case_sha256": "eff13b3df76e0b51f16927b6000f2c5a5728d0389849769019ac26e22dd8cb28",
+  "category": "early_identifier",
+  "split": "test",
+  "turns": 80,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2622,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 75.98849997157231,
+  "query_ms": 287.86780004156753,
+  "qa_ms": 1194.6077999891713,
+  "context_plus_answer_ms": 1482.4756000307389,
+  "cold_context_plus_answer_ms": 9606.857499980833,
+  "shared_tree_build": {
+    "elapsed_ms": 8124.3818999500945,
+    "attempts": 9,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 8124.3818999500945,
+    "attempts": 9,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": false,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": false,
+    "citation_check": false,
+    "passed": false,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "之前登记的维修单编号是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=88063808c7222a58b7e17d86; level=0; original]\n[turn=4; user; leaf=88063808c7222a58b7e17d86] 次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n[turn=4; user; leaf=88063808c7222a58b7e17d86] 请按本次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n请按本次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n[node=c6cbe9cceabfd8541d142f0f; level=2; rule_fallback]\n[turn=4; user; leaf=88063808c7222a58b7e17d86] 次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n\n[中间内容已省略]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=4; user] 请按本次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n[turn=4; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=7; user] 快递单号 LOG-5304，不是维修单号。\n[turn=7; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，需要先确认配件库存。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，请把费用明细单独列出。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，今天暂不安排上门。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 1011,
+        "total_tokens": 1026
+      },
+      "output": {
+        "answer": "未知",
+        "sources": []
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3554,
+          "input_estimate": 3554,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1194.4288999657147
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 15,
+      "prompt_tokens": 1011,
+      "total_tokens": 1026
+    }
+  ],
+  "answer": {
+    "answer": "未知",
+    "sources": []
+  }
+}

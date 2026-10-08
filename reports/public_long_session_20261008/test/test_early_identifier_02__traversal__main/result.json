@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "task_id": "test_early_identifier_02__traversal__main",
+  "case": "test_early_identifier_02",
+  "case_sha256": "60bceaf676e76567d782392f93df2d147bbec68ccaba351d359157d414a1bb2d",
+  "category": "early_identifier",
+  "split": "test",
+  "turns": 80,
+  "strategy": "traversal",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2758,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 8362.664600019343,
+  "query_ms": 758.9491000398993,
+  "qa_ms": 1973.187300027348,
+  "context_plus_answer_ms": 2732.1364000672475,
+  "cold_context_plus_answer_ms": 10135.058700107038,
+  "shared_tree_build": {
+    "elapsed_ms": 7402.922300039791,
+    "attempts": 8,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 7402.922300039791,
+    "attempts": 8,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 8,
+  "query_attempts": 1,
+  "total_attempts_this_task": 10,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "之前登记的维修单编号是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=9bcedfd1e2ba8dc5de0fc9d1; level=0; original]\n[turn=5; user; leaf=9bcedfd1e2ba8dc5de0fc9d1] 的地方说明一下3：维修单编号 CASE-5302，约定下周送检。\n[turn=5; user; leaf=9bcedfd1e2ba8dc5de0fc9d1] 我把上次不清楚的地方说明一下3：维修单编号 CASE-5302，约定下周送检。\n我把上次不清楚的地方说明一下3：维修单编号 CASE-5302，约定下周送检。\n[node=87d5a6e938a1da785c5485cb; level=3; rule_fallback]\n[turn=9; user; leaf=0debb726225436e57454247a] 邻居设备曾出现 ERR-5322，不是我的故障记录。\n[turn=8; user; leaf=0759b336fe4c03cb091b0b85] 快递单号 LOG-5302，不是维修单号。\n\n[中间内容已省略]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[turn=8; user] 快递单号 LOG-5302，不是维修单号。\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=5; user] 我把上次不清楚的地方说明一下3：维修单编号 CASE-5302，约定下周送检。\n[turn=5; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=8; user] 快递单号 LOG-5302，不是维修单号。\n[turn=8; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，收件地点暂定单位前台。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，需要先确认配件库存。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，今天暂不安排上门。需要先确认配件库存。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 64,
+        "prompt_tokens": 1058,
+        "total_tokens": 1122
+      },
+      "output": {
+        "answer": "CASE-5302",
+        "sources": [
+          {
+            "turn_id": 5,
+            "role": "user",
+            "quote": "维修单编号 CASE-5302"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3691,
+          "input_estimate": 3691,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1973.0303999967873
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 64,
+      "prompt_tokens": 1058,
+      "total_tokens": 1122
+    }
+  ],
+  "answer": {
+    "answer": "CASE-5302",
+    "sources": [
+      {
+        "turn_id": 5,
+        "role": "user",
+        "quote": "维修单编号 CASE-5302"
+      }
+    ]
+  }
+}

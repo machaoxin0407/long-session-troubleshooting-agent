@@ -1,0 +1,71 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.venv-asr/
+.venv-ocr/
+.venv-vlm/
+.venv-embedding/
+.venv-visual-embedding/
+venv/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs and traces
+*.log
+*.jsonl
+logs/
+traces/
+
+# Video RAG raw and generated artifacts
+data_video/raw/
+data_video/processed/
+data_video/keyframes/
+data_video/vlm_frames/
+data_video/review/
+data_video/transcripts/
+data_video/indexes/
+models/
+checkpoints/
+outputs/
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+
+# Local databases and object storage
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+minio-data/
+
+# Build/package artifacts
+build/
+dist/
+*.egg-info/
+
+# Local Codex workflow runtime state
+.codex/runtime/
+
+# Private/local evaluation runs; publish only the reviewed evidence export.
+/reports/**
+!/reports/public_long_session_20261008/
+!/reports/public_long_session_20261008/**

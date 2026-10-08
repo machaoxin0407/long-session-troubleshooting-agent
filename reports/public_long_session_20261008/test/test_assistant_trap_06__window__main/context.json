@@ -1,0 +1,158 @@
+[
+  {
+    "role": "user",
+    "content": "第148次补充，需要先确认配件库存。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=148; unix=1000.000]",
+    "turn_id": 148
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=148; unix=1000.000]",
+    "turn_id": 148
+  },
+  {
+    "role": "user",
+    "content": "第149次补充，说明书封面有磨损。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=149; unix=1000.000]",
+    "turn_id": 149
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=149; unix=1000.000]",
+    "turn_id": 149
+  },
+  {
+    "role": "user",
+    "content": "第150次补充，运输时会用泡沫保护边角。工作日晚上有人接电话。本条没有新增排障执行结果。",
+    "source": " [turn=150; unix=1000.000]",
+    "turn_id": 150
+  },
+  {
+    "role": "assistant",
+    "content": "您已经恢复出厂设置。",
+    "source": " [turn=150; unix=1000.000]",
+    "turn_id": 150
+  },
+  {
+    "role": "user",
+    "content": "现场复核记录7：我没有恢复出厂设置，仅询问步骤。",
+    "source": " [turn=151; unix=1000.000]",
+    "turn_id": 151
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=151; unix=1000.000]",
+    "turn_id": 151
+  },
+  {
+    "role": "user",
+    "content": "第152次补充，收件地点暂定单位前台。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=152; unix=1000.000]",
+    "turn_id": 152
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=152; unix=1000.000]",
+    "turn_id": 152
+  },
+  {
+    "role": "user",
+    "content": "第153次补充，今天暂不安排上门。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=153; unix=1000.000]",
+    "turn_id": 153
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=153; unix=1000.000]",
+    "turn_id": 153
+  },
+  {
+    "role": "user",
+    "content": "第154次补充，运输时会用泡沫保护边角。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=154; unix=1000.000]",
+    "turn_id": 154
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=154; unix=1000.000]",
+    "turn_id": 154
+  },
+  {
+    "role": "user",
+    "content": "邻居设备曾出现 ERR-5526，不是我的故障记录。",
+    "source": " [turn=155; unix=1000.000]",
+    "turn_id": 155
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=155; unix=1000.000]",
+    "turn_id": 155
+  },
+  {
+    "role": "user",
+    "content": "第156次补充，说明书封面有磨损。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+    "source": " [turn=156; unix=1000.000]",
+    "turn_id": 156
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=156; unix=1000.000]",
+    "turn_id": 156
+  },
+  {
+    "role": "user",
+    "content": "第157次补充，收件地点暂定单位前台。说明书封面有磨损。本条没有新增排障执行结果。",
+    "source": " [turn=157; unix=1000.000]",
+    "turn_id": 157
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=157; unix=1000.000]",
+    "turn_id": 157
+  },
+  {
+    "role": "user",
+    "content": "第158次补充，工作日晚上有人接电话。请把费用明细单独列出。本条没有新增排障执行结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "user",
+    "content": "第159次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "user",
+    "content": "第160次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  }
+]

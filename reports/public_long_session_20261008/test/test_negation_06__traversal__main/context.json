@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=e9f4455854307cfa3f7c6a1a; level=0; original]\n[turn=80; user; leaf=e9f4455854307cfa3f7c6a1a] 现场复核记录7：我没有更换主板，只更换了连接线。\n[turn=80; user; leaf=e9f4455854307cfa3f7c6a1a] 现场复核记录7：我没有更换主板，只更换了连接线。\n现场复核记录7：我没有更换主板，只更换了连接线。\n[node=2c1ccbe181a2cc684360794e; level=1; rule_fallback]\n[turn=84; user; leaf=4740e4a44988f7e72f6f76ff] 邻居设备曾出现 ERR-5126，不是我的故障记录。\n[turn=1; user; leaf=d1dbf52f7184831f2bdb84f5] 最早填过的设备型号是 DEV-5116，尚待核实。\n\n[中间内容已省略]\n\n[turn=79; assistant] 建议先断电重连，再决定是否更换部件。\n[turn=80; user] 现场复核记录7：我没有更换主板，只更换了连接线。\n[turn=84; user] 邻居设备曾出现 ERR-5126，不是我的故障记录。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=80; user] 现场复核记录7：我没有更换主板，只更换了连接线。\n[turn=80; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=157; user] 第157次补充，备用设备在另一处房间。\n[turn=157; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第158次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "user",
+    "content": "第159次补充，工作日晚上有人接电话。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "user",
+    "content": "第160次补充，说明书封面有磨损。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  }
+]

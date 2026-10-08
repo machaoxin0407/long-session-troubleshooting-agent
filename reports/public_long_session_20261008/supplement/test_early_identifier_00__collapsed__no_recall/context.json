@@ -1,0 +1,43 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=863d1e0ced9a858d44250fc5; level=1; rule_fallback]\n[turn=6; user; leaf=59d977aaa3fe880b73f65bf9] 快递单号 LOG-5300，不是维修单号。\n[turn=3; user; leaf=fc81dd9d461f0110e0325c88] 现场复核记录1：维修单编号 CASE-5300，约定下周送检。\n[turn=31; user; leaf=ba34f0eb9e8430030c2a0761] 作日晚上有人接电话。本条没有新增排障执行结果。\n[turn=31; user; leaf=ba34f0eb9e8430030c2a0761] 第31次补充，说明书封面有磨损。工作日晚上有人接电话。本条没有新增排障执行结果。\n\n[中间内容已省略]\n\n[turn=6; user] 快递单号 LOG-5300，不是维修单号。\n[turn=14; user] 第14次补充，今天暂不安排上门。收件地点暂定单位前台。本条没有新增排障执行结果。\n[turn=31; user] 第31次补充，说明书封面有磨损。工作日晚上有人接电话。本条没有新增排障执行结果。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，今天暂不安排上门。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，备用设备在另一处房间。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，备用设备在另一处房间。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=fb15685fbb5a399fda2af7b5; level=0; original]\n[turn=19; assistant未核验; leaf=fb15685fbb5a399fda2af7b5] 建议先断电重连，再决定是否更换部件。\n建议先断电重连，再决定是否更换部件。\n[node=2afef8377a13aad6ca901832; level=0; original]\n[turn=20; user; leaf=2afef8377a13aad6ca901832] 现场复核记录1：我没有更换主板，只更换了连接线。\n[turn=20; user; leaf=2afef8377a13aad6ca901832] 现场复核记录1：我没有更换主板，只更换了连接线。\n现场复核记录1：我没有更换主板，只更换了连接线。\n[node=9cf099d1e2cb776d5d22e87c; level=0; original]\n\n[中间内容已省略]\n\n第2次补充，备用设备在另一处房间。说明书封面有磨损。本条没有新增排障执行结果。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=20; user] 现场复核记录1：我没有更换主板，只更换了连接线。\n[turn=20; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=34; user] 第34次补充，备用设备在另一处房间。\n[turn=34; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，工作日晚上有人接电话。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，备用设备在另一处房间。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

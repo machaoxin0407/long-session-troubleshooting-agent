@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=9bcedfd1e2ba8dc5de0fc9d1; level=0; original]\n[turn=5; user; leaf=9bcedfd1e2ba8dc5de0fc9d1] 的地方说明一下3：维修单编号 CASE-5302，约定下周送检。\n[turn=5; user; leaf=9bcedfd1e2ba8dc5de0fc9d1] 我把上次不清楚的地方说明一下3：维修单编号 CASE-5302，约定下周送检。\n我把上次不清楚的地方说明一下3：维修单编号 CASE-5302，约定下周送检。\n[node=87d5a6e938a1da785c5485cb; level=3; rule_fallback]\n[turn=9; user; leaf=0debb726225436e57454247a] 邻居设备曾出现 ERR-5322，不是我的故障记录。\n[turn=8; user; leaf=0759b336fe4c03cb091b0b85] 快递单号 LOG-5302，不是维修单号。\n\n[中间内容已省略]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[turn=8; user] 快递单号 LOG-5302，不是维修单号。\n[中间内容已省略]\n",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=5; user] 我把上次不清楚的地方说明一下3：维修单编号 CASE-5302，约定下周送检。\n[turn=5; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=8; user] 快递单号 LOG-5302，不是维修单号。\n[turn=8; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第78次补充，收件地点暂定单位前台。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "user",
+    "content": "第79次补充，需要先确认配件库存。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "user",
+    "content": "第80次补充，今天暂不安排上门。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  }
+]

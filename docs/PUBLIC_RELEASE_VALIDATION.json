@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-08",
+  "scope": "isolated public source subset; no private history or production data",
+  "pytest": {
+    "command": "python -m pytest tests -q",
+    "exit_code": 0,
+    "passed": 133,
+    "elapsed_seconds": 18.46,
+    "dependency_warning": "jieba/pkg_resources deprecation",
+    "additional_exit_warnings": "pytest cleanup reported permission errors on old unrelated temporary directories; test exit code was 0"
+  },
+  "frozen_evidence": {
+    "file_hashes_verified": 906,
+    "rescored_development_answers": 70,
+    "rescored_main_answers": 280,
+    "rescored_supplement_answers": 98,
+    "frozen_source_hashes_verified": 14
+  },
+  "privacy_scan": {
+    "reviewed_files": 1031,
+    "credential_and_private_endpoint_patterns": 0,
+    "source_selection": "explicit allowlist and local import dependencies; raw data/cache excluded"
+  },
+  "new_model_requests": 0,
+  "public_export_validation": {
+    "fresh_directory_export": "passed",
+    "frozen_scores_unchanged": true,
+    "report_generated_from_comparison": true,
+    "source_policy_instruction_omitted": true,
+    "career_materials_present": false
+  }
+}

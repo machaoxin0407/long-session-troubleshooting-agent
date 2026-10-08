@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "task_id": "test_negation_02__collapsed__main",
+  "case": "test_negation_02",
+  "case_sha256": "ce611da4ad5e1f29543063c276f47a621b9628f73370e0e48922857f793ca172",
+  "category": "negation",
+  "split": "test",
+  "turns": 80,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2628,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 8955.635800026357,
+  "query_ms": 833.4968999843113,
+  "qa_ms": 3326.530600024853,
+  "context_plus_answer_ms": 4160.027500009164,
+  "cold_context_plus_answer_ms": 12143.017299997155,
+  "shared_tree_build": {
+    "elapsed_ms": 7982.98979998799,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 7982.98979998799,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 9,
+  "query_attempts": 1,
+  "total_attempts_this_task": 11,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "我实际更换了哪个部件，另一个部件动过吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=cd3301462a884b3d40306a2d; level=0; original]\n[turn=2; assistant未核验; leaf=cd3301462a884b3d40306a2d] 建议先断电重连，再决定是否更换部件。\n建议先断电重连，再决定是否更换部件。\n[node=72f9202d4713ad9dc8b635e1; level=0; original]\n[turn=3; user; leaf=72f9202d4713ad9dc8b635e1] 清楚的地方说明一下3：我没有更换主板，只更换了连接线。\n[turn=3; user; leaf=72f9202d4713ad9dc8b635e1] 我把上次不清楚的地方说明一下3：我没有更换主板，只更换了连接线。\n我把上次不清楚的地方说明一下3：我没有更换主板，只更换了连接线。\n[node=9e23cf4cedf024b58a025edf; level=3; rule_fallback]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=3; user] 我把上次不清楚的地方说明一下3：我没有更换主板，只更换了连接线。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=77; user] 第77次补充，备用设备在另一处房间。\n[turn=77; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，需要先确认配件库存。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，运输时会用泡沫保护边角。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，需要先确认配件库存。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 998,
+        "total_tokens": 1058
+      },
+      "output": {
+        "answer": "您实际更换了连接线，没有更换主板。",
+        "sources": [
+          {
+            "turn_id": 3,
+            "role": "user",
+            "quote": "我没有更换主板，只更换了连接线。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3576,
+          "input_estimate": 3576,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 3326.345700013917
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 60,
+      "prompt_tokens": 998,
+      "total_tokens": 1058
+    }
+  ],
+  "answer": {
+    "answer": "您实际更换了连接线，没有更换主板。",
+    "sources": [
+      {
+        "turn_id": 3,
+        "role": "user",
+        "quote": "我没有更换主板，只更换了连接线。"
+      }
+    ]
+  }
+}

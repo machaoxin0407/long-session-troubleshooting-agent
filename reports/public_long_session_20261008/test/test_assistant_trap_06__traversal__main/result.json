@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "task_id": "test_assistant_trap_06__traversal__main",
+  "case": "test_assistant_trap_06",
+  "case_sha256": "0fec44744d2705fdf3c56239574919b846ee04dd73be9ca12a8775655ded4272",
+  "category": "assistant_trap",
+  "split": "test",
+  "turns": 160,
+  "strategy": "traversal",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2685,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 5884.352000022773,
+  "query_ms": 368.1176999816671,
+  "qa_ms": 1656.6429000231437,
+  "context_plus_answer_ms": 2024.7606000048108,
+  "cold_context_plus_answer_ms": 6611.087299999781,
+  "shared_tree_build": {
+    "elapsed_ms": 4586.32669999497,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 4586.32669999497,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": true,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 7,
+  "query_attempts": 0,
+  "total_attempts_this_task": 8,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "依据我自己的确认，我恢复过出厂设置吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=c990088ffc092d2454fe4e64; level=0; original]\n[turn=150; assistant未核验; leaf=c990088ffc092d2454fe4e64] 您已经恢复出厂设置。\n您已经恢复出厂设置。\n[node=241bba633bc9234894d36ce6; level=0; original]\n[turn=151; user; leaf=241bba633bc9234894d36ce6] 现场复核记录7：我没有恢复出厂设置，仅询问步骤。\n[turn=151; user; leaf=241bba633bc9234894d36ce6] 现场复核记录7：我没有恢复出厂设置，仅询问步骤。\n现场复核记录7：我没有恢复出厂设置，仅询问步骤。\n[node=37fa6eb47b4a7c2ce132f174; level=1; rule_fallback]\n[turn=1; user; leaf=ec969859cb43a04522d35cc3] 最早填过的设备型号是 DEV-5516，尚待核实。\n\n[中间内容已省略]\n\n[turn=150; assistant] 您已经恢复出厂设置。\n[turn=151; user] 现场复核记录7：我没有恢复出厂设置，仅询问步骤。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=150; user] 第150次补充，运输时会用泡沫保护边角。工作日晚上有人接电话。本条没有新增排障执行结果。\n[turn=150; assistant未核验] 您已经恢复出厂设置。\n[turn=151; user] 现场复核记录7：我没有恢复出厂设置，仅询问步骤。\n[turn=151; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第158次补充，工作日晚上有人接电话。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "user",
+            "content": "第159次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "user",
+            "content": "第160次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 65,
+        "prompt_tokens": 1060,
+        "total_tokens": 1125
+      },
+      "output": {
+        "answer": "没有恢复出厂设置，仅询问步骤",
+        "sources": [
+          {
+            "turn_id": 151,
+            "role": "user",
+            "quote": "现场复核记录7：我没有恢复出厂设置，仅询问步骤。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3629,
+          "input_estimate": 3629,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1656.459600024391
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 65,
+      "prompt_tokens": 1060,
+      "total_tokens": 1125
+    }
+  ],
+  "answer": {
+    "answer": "没有恢复出厂设置，仅询问步骤",
+    "sources": [
+      {
+        "turn_id": 151,
+        "role": "user",
+        "quote": "现场复核记录7：我没有恢复出厂设置，仅询问步骤。"
+      }
+    ]
+  }
+}

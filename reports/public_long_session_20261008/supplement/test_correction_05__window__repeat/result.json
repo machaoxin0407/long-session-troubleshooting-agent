@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "task_id": "test_correction_05__window__repeat",
+  "case": "test_correction_05",
+  "case_sha256": "eaaee291eb846ddfae406f67fe1c7ed254c85c9e9610dd682ff09f75cd850135",
+  "category": "correction",
+  "split": "test",
+  "turns": 160,
+  "strategy": "window",
+  "variant": "repeat",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 5110,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 1.273699977900833,
+  "query_ms": 1.0647000162862241,
+  "qa_ms": 3153.0556000070646,
+  "context_plus_answer_ms": 3154.120300023351,
+  "cold_context_plus_answer_ms": 3155.3940000012517,
+  "shared_tree_build": null,
+  "shared_build": null,
+  "build_performed_this_task": true,
+  "vector_method": null,
+  "tree_model_nodes": null,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "我后来确认的实际设备型号是什么？",
+        "history": [
+          {
+            "role": "user",
+            "content": "第148次补充，需要先确认配件库存。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=148; unix=1000.000]",
+            "turn_id": 148
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=148; unix=1000.000]",
+            "turn_id": 148
+          },
+          {
+            "role": "user",
+            "content": "第149次补充，备用设备在另一处房间。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "source": " [turn=149; unix=1000.000]",
+            "turn_id": 149
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=149; unix=1000.000]",
+            "turn_id": 149
+          },
+          {
+            "role": "user",
+            "content": "第150次补充，运输时会用泡沫保护边角。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=150; unix=1000.000]",
+            "turn_id": 150
+          },
+          {
+            "role": "assistant",
+            "content": "建议先断电重连，再决定是否更换部件。",
+            "source": " [turn=150; unix=1000.000]",
+            "turn_id": 150
+          },
+          {
+            "role": "user",
+            "content": "我把上次不清楚的地方说明一下6：更正：实际设备型号为 DEV-5005，不是 DEV-5015。",
+            "source": " [turn=151; unix=1000.000]",
+            "turn_id": 151
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=151; unix=1000.000]",
+            "turn_id": 151
+          },
+          {
+            "role": "user",
+            "content": "第152次补充，需要先确认配件库存。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=152; unix=1000.000]",
+            "turn_id": 152
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=152; unix=1000.000]",
+            "turn_id": 152
+          },
+          {
+            "role": "user",
+            "content": "第153次补充，需要先确认配件库存。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=153; unix=1000.000]",
+            "turn_id": 153
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=153; unix=1000.000]",
+            "turn_id": 153
+          },
+          {
+            "role": "user",
+            "content": "第154次补充，备用设备在另一处房间。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=154; unix=1000.000]",
+            "turn_id": 154
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=154; unix=1000.000]",
+            "turn_id": 154
+          },
+          {
+            "role": "user",
+            "content": "邻居设备曾出现 ERR-5025，不是我的故障记录。",
+            "source": " [turn=155; unix=1000.000]",
+            "turn_id": 155
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=155; unix=1000.000]",
+            "turn_id": 155
+          },
+          {
+            "role": "user",
+            "content": "第156次补充，说明书封面有磨损。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=156; unix=1000.000]",
+            "turn_id": 156
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=156; unix=1000.000]",
+            "turn_id": 156
+          },
+          {
+            "role": "user",
+            "content": "第157次补充，请把费用明细单独列出。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=157; unix=1000.000]",
+            "turn_id": 157
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=157; unix=1000.000]",
+            "turn_id": 157
+          },
+          {
+            "role": "user",
+            "content": "第158次补充，备用设备在另一处房间。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "user",
+            "content": "第159次补充，今天暂不安排上门。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "user",
+            "content": "第160次补充，需要先确认配件库存。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 70,
+        "prompt_tokens": 1845,
+        "total_tokens": 1915
+      },
+      "output": {
+        "answer": "DEV-5005",
+        "sources": [
+          {
+            "turn_id": 151,
+            "role": "user",
+            "quote": "更正：实际设备型号为 DEV-5005，不是 DEV-5015。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 6288,
+          "input_estimate": 6288,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 3152.859699970577
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 70,
+      "prompt_tokens": 1845,
+      "total_tokens": 1915
+    }
+  ],
+  "answer": {
+    "answer": "DEV-5005",
+    "sources": [
+      {
+        "turn_id": 151,
+        "role": "user",
+        "quote": "更正：实际设备型号为 DEV-5005，不是 DEV-5015。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "schema": 1,
+  "task_id": "test_assistant_trap_02__traversal__main",
+  "case": "test_assistant_trap_02",
+  "case_sha256": "36f563791a5860e057f0a0a09cc52f028af7ee2f5d70bd100c4768b0d0d47339",
+  "category": "assistant_trap",
+  "split": "test",
+  "turns": 80,
+  "strategy": "traversal",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2565,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 8442.561500007287,
+  "query_ms": 816.6397000313736,
+  "qa_ms": 1478.6269000032917,
+  "context_plus_answer_ms": 2295.2666000346653,
+  "cold_context_plus_answer_ms": 9762.931500037666,
+  "shared_tree_build": {
+    "elapsed_ms": 7467.664900003001,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "190a50d8647538f18715d03e",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=14; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=16; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[turn=39; assistant] 您已经恢复出厂设置。\n[中间内容已省略]\n[turn=40; user] 我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "06b40a4f27e0c8344b068b4f",
+                  "quote": "邻居设备曾出现 ERR-5522，不是我的故障记录。",
+                  "turn_id": 44,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "dbc4030130df0648424a6ea3",
+                  "quote": "最早填过的设备型号是 DEV-5512，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "56f50796c6e0dd8f46db4d50",
+                  "quote": "。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 77,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "56f50796c6e0dd8f46db4d50",
+                  "quote": "第77次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 77,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "cb41192ed26011f8d9b6c1f5",
+                  "quote": "。说明书封面有磨损。本条没有新增排障执行结果。",
+                  "turn_id": 76,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "cb41192ed26011f8d9b6c1f5",
+                  "quote": "第76次补充，今天暂不安排上门。说明书封面有磨损。本条没有新增排障执行结果。",
+                  "turn_id": 76,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7071d8967ab5dc2940cb9d1b",
+                  "quote": "件地点暂定单位前台。本条没有新增排障执行结果。",
+                  "turn_id": 75,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7071d8967ab5dc2940cb9d1b",
+                  "quote": "第75次补充，今天暂不安排上门。收件地点暂定单位前台。本条没有新增排障执行结果。",
+                  "turn_id": 75,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": null,
+        "error_type": "TimeoutError",
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 5235,
+            "input_estimate": 5235,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 745.2127999858931
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 7467.664900003001,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "190a50d8647538f18715d03e",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=14; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=16; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[turn=39; assistant] 您已经恢复出厂设置。\n[中间内容已省略]\n[turn=40; user] 我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "06b40a4f27e0c8344b068b4f",
+                  "quote": "邻居设备曾出现 ERR-5522，不是我的故障记录。",
+                  "turn_id": 44,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "dbc4030130df0648424a6ea3",
+                  "quote": "最早填过的设备型号是 DEV-5512，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "56f50796c6e0dd8f46db4d50",
+                  "quote": "。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 77,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "56f50796c6e0dd8f46db4d50",
+                  "quote": "第77次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 77,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "cb41192ed26011f8d9b6c1f5",
+                  "quote": "。说明书封面有磨损。本条没有新增排障执行结果。",
+                  "turn_id": 76,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "cb41192ed26011f8d9b6c1f5",
+                  "quote": "第76次补充，今天暂不安排上门。说明书封面有磨损。本条没有新增排障执行结果。",
+                  "turn_id": 76,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7071d8967ab5dc2940cb9d1b",
+                  "quote": "件地点暂定单位前台。本条没有新增排障执行结果。",
+                  "turn_id": 75,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7071d8967ab5dc2940cb9d1b",
+                  "quote": "第75次补充，今天暂不安排上门。收件地点暂定单位前台。本条没有新增排障执行结果。",
+                  "turn_id": 75,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": null,
+        "error_type": "TimeoutError",
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 5235,
+            "input_estimate": 5235,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 745.2127999858931
+      }
+    ]
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 9,
+  "query_attempts": 1,
+  "total_attempts_this_task": 11,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": false,
+    "citation_check": true,
+    "passed": false,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "tree_summary",
+      "input": {
+        "groups": [
+          {
+            "id": "190a50d8647538f18715d03e",
+            "children": [
+              {
+                "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=14; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=16; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+              },
+              {
+                "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+              },
+              {
+                "text": "\n[中间内容已省略]\n[turn=39; assistant] 您已经恢复出厂设置。\n[中间内容已省略]\n[turn=40; user] 我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+              }
+            ],
+            "evidence": [
+              {
+                "leaf_id": "06b40a4f27e0c8344b068b4f",
+                "quote": "邻居设备曾出现 ERR-5522，不是我的故障记录。",
+                "turn_id": 44,
+                "role": "user"
+              },
+              {
+                "leaf_id": "dbc4030130df0648424a6ea3",
+                "quote": "最早填过的设备型号是 DEV-5512，尚待核实。",
+                "turn_id": 1,
+                "role": "user"
+              },
+              {
+                "leaf_id": "56f50796c6e0dd8f46db4d50",
+                "quote": "。今天暂不安排上门。本条没有新增排障执行结果。",
+                "turn_id": 77,
+                "role": "user"
+              },
+              {
+                "leaf_id": "56f50796c6e0dd8f46db4d50",
+                "quote": "第77次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+                "turn_id": 77,
+                "role": "user"
+              },
+              {
+                "leaf_id": "cb41192ed26011f8d9b6c1f5",
+                "quote": "。说明书封面有磨损。本条没有新增排障执行结果。",
+                "turn_id": 76,
+                "role": "user"
+              },
+              {
+                "leaf_id": "cb41192ed26011f8d9b6c1f5",
+                "quote": "第76次补充，今天暂不安排上门。说明书封面有磨损。本条没有新增排障执行结果。",
+                "turn_id": 76,
+                "role": "user"
+              },
+              {
+                "leaf_id": "7071d8967ab5dc2940cb9d1b",
+                "quote": "件地点暂定单位前台。本条没有新增排障执行结果。",
+                "turn_id": 75,
+                "role": "user"
+              },
+              {
+                "leaf_id": "7071d8967ab5dc2940cb9d1b",
+                "quote": "第75次补充，今天暂不安排上门。收件地点暂定单位前台。本条没有新增排障执行结果。",
+                "turn_id": 75,
+                "role": "user"
+              }
+            ]
+          }
+        ]
+      },
+      "usage": null,
+      "error_type": "TimeoutError",
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 5235,
+          "input_estimate": 5235,
+          "output_reserved": 1200,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 745.2127999858931
+    },
+    {
+      "kind": "qa",
+      "input": {
+        "question": "依据我自己的确认，我恢复过出厂设置吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=fc6747966cdd0bada2e647c8; level=0; original]\n[turn=39; assistant未核验; leaf=fc6747966cdd0bada2e647c8] 您已经恢复出厂设置。\n您已经恢复出厂设置。\n[node=a4f5c0a6e531e5cde544d97b; level=1; rule_fallback]\n[turn=40; user; leaf=f7ec10a4fe27beb50d1b9353] 清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[turn=40; user; leaf=f7ec10a4fe27beb50d1b9353] 我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[turn=39; assistant未核验; leaf=fc6747966cdd0bada2e647c8] 您已经恢复出厂设置。\n[turn=39; assistant] 您已经恢复出厂设置。\n[turn=40; user] 我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[node=f7ec10a4fe27beb50d1b9353; level=0; original]\n\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=39; user] 需要先确认配件库存。\n[turn=39; assistant未核验] 您已经恢复出厂设置。\n[turn=40; user] 我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[turn=40; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，需要先确认配件库存。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，工作日晚上有人接电话。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 992,
+        "total_tokens": 1052
+      },
+      "output": {
+        "answer": "没有",
+        "sources": [
+          {
+            "turn_id": 40,
+            "role": "user",
+            "quote": "我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3508,
+          "input_estimate": 3508,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1478.4612000221387
+    }
+  ],
+  "provider_usage": [
+    null,
+    {
+      "completion_tokens": 60,
+      "prompt_tokens": 992,
+      "total_tokens": 1052
+    }
+  ],
+  "answer": {
+    "answer": "没有",
+    "sources": [
+      {
+        "turn_id": 40,
+        "role": "user",
+        "quote": "我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。"
+      }
+    ]
+  }
+}

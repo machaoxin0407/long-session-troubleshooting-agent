@@ -1,0 +1,158 @@
+[
+  {
+    "role": "user",
+    "content": "第28次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=28; unix=1000.000]",
+    "turn_id": 28
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=28; unix=1000.000]",
+    "turn_id": 28
+  },
+  {
+    "role": "user",
+    "content": "第29次补充，工作日晚上有人接电话。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=29; unix=1000.000]",
+    "turn_id": 29
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=29; unix=1000.000]",
+    "turn_id": 29
+  },
+  {
+    "role": "user",
+    "content": "第30次补充，工作日晚上有人接电话。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=30; unix=1000.000]",
+    "turn_id": 30
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=30; unix=1000.000]",
+    "turn_id": 30
+  },
+  {
+    "role": "user",
+    "content": "第31次补充，备用设备在另一处房间。请把费用明细单独列出。本条没有新增排障执行结果。",
+    "source": " [turn=31; unix=1000.000]",
+    "turn_id": 31
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=31; unix=1000.000]",
+    "turn_id": 31
+  },
+  {
+    "role": "user",
+    "content": "第32次补充，请把费用明细单独列出。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=32; unix=1000.000]",
+    "turn_id": 32
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=32; unix=1000.000]",
+    "turn_id": 32
+  },
+  {
+    "role": "user",
+    "content": "第33次补充，运输时会用泡沫保护边角。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=33; unix=1000.000]",
+    "turn_id": 33
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=33; unix=1000.000]",
+    "turn_id": 33
+  },
+  {
+    "role": "user",
+    "content": "第34次补充，备用设备在另一处房间。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=34; unix=1000.000]",
+    "turn_id": 34
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=34; unix=1000.000]",
+    "turn_id": 34
+  },
+  {
+    "role": "user",
+    "content": "第35次补充，请把费用明细单独列出。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=35; unix=1000.000]",
+    "turn_id": 35
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=35; unix=1000.000]",
+    "turn_id": 35
+  },
+  {
+    "role": "user",
+    "content": "第36次补充，运输时会用泡沫保护边角。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=36; unix=1000.000]",
+    "turn_id": 36
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=36; unix=1000.000]",
+    "turn_id": 36
+  },
+  {
+    "role": "user",
+    "content": "第37次补充，说明书封面有磨损。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=37; unix=1000.000]",
+    "turn_id": 37
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=37; unix=1000.000]",
+    "turn_id": 37
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，备用设备在另一处房间。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，备用设备在另一处房间。请把费用明细单独列出。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，请把费用明细单独列出。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

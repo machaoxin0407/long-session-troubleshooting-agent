@@ -1,0 +1,43 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=37eaaa4627d596a3ead3abf3; level=0; original]\n[turn=3; user; leaf=37eaaa4627d596a3ead3abf3] 法蓄电，充电后很快耗尽，型号 PACK-5600。\n[turn=3; user; leaf=37eaaa4627d596a3ead3abf3] 现场复核记录1：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5600。\n现场复核记录1：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5600。\n[node=c8e8781003c0b37d22048d15; level=2; rule_fallback]\n[turn=7; user; leaf=6c05c6ced1fe4f89d43b24e4] 邻居设备曾出现 ERR-5620，不是我的故障记录。\n\n[中间内容已省略]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，备用设备在另一处房间。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，备用设备在另一处房间。请把费用明细单独列出。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，请把费用明细单独列出。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

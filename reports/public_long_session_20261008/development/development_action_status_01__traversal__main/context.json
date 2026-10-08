@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=061c2d2dd8779587319fef37; level=0; original]\n[turn=3; user; leaf=061c2d2dd8779587319fef37] 补充第2份现场记录：我已经执行断电操作，重连后问题仍然存在。\n补充第2份现场记录：我已经执行断电操作，重连后问题仍然存在。\n[node=cd3301462a884b3d40306a2d; level=0; original]\n[turn=2; assistant未核验; leaf=cd3301462a884b3d40306a2d] 建议先断电重连，再决定是否更换部件。\n建议先断电重连，再决定是否更换部件。\n[node=a9ed12f6ba80cba63007f2d2; level=3; rule_fallback]\n[turn=7; user; leaf=0d9e6168e667315a85575d0b] 邻居设备曾出现 ERR-1221，不是我的故障记录。\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=2; user] 本条没有新增排障执行结果。\n[turn=2; assistant未核验] 建议先断电重连，再决定是否更换部件。\n[turn=3; user] 补充第2份现场记录：我已经执行断电操作，重连后问题仍然存在。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第78次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "user",
+    "content": "第79次补充，预约时间需要改到周末。外壳有轻微划痕。本条没有新增排障执行结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "user",
+    "content": "第80次补充，预约时间需要改到周末。包装盒放在储物间。本条没有新增排障执行结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  }
+]

@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "task_id": "development_assistant_trap_00__window__main",
+  "case": "development_assistant_trap_00",
+  "case_sha256": "d73052876e92a678f8c9840fdc7b71789d1d42faae35f9527a6bd4111e5e416d",
+  "category": "assistant_trap",
+  "split": "development",
+  "turns": 40,
+  "strategy": "window",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 4915,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 1.178800011985004,
+  "query_ms": 1.1381999938748777,
+  "qa_ms": 1623.2228000299074,
+  "context_plus_answer_ms": 1624.3610000237823,
+  "cold_context_plus_answer_ms": 1625.5398000357673,
+  "shared_tree_build": null,
+  "shared_build": null,
+  "build_performed_this_task": true,
+  "vector_method": null,
+  "tree_model_nodes": null,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "依据我自己的确认，我恢复过出厂设置吗？",
+        "history": [
+          {
+            "role": "user",
+            "content": "第28次补充，包装盒放在储物间。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=28; unix=1000.000]",
+            "turn_id": 28
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=28; unix=1000.000]",
+            "turn_id": 28
+          },
+          {
+            "role": "user",
+            "content": "第29次补充，预约时间需要改到周末。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=29; unix=1000.000]",
+            "turn_id": 29
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=29; unix=1000.000]",
+            "turn_id": 29
+          },
+          {
+            "role": "user",
+            "content": "第30次补充，外壳有轻微划痕。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=30; unix=1000.000]",
+            "turn_id": 30
+          },
+          {
+            "role": "assistant",
+            "content": "您已经恢复出厂设置。",
+            "source": " [turn=30; unix=1000.000]",
+            "turn_id": 30
+          },
+          {
+            "role": "user",
+            "content": "补充第1份现场记录：我没有恢复出厂设置，仅询问步骤。",
+            "source": " [turn=31; unix=1000.000]",
+            "turn_id": 31
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=31; unix=1000.000]",
+            "turn_id": 31
+          },
+          {
+            "role": "user",
+            "content": "第32次补充，外壳有轻微划痕。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=32; unix=1000.000]",
+            "turn_id": 32
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=32; unix=1000.000]",
+            "turn_id": 32
+          },
+          {
+            "role": "user",
+            "content": "第33次补充，包装盒放在储物间。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=33; unix=1000.000]",
+            "turn_id": 33
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=33; unix=1000.000]",
+            "turn_id": 33
+          },
+          {
+            "role": "user",
+            "content": "第34次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=34; unix=1000.000]",
+            "turn_id": 34
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=34; unix=1000.000]",
+            "turn_id": 34
+          },
+          {
+            "role": "user",
+            "content": "邻居设备曾出现 ERR-1520，不是我的故障记录。",
+            "source": " [turn=35; unix=1000.000]",
+            "turn_id": 35
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=35; unix=1000.000]",
+            "turn_id": 35
+          },
+          {
+            "role": "user",
+            "content": "第36次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=36; unix=1000.000]",
+            "turn_id": 36
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=36; unix=1000.000]",
+            "turn_id": 36
+          },
+          {
+            "role": "user",
+            "content": "第37次补充，包装盒放在储物间。外壳有轻微划痕。本条没有新增排障执行结果。",
+            "source": " [turn=37; unix=1000.000]",
+            "turn_id": 37
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=37; unix=1000.000]",
+            "turn_id": 37
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，预约时间需要改到周末。外壳有轻微划痕。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，外壳有轻微划痕。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，外壳有轻微划痕。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 68,
+        "prompt_tokens": 1759,
+        "total_tokens": 1827
+      },
+      "output": {
+        "answer": "没有，您明确确认未恢复出厂设置。",
+        "sources": [
+          {
+            "turn_id": 31,
+            "role": "user",
+            "quote": "补充第1份现场记录：我没有恢复出厂设置，仅询问步骤。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 6102,
+          "input_estimate": 6102,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1622.8927000192925
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 68,
+      "prompt_tokens": 1759,
+      "total_tokens": 1827
+    }
+  ],
+  "answer": {
+    "answer": "没有，您明确确认未恢复出厂设置。",
+    "sources": [
+      {
+        "turn_id": 31,
+        "role": "user",
+        "quote": "补充第1份现场记录：我没有恢复出厂设置，仅询问步骤。"
+      }
+    ]
+  }
+}

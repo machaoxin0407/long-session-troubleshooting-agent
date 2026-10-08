@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "source": "frozen raw test/supplement results; supplementary descriptive tables",
+  "costs_by_strategy": {
+    "window": {
+      "cold_build_p50_ms": 0.8664000197313726,
+      "cold_build_p95_ms": 1.3984999968670309,
+      "representation_build_p50_ms": 0.8664000197313726,
+      "representation_build_p95_ms": 1.3984999968670309,
+      "logical_build_attempts": 0,
+      "physical_query_attempts": 0,
+      "cached_query_tasks": 56,
+      "cached_query_p50_ms": 0.78369997208938,
+      "cached_query_p95_ms": 1.1045000283047557,
+      "history_bytes_p50": 5155,
+      "history_bytes_p95": 5229,
+      "fallback_error_counts": {}
+    },
+    "rolling": {
+      "cold_build_p50_ms": 8015.9289999865,
+      "cold_build_p95_ms": 16044.89520000061,
+      "representation_build_p50_ms": 8015.9289999865,
+      "representation_build_p95_ms": 16044.89520000061,
+      "logical_build_attempts": 140,
+      "physical_query_attempts": 0,
+      "cached_query_tasks": 56,
+      "cached_query_p50_ms": 1.1443000403232872,
+      "cached_query_p95_ms": 1.4785999665036798,
+      "history_bytes_p50": 2281,
+      "history_bytes_p95": 2660,
+      "fallback_error_counts": {
+        "rolling:TimeoutError": 97,
+        "rolling:ValueError": 10
+      }
+    },
+    "structured_recall": {
+      "cold_build_p50_ms": 4560.821400023997,
+      "cold_build_p95_ms": 5167.059800005518,
+      "representation_build_p50_ms": 4560.821400023997,
+      "representation_build_p95_ms": 5167.059800005518,
+      "logical_build_attempts": 56,
+      "physical_query_attempts": 0,
+      "cached_query_tasks": 56,
+      "cached_query_p50_ms": 6.050099967978895,
+      "cached_query_p95_ms": 11.254700017161667,
+      "history_bytes_p50": 2993,
+      "history_bytes_p95": 3083,
+      "fallback_error_counts": {
+        "structured:RuleFallback": 54
+      }
+    },
+    "collapsed": {
+      "cold_build_p50_ms": 7395.2085000346415,
+      "cold_build_p95_ms": 9206.15280000493,
+      "representation_build_p50_ms": 6908.409000025131,
+      "representation_build_p95_ms": 8195.887700014282,
+      "logical_build_attempts": 439,
+      "physical_query_attempts": 17,
+      "cached_query_tasks": 39,
+      "cached_query_p50_ms": 330.7512000319548,
+      "cached_query_p95_ms": 402.3049999959767,
+      "history_bytes_p50": 2664,
+      "history_bytes_p95": 2837,
+      "fallback_error_counts": {
+        "embedding:TimeoutError": 25,
+        "summary:NoAcceptedModelRoot": 51,
+        "summary:TimeoutError": 12,
+        "summary:ValueError": 6,
+        "embedding:BuildDeadline": 1
+      }
+    },
+    "traversal": {
+      "cold_build_p50_ms": 7395.2085000346415,
+      "cold_build_p95_ms": 9206.15280000493,
+      "representation_build_p50_ms": 6908.409000025131,
+      "representation_build_p95_ms": 8195.887700014282,
+      "logical_build_attempts": 439,
+      "physical_query_attempts": 13,
+      "cached_query_tasks": 43,
+      "cached_query_p50_ms": 336.14259999012575,
+      "cached_query_p95_ms": 454.4764999882318,
+      "history_bytes_p50": 2664,
+      "history_bytes_p95": 2837,
+      "fallback_error_counts": {
+        "embedding:TimeoutError": 25,
+        "summary:NoAcceptedModelRoot": 51,
+        "summary:TimeoutError": 12,
+        "summary:ValueError": 6,
+        "embedding:BuildDeadline": 1
+      }
+    }
+  },
+  "physical_main_usage_by_kind": {
+    "qa": {
+      "physical_observations": 280,
+      "usage_missing": 0,
+      "observed_prompt_tokens": 319721,
+      "observed_completion_tokens": 12822
+    },
+    "rolling_summary": {
+      "physical_observations": 140,
+      "usage_missing": 97,
+      "observed_prompt_tokens": 132188,
+      "observed_completion_tokens": 13272
+    },
+    "structured_summary": {
+      "physical_observations": 56,
+      "usage_missing": 54,
+      "observed_prompt_tokens": 9192,
+      "observed_completion_tokens": 641
+    },
+    "tree_summary": {
+      "physical_observations": 23,
+      "usage_missing": 12,
+      "observed_prompt_tokens": 13713,
+      "observed_completion_tokens": 1463
+    }
+  },
+  "paired_repeat_rule_stability": {
+    "window": {
+      "paired_cases": 14,
+      "original_0_repeat_0": 11,
+      "citation_rule_flips": 0,
+      "answer_json_changed_not_necessarily_semantic_error": 3,
+      "same_context_tasks": 14,
+      "changed_context_tasks": 0,
+      "same_context_rule_flips": 1,
+      "original_1_repeat_0": 1,
+      "original_1_repeat_1": 2
+    },
+    "rolling": {
+      "paired_cases": 14,
+      "original_0_repeat_0": 12,
+      "citation_rule_flips": 1,
+      "answer_json_changed_not_necessarily_semantic_error": 1,
+      "same_context_tasks": 14,
+      "changed_context_tasks": 0,
+      "same_context_rule_flips": 1,
+      "original_1_repeat_1": 1,
+      "original_1_repeat_0": 1
+    },
+    "structured_recall": {
+      "paired_cases": 14,
+      "original_0_repeat_0": 3,
+      "citation_rule_flips": 0,
+      "answer_json_changed_not_necessarily_semantic_error": 4,
+      "same_context_tasks": 14,
+      "changed_context_tasks": 0,
+      "same_context_rule_flips": 1,
+      "original_1_repeat_1": 10,
+      "original_0_repeat_1": 1
+    },
+    "collapsed": {
+      "paired_cases": 14,
+      "original_1_repeat_0": 1,
+      "citation_rule_flips": 0,
+      "answer_json_changed_not_necessarily_semantic_error": 4,
+      "same_context_tasks": 14,
+      "changed_context_tasks": 0,
+      "same_context_rule_flips": 1,
+      "original_0_repeat_0": 3,
+      "original_1_repeat_1": 10
+    },
+    "traversal": {
+      "paired_cases": 14,
+      "original_0_repeat_0": 3,
+      "citation_rule_flips": 0,
+      "answer_json_changed_not_necessarily_semantic_error": 6,
+      "same_context_tasks": 14,
+      "changed_context_tasks": 0,
+      "same_context_rule_flips": 0,
+      "original_1_repeat_1": 11
+    }
+  },
+  "independent_tree_cases": 56,
+  "accepted_model_root_cases": 5,
+  "tree_build_methods": {
+    "semantic": 30,
+    "lexical_tfidf": 26
+  },
+  "unique_tree_build_diagnostic_counts": {
+    "TimeoutError": 37,
+    "tree critical fact absent from selected quotes": 6,
+    "BuildDeadline": 1
+  },
+  "no_root_effective_treatments": 2,
+  "main_qa_error_types": {},
+  "all_main_budget_ok": true,
+  "history_estimate_units": "UTF-8 bytes with existing estimator; not provider tokens",
+  "embedding_provider_token_usage": "missing; current adapter does not expose usage",
+  "timing_note": "warm query table excludes tasks sending a query embedding HTTP request; random order and shared exact-question cache affect task counts. Supplementary cold build uses the first tree task build_ms (archive population, tree construction, installation) for both modes; original shared representation timings remain separately recorded. Cold build excludes API/Agent tools. Context+answer includes observed model network; no full Agent E2E claim."
+}

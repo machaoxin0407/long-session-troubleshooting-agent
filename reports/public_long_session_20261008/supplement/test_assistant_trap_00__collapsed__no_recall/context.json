@@ -1,0 +1,43 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=f22734cc7cf31416460b1e64; level=0; original]\n[turn=30; assistant未核验; leaf=f22734cc7cf31416460b1e64] 您已经恢复出厂设置。\n您已经恢复出厂设置。\n[node=0a1b09af5aee8b457a2375b5; level=1; rule_fallback]\n[turn=31; user; leaf=22fe426813d409739e0a1d23] 现场复核记录1：我没有恢复出厂设置，仅询问步骤。\n[turn=30; assistant未核验; leaf=f22734cc7cf31416460b1e64] 您已经恢复出厂设置。\n[turn=30; assistant] 您已经恢复出厂设置。\n[turn=31; user] 现场复核记录1：我没有恢复出厂设置，仅询问步骤。\n[node=22fe426813d409739e0a1d23; level=0; original]\n[turn=31; user; leaf=22fe426813d409739e0a1d23] 现场复核记录1：我没有恢复出厂设置，仅询问步骤。\n\n[中间内容已省略]\n\n现场复核记录1：我没有恢复出厂设置，仅询问步骤。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，备用设备在另一处房间。说明书封面有磨损。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，今天暂不安排上门。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，运输时会用泡沫保护边角。说明书封面有磨损。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

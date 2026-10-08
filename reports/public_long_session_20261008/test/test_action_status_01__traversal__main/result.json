@@ -1,0 +1,489 @@
+{
+  "schema": 1,
+  "task_id": "test_action_status_01__traversal__main",
+  "case": "test_action_status_01",
+  "case_sha256": "67c48e67717cb4727220c2eddbd7d79127274b10caede43bf54c5d48b57dbe1d",
+  "category": "action_status",
+  "split": "test",
+  "turns": 40,
+  "strategy": "traversal",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2577,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 7121.612300048582,
+  "query_ms": 646.9322000048123,
+  "qa_ms": 1403.0106000136584,
+  "context_plus_answer_ms": 2049.9428000184707,
+  "cold_context_plus_answer_ms": 8690.031500009354,
+  "shared_tree_build": {
+    "elapsed_ms": 6640.0886999908835,
+    "attempts": 7,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 1,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "7017db14a8f29efada9cdc88",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=3; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=4; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "eb13701aadfdc0bb3ac32d29",
+                  "quote": "邻居设备曾出现 ERR-5221，不是我的故障记录。",
+                  "turn_id": 7,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "368abb19ed1a629b854866b6",
+                  "quote": "最早填过的设备型号是 DEV-5211，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                  "quote": "用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                  "quote": "第37次补充，说明书封面有磨损。备用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "ee845352209be749f16b83bd",
+                  "quote": "。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "ee845352209be749f16b83bd",
+                  "quote": "第36次补充，说明书封面有磨损。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "68b0d70e9c4d962d9e0e7edd",
+                  "quote": "需要先确认配件库存。本条没有新增排障执行结果。",
+                  "turn_id": 35,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "68b0d70e9c4d962d9e0e7edd",
+                  "quote": "第35次补充，备用设备在另一处房间。需要先确认配件库存。本条没有新增排障执行结果。",
+                  "turn_id": 35,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 128,
+          "prompt_tokens": 1237,
+          "total_tokens": 1365
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "7017db14a8f29efada9cdc88",
+              "text": "型号DEV-5211待核实，暂不安排上门。",
+              "sources": [
+                {
+                  "leaf_id": "368abb19ed1a629b854866b6",
+                  "quote": "最早填过的设备型号是 DEV-5211"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4545,
+            "input_estimate": 4545,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1734.3372999457642
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 6640.0886999908835,
+    "attempts": 7,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 1,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "7017db14a8f29efada9cdc88",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=3; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=4; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "eb13701aadfdc0bb3ac32d29",
+                  "quote": "邻居设备曾出现 ERR-5221，不是我的故障记录。",
+                  "turn_id": 7,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "368abb19ed1a629b854866b6",
+                  "quote": "最早填过的设备型号是 DEV-5211，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                  "quote": "用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                  "quote": "第37次补充，说明书封面有磨损。备用设备在另一处房间。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "ee845352209be749f16b83bd",
+                  "quote": "。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "ee845352209be749f16b83bd",
+                  "quote": "第36次补充，说明书封面有磨损。今天暂不安排上门。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "68b0d70e9c4d962d9e0e7edd",
+                  "quote": "需要先确认配件库存。本条没有新增排障执行结果。",
+                  "turn_id": 35,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "68b0d70e9c4d962d9e0e7edd",
+                  "quote": "第35次补充，备用设备在另一处房间。需要先确认配件库存。本条没有新增排障执行结果。",
+                  "turn_id": 35,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 128,
+          "prompt_tokens": 1237,
+          "total_tokens": 1365
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "7017db14a8f29efada9cdc88",
+              "text": "型号DEV-5211待核实，暂不安排上门。",
+              "sources": [
+                {
+                  "leaf_id": "368abb19ed1a629b854866b6",
+                  "quote": "最早填过的设备型号是 DEV-5211"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4545,
+            "input_estimate": 4545,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1734.3372999457642
+      }
+    ]
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 1,
+  "build_attempts": 7,
+  "query_attempts": 1,
+  "total_attempts_this_task": 9,
+  "fallbacks": [],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "tree_summary",
+      "input": {
+        "groups": [
+          {
+            "id": "7017db14a8f29efada9cdc88",
+            "children": [
+              {
+                "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=3; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=4; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+              },
+              {
+                "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+              }
+            ],
+            "evidence": [
+              {
+                "leaf_id": "eb13701aadfdc0bb3ac32d29",
+                "quote": "邻居设备曾出现 ERR-5221，不是我的故障记录。",
+                "turn_id": 7,
+                "role": "user"
+              },
+              {
+                "leaf_id": "368abb19ed1a629b854866b6",
+                "quote": "最早填过的设备型号是 DEV-5211，尚待核实。",
+                "turn_id": 1,
+                "role": "user"
+              },
+              {
+                "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                "quote": "用设备在另一处房间。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "0834a19fb9a0bd9d9d1eeb82",
+                "quote": "第37次补充，说明书封面有磨损。备用设备在另一处房间。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "ee845352209be749f16b83bd",
+                "quote": "。今天暂不安排上门。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              },
+              {
+                "leaf_id": "ee845352209be749f16b83bd",
+                "quote": "第36次补充，说明书封面有磨损。今天暂不安排上门。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              },
+              {
+                "leaf_id": "68b0d70e9c4d962d9e0e7edd",
+                "quote": "需要先确认配件库存。本条没有新增排障执行结果。",
+                "turn_id": 35,
+                "role": "user"
+              },
+              {
+                "leaf_id": "68b0d70e9c4d962d9e0e7edd",
+                "quote": "第35次补充，备用设备在另一处房间。需要先确认配件库存。本条没有新增排障执行结果。",
+                "turn_id": 35,
+                "role": "user"
+              }
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 128,
+        "prompt_tokens": 1237,
+        "total_tokens": 1365
+      },
+      "output": {
+        "nodes": [
+          {
+            "id": "7017db14a8f29efada9cdc88",
+            "text": "型号DEV-5211待核实，暂不安排上门。",
+            "sources": [
+              {
+                "leaf_id": "368abb19ed1a629b854866b6",
+                "quote": "最早填过的设备型号是 DEV-5211"
+              }
+            ]
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 4545,
+          "input_estimate": 4545,
+          "output_reserved": 1200,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1734.3372999457642
+    },
+    {
+      "kind": "qa",
+      "input": {
+        "question": "建议的断电操作我到底执行过了吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=1188e49146bd39d94ea5eb8f; level=0; original]\n[turn=3; user; leaf=1188e49146bd39d94ea5eb8f] 请按本次实际情况登记2：我已经执行断电操作，重连后问题仍然存在。\n请按本次实际情况登记2：我已经执行断电操作，重连后问题仍然存在。\n[node=cd3301462a884b3d40306a2d; level=0; original]\n[turn=2; assistant未核验; leaf=cd3301462a884b3d40306a2d] 建议先断电重连，再决定是否更换部件。\n建议先断电重连，再决定是否更换部件。\n[node=a9b5f2b5c5c7c54dd2400861; level=1; rule_fallback]\n[turn=7; user; leaf=eb13701aadfdc0bb3ac32d29] 邻居设备曾出现 ERR-5221，不是我的故障记录。\n\n[中间内容已省略]\n\n[turn=36; user] 第36次补充，说明书封面有磨损。今天暂不安排上门。本条没有新增排障执行结果。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=2; user] 本条没有新增排障执行结果。\n[turn=2; assistant未核验] 建议先断电重连，再决定是否更换部件。\n[turn=3; user] 请按本次实际情况登记2：我已经执行断电操作，重连后问题仍然存在。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，备用设备在另一处房间。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，运输时会用泡沫保护边角。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 66,
+        "prompt_tokens": 986,
+        "total_tokens": 1052
+      },
+      "output": {
+        "answer": "是的，您已执行断电操作。",
+        "sources": [
+          {
+            "turn_id": 3,
+            "role": "user",
+            "quote": "请按本次实际情况登记2：我已经执行断电操作，重连后问题仍然存在。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3510,
+          "input_estimate": 3510,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1402.8468999895267
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 128,
+      "prompt_tokens": 1237,
+      "total_tokens": 1365
+    },
+    {
+      "completion_tokens": 66,
+      "prompt_tokens": 986,
+      "total_tokens": 1052
+    }
+  ],
+  "answer": {
+    "answer": "是的，您已执行断电操作。",
+    "sources": [
+      {
+        "turn_id": 3,
+        "role": "user",
+        "quote": "请按本次实际情况登记2：我已经执行断电操作，重连后问题仍然存在。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=ddfac90adef3bde319e501cb; level=0; original]\n[turn=1; user; leaf=ddfac90adef3bde319e501cb] 最早填过的设备型号是 DEV-5615，尚待核实。\n[turn=1; user; leaf=ddfac90adef3bde319e501cb] 最早填过的设备型号是 DEV-5615，尚待核实。\n最早填过的设备型号是 DEV-5615，尚待核实。\n[node=3289628d7c79b06ff73ab424; level=3; rule_fallback]\n[turn=155; user; leaf=31ea381f14ba99bd90166c61] 邻居设备曾出现 ERR-5625，不是我的故障记录。\n[turn=151; user; leaf=449e5cd645c6c37fc1801df7] 法蓄电，充电后很快耗尽，型号 PACK-5605。\n\n[中间内容已省略]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5615，尚待核实。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "user",
+    "content": "第158次补充，今天暂不安排上门。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "user",
+    "content": "第159次补充，备用设备在另一处房间。工作日晚上有人接电话。本条没有新增排障执行结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "user",
+    "content": "第160次补充，工作日晚上有人接电话。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  }
+]

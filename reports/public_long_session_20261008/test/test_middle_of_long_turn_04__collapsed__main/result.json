@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "task_id": "test_middle_of_long_turn_04__collapsed__main",
+  "case": "test_middle_of_long_turn_04",
+  "case_sha256": "45bc96750f70ddce1c9bd0ad14cf0588a0d80f83380ce19c73c48933d4a63243",
+  "category": "middle_of_long_turn",
+  "split": "test",
+  "turns": 80,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2837,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 9407.302299980074,
+  "query_ms": 836.0842000111006,
+  "qa_ms": 3340.198200021405,
+  "context_plus_answer_ms": 4176.282400032505,
+  "cold_context_plus_answer_ms": 12603.362500027288,
+  "shared_tree_build": {
+    "elapsed_ms": 8427.080099994782,
+    "attempts": 10,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 8427.080099994782,
+    "attempts": 10,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 10,
+  "query_attempts": 1,
+  "total_attempts_this_task": 12,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "仅在启动时出现的那个错误码是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=8c3f946ac7572b4f08a54077; level=1; rule_fallback]\n[turn=71; user; leaf=e6482a70e36bac0f385f3931] 和预约安排仍待确认。关键错误码 ERR-5404，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和\n[turn=71; user; leaf=e6482a70e36bac0f385f3931] 外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。关键错误码 ERR-5404，仅在启动时出现。配件库存和\n\n[中间内容已省略]\n\n[中间内容已省略]\n需要先确认配件库存。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[turn=69; user] 第69次补充，需要先确认配件库存。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n关键错误码 ERR-5404，仅在启动时出现。\n[中间内容已省略]\n配\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=71; user] 关键错误码 ERR-5404，仅在启动时出现。\n[turn=71; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=75; user] 邻居设备曾出现 ERR-5424，不是我的故障记录。\n[turn=75; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，需要先确认配件库存。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，收件地点暂定单位前台。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，需要先确认配件库存。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 63,
+        "prompt_tokens": 1015,
+        "total_tokens": 1078
+      },
+      "output": {
+        "answer": "ERR-5404",
+        "sources": [
+          {
+            "turn_id": 71,
+            "role": "user",
+            "quote": "关键错误码 ERR-5404，仅在启动时出现。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3781,
+          "input_estimate": 3781,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 3339.9758000159636
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 63,
+      "prompt_tokens": 1015,
+      "total_tokens": 1078
+    }
+  ],
+  "answer": {
+    "answer": "ERR-5404",
+    "sources": [
+      {
+        "turn_id": 71,
+        "role": "user",
+        "quote": "关键错误码 ERR-5404，仅在启动时出现。"
+      }
+    ]
+  }
+}

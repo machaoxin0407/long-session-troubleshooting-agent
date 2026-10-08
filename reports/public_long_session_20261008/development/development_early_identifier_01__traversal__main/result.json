@@ -1,0 +1,368 @@
+{
+  "schema": 1,
+  "task_id": "development_early_identifier_01__traversal__main",
+  "case": "development_early_identifier_01",
+  "case_sha256": "0e06c24b6721f81279d41344d016ffe1dd2174b756276ddf962f0ebb7638f185",
+  "category": "early_identifier",
+  "split": "development",
+  "turns": 80,
+  "strategy": "traversal",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2634,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 574.1978999576531,
+  "query_ms": 386.83380000293255,
+  "qa_ms": 1814.0210999990813,
+  "context_plus_answer_ms": 2200.854900002014,
+  "cold_context_plus_answer_ms": 9704.48109996505,
+  "shared_tree_build": {
+    "elapsed_ms": 7503.626199963037,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "9cfcd57e2fa906032bdc6182",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=21; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=22; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1311，尚待核实。\n[中间内容已省略]\n[turn=8; user] 邻居设备曾出现 ERR-1321，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "50d69aa8e0902ab68a609d59",
+                  "quote": "邻居设备曾出现 ERR-1321，不是我的故障记录。",
+                  "turn_id": 8,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7f0f494075104bdb1a1adaa1",
+                  "quote": "快递单号 LOG-1301，不是维修单号。",
+                  "turn_id": 7,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "ed7e1d766304e2be381417be",
+                  "quote": "充第2份现场记录：维修单编号 CASE-1301，约定下周送检。",
+                  "turn_id": 4,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "ed7e1d766304e2be381417be",
+                  "quote": "补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。",
+                  "turn_id": 4,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "1c42c5bbba9b88012e6e4ecc",
+                  "quote": "最早填过的设备型号是 DEV-1311，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "18e4bda0698162b6c6b1a473",
+                  "quote": "约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 77,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "18e4bda0698162b6c6b1a473",
+                  "quote": "第77次补充，外壳有轻微划痕。预约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 77,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "71fae1ca4f9c9a79926bfc73",
+                  "quote": "间。外壳有轻微划痕。本条没有新增排障执行结果。",
+                  "turn_id": 76,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": null,
+        "error_type": "TimeoutError",
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 5115,
+            "input_estimate": 5115,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 581.3443000079133
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 7503.626199963037,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "9cfcd57e2fa906032bdc6182",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=21; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=22; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1311，尚待核实。\n[中间内容已省略]\n[turn=8; user] 邻居设备曾出现 ERR-1321，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "50d69aa8e0902ab68a609d59",
+                  "quote": "邻居设备曾出现 ERR-1321，不是我的故障记录。",
+                  "turn_id": 8,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "7f0f494075104bdb1a1adaa1",
+                  "quote": "快递单号 LOG-1301，不是维修单号。",
+                  "turn_id": 7,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "ed7e1d766304e2be381417be",
+                  "quote": "充第2份现场记录：维修单编号 CASE-1301，约定下周送检。",
+                  "turn_id": 4,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "ed7e1d766304e2be381417be",
+                  "quote": "补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。",
+                  "turn_id": 4,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "1c42c5bbba9b88012e6e4ecc",
+                  "quote": "最早填过的设备型号是 DEV-1311，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "18e4bda0698162b6c6b1a473",
+                  "quote": "约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 77,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "18e4bda0698162b6c6b1a473",
+                  "quote": "第77次补充，外壳有轻微划痕。预约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 77,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "71fae1ca4f9c9a79926bfc73",
+                  "quote": "间。外壳有轻微划痕。本条没有新增排障执行结果。",
+                  "turn_id": 76,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": null,
+        "error_type": "TimeoutError",
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 5115,
+            "input_estimate": 5115,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 581.3443000079133
+      }
+    ]
+  },
+  "build_performed_this_task": false,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "之前登记的维修单编号是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=ed7e1d766304e2be381417be; level=0; original]\n[turn=4; user; leaf=ed7e1d766304e2be381417be] 充第2份现场记录：维修单编号 CASE-1301，约定下周送检。\n[turn=4; user; leaf=ed7e1d766304e2be381417be] 补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。\n补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。\n[node=7f0f494075104bdb1a1adaa1; level=0; original]\n[turn=7; user; leaf=7f0f494075104bdb1a1adaa1] 快递单号 LOG-1301，不是维修单号。\n[turn=7; user; leaf=7f0f494075104bdb1a1adaa1] 快递单号 LOG-1301，不是维修单号。\n快递单号 LOG-1301，不是维修单号。\n[node=2cb2c8fe0894954733057ae3; level=0; original]\n\n[中间内容已省略]\n\n第18次补充，还在寻找购机凭证。包装盒放在储物间。本条没有新增排障执行结果。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=4; user] 补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。\n[turn=4; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=7; user] 快递单号 LOG-1301，不是维修单号。\n[turn=7; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，外壳有轻微划痕。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，预约时间需要改到周末。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，预约时间需要改到周末。外壳有轻微划痕。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 69,
+        "prompt_tokens": 1062,
+        "total_tokens": 1131
+      },
+      "output": {
+        "answer": "CASE-1301",
+        "sources": [
+          {
+            "turn_id": 4,
+            "role": "user",
+            "quote": "补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3562,
+          "input_estimate": 3562,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1813.8773000100628
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 69,
+      "prompt_tokens": 1062,
+      "total_tokens": 1131
+    }
+  ],
+  "answer": {
+    "answer": "CASE-1301",
+    "sources": [
+      {
+        "turn_id": 4,
+        "role": "user",
+        "quote": "补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=935afcb9b31e3a2e1bc8435b; level=0; original]\n[turn=31; user; leaf=935afcb9b31e3a2e1bc8435b] 现场复核记录1：我尚未执行断电操作，只记录了建议。\n[turn=31; user; leaf=935afcb9b31e3a2e1bc8435b] 现场复核记录1：我尚未执行断电操作，只记录了建议。\n现场复核记录1：我尚未执行断电操作，只记录了建议。\n[node=67a141bce218169671303d10; level=1; rule_fallback]\n[turn=1; user; leaf=25aebd31d2bb0b53119a6044] 最早填过的设备型号是 DEV-5210，尚待核实。\n[turn=31; user; leaf=935afcb9b31e3a2e1bc8435b] 现场复核记录1：我尚未执行断电操作，只记录了建议。\n[turn=27; user; leaf=2a065a88c4c393b50912d1d7] 需要先确认配件库存。\n[中间内容已省略]\n\n[turn=27; user] 第27次补充，备用设备在另一处房间。需要先确认配件库存。本条没有新增排障执行结果。\n[turn=31; user] 现场复核记录1：我尚未执行断电操作，只记录了建议。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "user",
+    "content": "第38次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=38; unix=1000.000]",
+    "turn_id": 38
+  },
+  {
+    "role": "user",
+    "content": "第39次补充，收件地点暂定单位前台。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=39; unix=1000.000]",
+    "turn_id": 39
+  },
+  {
+    "role": "user",
+    "content": "第40次补充，需要先确认配件库存。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=40; unix=1000.000]",
+    "turn_id": 40
+  }
+]

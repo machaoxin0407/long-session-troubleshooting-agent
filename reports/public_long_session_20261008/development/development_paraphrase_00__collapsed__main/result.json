@@ -1,0 +1,511 @@
+{
+  "schema": 1,
+  "task_id": "development_paraphrase_00__collapsed__main",
+  "case": "development_paraphrase_00",
+  "case_sha256": "a1a27c98c2471250cb25ac467681057400b78a85faf2cd3b3e35152ee0a7baa2",
+  "category": "paraphrase",
+  "split": "development",
+  "turns": 40,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2650,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 6685.594599985052,
+  "query_ms": 859.9074999801815,
+  "qa_ms": 1444.355599989649,
+  "context_plus_answer_ms": 2304.2630999698304,
+  "cold_context_plus_answer_ms": 8513.749799982179,
+  "shared_tree_build": {
+    "elapsed_ms": 6209.486700012349,
+    "attempts": 6,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "ValueError",
+        "reason": "tree critical fact absent from selected quotes"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "24ce2339c21359879dade847",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1610，尚待核实。\n[中间内容已省略]\n[turn=7; user] 邻居设备曾出现 ERR-1620，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=6; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=7; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "d97e5c3c250af9abf415e451",
+                  "quote": "邻居设备曾出现 ERR-1620，不是我的故障记录。",
+                  "turn_id": 7,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4c376726a56a07e7b1801d18",
+                  "quote": "法蓄电，充电后很快耗尽，型号 PACK-1600。",
+                  "turn_id": 3,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4c376726a56a07e7b1801d18",
+                  "quote": "补充第1份现场记录：电池已经无法蓄电，充电后很快耗尽，型号 PACK-1600。",
+                  "turn_id": 3,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "cfacb8e250dcc26744d6969c",
+                  "quote": "最早填过的设备型号是 DEV-1610，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4d04a556986d671d326d8c33",
+                  "quote": "。还在寻找购机凭证。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4d04a556986d671d326d8c33",
+                  "quote": "第37次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "20b45284e500ce2282e74232",
+                  "quote": "。包装盒放在储物间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "20b45284e500ce2282e74232",
+                  "quote": "第36次补充，还在寻找购机凭证。包装盒放在储物间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 128,
+          "prompt_tokens": 1265,
+          "total_tokens": 1393
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "24ce2339c21359879dade847",
+              "text": "DEV-1610待核实，PACK-1600电池故障。无新增排障结果。",
+              "sources": [
+                {
+                  "leaf_id": "cfacb8e250dcc26744d6969c",
+                  "quote": "最早填过的设备型号是 DEV-1610，尚待核实。"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4487,
+            "input_estimate": 4487,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 2093.4160000178963
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 6209.486700012349,
+    "attempts": 6,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "ValueError",
+        "reason": "tree critical fact absent from selected quotes"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "24ce2339c21359879dade847",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1610，尚待核实。\n[中间内容已省略]\n[turn=7; user] 邻居设备曾出现 ERR-1620，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=6; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=7; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "d97e5c3c250af9abf415e451",
+                  "quote": "邻居设备曾出现 ERR-1620，不是我的故障记录。",
+                  "turn_id": 7,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4c376726a56a07e7b1801d18",
+                  "quote": "法蓄电，充电后很快耗尽，型号 PACK-1600。",
+                  "turn_id": 3,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4c376726a56a07e7b1801d18",
+                  "quote": "补充第1份现场记录：电池已经无法蓄电，充电后很快耗尽，型号 PACK-1600。",
+                  "turn_id": 3,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "cfacb8e250dcc26744d6969c",
+                  "quote": "最早填过的设备型号是 DEV-1610，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4d04a556986d671d326d8c33",
+                  "quote": "。还在寻找购机凭证。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4d04a556986d671d326d8c33",
+                  "quote": "第37次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "20b45284e500ce2282e74232",
+                  "quote": "。包装盒放在储物间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "20b45284e500ce2282e74232",
+                  "quote": "第36次补充，还在寻找购机凭证。包装盒放在储物间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 128,
+          "prompt_tokens": 1265,
+          "total_tokens": 1393
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "24ce2339c21359879dade847",
+              "text": "DEV-1610待核实，PACK-1600电池故障。无新增排障结果。",
+              "sources": [
+                {
+                  "leaf_id": "cfacb8e250dcc26744d6969c",
+                  "quote": "最早填过的设备型号是 DEV-1610，尚待核实。"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4487,
+            "input_estimate": 4487,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 2093.4160000178963
+      }
+    ]
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 6,
+  "query_attempts": 1,
+  "total_attempts_this_task": 8,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "ValueError",
+      "reason": "tree critical fact absent from selected quotes"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "tree_summary",
+      "input": {
+        "groups": [
+          {
+            "id": "24ce2339c21359879dade847",
+            "children": [
+              {
+                "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1610，尚待核实。\n[中间内容已省略]\n[turn=7; user] 邻居设备曾出现 ERR-1620，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+              },
+              {
+                "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=6; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=7; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+              }
+            ],
+            "evidence": [
+              {
+                "leaf_id": "d97e5c3c250af9abf415e451",
+                "quote": "邻居设备曾出现 ERR-1620，不是我的故障记录。",
+                "turn_id": 7,
+                "role": "user"
+              },
+              {
+                "leaf_id": "4c376726a56a07e7b1801d18",
+                "quote": "法蓄电，充电后很快耗尽，型号 PACK-1600。",
+                "turn_id": 3,
+                "role": "user"
+              },
+              {
+                "leaf_id": "4c376726a56a07e7b1801d18",
+                "quote": "补充第1份现场记录：电池已经无法蓄电，充电后很快耗尽，型号 PACK-1600。",
+                "turn_id": 3,
+                "role": "user"
+              },
+              {
+                "leaf_id": "cfacb8e250dcc26744d6969c",
+                "quote": "最早填过的设备型号是 DEV-1610，尚待核实。",
+                "turn_id": 1,
+                "role": "user"
+              },
+              {
+                "leaf_id": "4d04a556986d671d326d8c33",
+                "quote": "。还在寻找购机凭证。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "4d04a556986d671d326d8c33",
+                "quote": "第37次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "20b45284e500ce2282e74232",
+                "quote": "。包装盒放在储物间。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              },
+              {
+                "leaf_id": "20b45284e500ce2282e74232",
+                "quote": "第36次补充，还在寻找购机凭证。包装盒放在储物间。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              }
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 128,
+        "prompt_tokens": 1265,
+        "total_tokens": 1393
+      },
+      "output": {
+        "nodes": [
+          {
+            "id": "24ce2339c21359879dade847",
+            "text": "DEV-1610待核实，PACK-1600电池故障。无新增排障结果。",
+            "sources": [
+              {
+                "leaf_id": "cfacb8e250dcc26744d6969c",
+                "quote": "最早填过的设备型号是 DEV-1610，尚待核实。"
+              }
+            ]
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 4487,
+          "input_estimate": 4487,
+          "output_reserved": 1200,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 2093.4160000178963
+    },
+    {
+      "kind": "qa",
+      "input": {
+        "question": "之前提过的续航很差的电池型号是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=4c376726a56a07e7b1801d18; level=0; original]\n[turn=3; user; leaf=4c376726a56a07e7b1801d18] 法蓄电，充电后很快耗尽，型号 PACK-1600。\n[turn=3; user; leaf=4c376726a56a07e7b1801d18] 补充第1份现场记录：电池已经无法蓄电，充电后很快耗尽，型号 PACK-1600。\n补充第1份现场记录：电池已经无法蓄电，充电后很快耗尽，型号 PACK-1600。\n[node=c0ce8489db1e6f5a3ba4c5f2; level=2; rule_fallback]\n[turn=3; user; leaf=4c376726a56a07e7b1801d18] 法蓄电，充电后很快耗尽，型号 PACK-1600。\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=1; user] 最早填过的设备型号是 DEV-1610，尚待核实。\n[turn=1; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=3; user] 补充第1份现场记录：电池已经无法蓄电，充电后很快耗尽，型号 PACK-1600。\n[turn=3; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，还在寻找购机凭证。外壳有轻微划痕。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，外壳有轻微划痕。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，外壳有轻微划痕。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 73,
+        "prompt_tokens": 1033,
+        "total_tokens": 1106
+      },
+      "output": {
+        "answer": "PACK-1600",
+        "sources": [
+          {
+            "turn_id": 3,
+            "role": "user",
+            "quote": "补充第1份现场记录：电池已经无法蓄电，充电后很快耗尽，型号 PACK-1600。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3594,
+          "input_estimate": 3594,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1444.1980000119656
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 128,
+      "prompt_tokens": 1265,
+      "total_tokens": 1393
+    },
+    {
+      "completion_tokens": 73,
+      "prompt_tokens": 1033,
+      "total_tokens": 1106
+    }
+  ],
+  "answer": {
+    "answer": "PACK-1600",
+    "sources": [
+      {
+        "turn_id": 3,
+        "role": "user",
+        "quote": "补充第1份现场记录：电池已经无法蓄电，充电后很快耗尽，型号 PACK-1600。"
+      }
+    ]
+  }
+}

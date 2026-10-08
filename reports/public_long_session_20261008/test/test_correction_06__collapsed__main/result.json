@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "task_id": "test_correction_06__collapsed__main",
+  "case": "test_correction_06",
+  "case_sha256": "f331d50a4832e8985d57e1f0c70ac53a38cacfe3654f0d13d2a34b1da45a88c8",
+  "category": "correction",
+  "split": "test",
+  "turns": 160,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2664,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 5754.918000020552,
+  "query_ms": 325.8695999975316,
+  "qa_ms": 1736.2704999977723,
+  "context_plus_answer_ms": 2062.140099995304,
+  "cold_context_plus_answer_ms": 6642.233499966096,
+  "shared_tree_build": {
+    "elapsed_ms": 4580.093399970792,
+    "attempts": 8,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 4580.093399970792,
+    "attempts": 8,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": true,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 8,
+  "query_attempts": 0,
+  "total_attempts_this_task": 9,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "我后来确认的实际设备型号是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=8987e5095d35d4b113d85554; level=0; original]\n[turn=3; user; leaf=8987e5095d35d4b113d85554] 现场复核记录7：更正：实际设备型号为 DEV-5006，不是 DEV-5016。\n[turn=3; user; leaf=8987e5095d35d4b113d85554] 现场复核记录7：更正：实际设备型号为 DEV-5006，不是 DEV-5016。\n现场复核记录7：更正：实际设备型号为 DEV-5006，不是 DEV-5016。\n[node=b7d5908a290de006bfd1d5fb; level=1; rule_fallback]\n[turn=7; user; leaf=6c44c5422ca391f78a7f0c6a] 邻居设备曾出现 ERR-5026，不是我的故障记录。\n[turn=3; user; leaf=8987e5095d35d4b113d85554] 现场复核记录7：更正：实际设备型号为 DEV-5006，不是 DEV-5016。\n\n[中间内容已省略]\n\n[turn=3; user] 现场复核记录7：更正：实际设备型号为 DEV-5006，不是 DEV-5016。\n[turn=7; user] 邻居设备曾出现 ERR-5026，不是我的故障记录。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=1; user] 最早填过的设备型号是 DEV-5016，尚待核实。\n[turn=1; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=3; user] 现场复核记录7：更正：实际设备型号为 DEV-5006，不是 DEV-5016。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第158次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "user",
+            "content": "第159次补充，说明书封面有磨损。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "user",
+            "content": "第160次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 73,
+        "prompt_tokens": 1100,
+        "total_tokens": 1173
+      },
+      "output": {
+        "answer": "DEV-5006",
+        "sources": [
+          {
+            "turn_id": 3,
+            "role": "user",
+            "quote": "现场复核记录7：更正：实际设备型号为 DEV-5006，不是 DEV-5016。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3597,
+          "input_estimate": 3597,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1735.8801999944262
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 73,
+      "prompt_tokens": 1100,
+      "total_tokens": 1173
+    }
+  ],
+  "answer": {
+    "answer": "DEV-5006",
+    "sources": [
+      {
+        "turn_id": 3,
+        "role": "user",
+        "quote": "现场复核记录7：更正：实际设备型号为 DEV-5006，不是 DEV-5016。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# Isolated dense-retrieval environment. The API environment only needs NumPy
+# and requests to consume the generated index and local embedding endpoint.
+torch==2.7.0+cu128
+transformers==4.57.1
+sentence-transformers==5.1.1
+rank-bm25==0.2.2
+huggingface-hub==0.36.0
+safetensors==0.6.2
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+pydantic==2.11.7

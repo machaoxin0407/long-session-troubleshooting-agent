@@ -1,0 +1,521 @@
+{
+  "schema": 1,
+  "task_id": "test_paraphrase_01__collapsed__main",
+  "case": "test_paraphrase_01",
+  "case_sha256": "e80bbdc653a755e2823ae69ec5849bcfa914349fd69dc417bb68095518e859c2",
+  "category": "paraphrase",
+  "split": "test",
+  "turns": 40,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2645,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 7395.2085000346415,
+  "query_ms": 815.8918000408448,
+  "qa_ms": 2471.927299979143,
+  "context_plus_answer_ms": 3287.8191000199877,
+  "cold_context_plus_answer_ms": 10196.228100045118,
+  "shared_tree_build": {
+    "elapsed_ms": 6908.409000025131,
+    "attempts": 7,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "ValueError",
+        "reason": "tree critical fact absent from selected quotes"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "592078b9570a2553f801efc8",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5611，尚待核实。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=9; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=10; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "4e8651ce559ad15a3827ec63",
+                  "quote": "邻居设备曾出现 ERR-5621，不是我的故障记录。",
+                  "turn_id": 24,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "bd8d15991e2657a859c01acf",
+                  "quote": "法蓄电，充电后很快耗尽，型号 PACK-5601。",
+                  "turn_id": 20,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "bd8d15991e2657a859c01acf",
+                  "quote": "请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。",
+                  "turn_id": 20,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "b67c7dbfafcd1ffa610d8129",
+                  "quote": "最早填过的设备型号是 DEV-5611，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "83b90d3eaf843c9a31f841fd",
+                  "quote": "作日晚上有人接电话。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "83b90d3eaf843c9a31f841fd",
+                  "quote": "第37次补充，说明书封面有磨损。工作日晚上有人接电话。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "f4e59ee27cfcf007ea68a88a",
+                  "quote": "把费用明细单独列出。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "f4e59ee27cfcf007ea68a88a",
+                  "quote": "第36次补充，今天暂不安排上门。请把费用明细单独列出。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 1243,
+          "total_tokens": 1382
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "592078b9570a2553f801efc8",
+              "text": "DEV-5611待核实，PACK-5601电池耗尽。无新增排障结果。",
+              "sources": [
+                {
+                  "leaf_id": "b67c7dbfafcd1ffa610d8129",
+                  "quote": "最早填过的设备型号是 DEV-5611"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4489,
+            "input_estimate": 4489,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1764.9054999928921
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 6908.409000025131,
+    "attempts": 7,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "ValueError",
+        "reason": "tree critical fact absent from selected quotes"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "592078b9570a2553f801efc8",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5611，尚待核实。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=9; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=10; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "4e8651ce559ad15a3827ec63",
+                  "quote": "邻居设备曾出现 ERR-5621，不是我的故障记录。",
+                  "turn_id": 24,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "bd8d15991e2657a859c01acf",
+                  "quote": "法蓄电，充电后很快耗尽，型号 PACK-5601。",
+                  "turn_id": 20,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "bd8d15991e2657a859c01acf",
+                  "quote": "请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。",
+                  "turn_id": 20,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "b67c7dbfafcd1ffa610d8129",
+                  "quote": "最早填过的设备型号是 DEV-5611，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "83b90d3eaf843c9a31f841fd",
+                  "quote": "作日晚上有人接电话。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "83b90d3eaf843c9a31f841fd",
+                  "quote": "第37次补充，说明书封面有磨损。工作日晚上有人接电话。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "f4e59ee27cfcf007ea68a88a",
+                  "quote": "把费用明细单独列出。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "f4e59ee27cfcf007ea68a88a",
+                  "quote": "第36次补充，今天暂不安排上门。请把费用明细单独列出。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 1243,
+          "total_tokens": 1382
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "592078b9570a2553f801efc8",
+              "text": "DEV-5611待核实，PACK-5601电池耗尽。无新增排障结果。",
+              "sources": [
+                {
+                  "leaf_id": "b67c7dbfafcd1ffa610d8129",
+                  "quote": "最早填过的设备型号是 DEV-5611"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4489,
+            "input_estimate": 4489,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1764.9054999928921
+      }
+    ]
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 7,
+  "query_attempts": 1,
+  "total_attempts_this_task": 9,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "ValueError",
+      "reason": "tree critical fact absent from selected quotes"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "tree_summary",
+      "input": {
+        "groups": [
+          {
+            "id": "592078b9570a2553f801efc8",
+            "children": [
+              {
+                "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5611，尚待核实。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+              },
+              {
+                "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=9; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=10; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+              }
+            ],
+            "evidence": [
+              {
+                "leaf_id": "4e8651ce559ad15a3827ec63",
+                "quote": "邻居设备曾出现 ERR-5621，不是我的故障记录。",
+                "turn_id": 24,
+                "role": "user"
+              },
+              {
+                "leaf_id": "bd8d15991e2657a859c01acf",
+                "quote": "法蓄电，充电后很快耗尽，型号 PACK-5601。",
+                "turn_id": 20,
+                "role": "user"
+              },
+              {
+                "leaf_id": "bd8d15991e2657a859c01acf",
+                "quote": "请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。",
+                "turn_id": 20,
+                "role": "user"
+              },
+              {
+                "leaf_id": "b67c7dbfafcd1ffa610d8129",
+                "quote": "最早填过的设备型号是 DEV-5611，尚待核实。",
+                "turn_id": 1,
+                "role": "user"
+              },
+              {
+                "leaf_id": "83b90d3eaf843c9a31f841fd",
+                "quote": "作日晚上有人接电话。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "83b90d3eaf843c9a31f841fd",
+                "quote": "第37次补充，说明书封面有磨损。工作日晚上有人接电话。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "f4e59ee27cfcf007ea68a88a",
+                "quote": "把费用明细单独列出。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              },
+              {
+                "leaf_id": "f4e59ee27cfcf007ea68a88a",
+                "quote": "第36次补充，今天暂不安排上门。请把费用明细单独列出。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              }
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 139,
+        "prompt_tokens": 1243,
+        "total_tokens": 1382
+      },
+      "output": {
+        "nodes": [
+          {
+            "id": "592078b9570a2553f801efc8",
+            "text": "DEV-5611待核实，PACK-5601电池耗尽。无新增排障结果。",
+            "sources": [
+              {
+                "leaf_id": "b67c7dbfafcd1ffa610d8129",
+                "quote": "最早填过的设备型号是 DEV-5611"
+              }
+            ]
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 4489,
+          "input_estimate": 4489,
+          "output_reserved": 1200,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1764.9054999928921
+    },
+    {
+      "kind": "qa",
+      "input": {
+        "question": "之前提过的续航很差的电池型号是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=bd8d15991e2657a859c01acf; level=0; original]\n[turn=20; user; leaf=bd8d15991e2657a859c01acf] 法蓄电，充电后很快耗尽，型号 PACK-5601。\n[turn=20; user; leaf=bd8d15991e2657a859c01acf] 请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。\n请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。\n[node=c2f459b235b1ae634a80793d; level=1; rule_fallback]\n[turn=20; user; leaf=bd8d15991e2657a859c01acf] 法蓄电，充电后很快耗尽，型号 PACK-5601。\n\n[中间内容已省略]\n运输时会用泡沫保护边角。本条没有新增排障执行结果。\n[turn=20; user] 请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=1; user] 最早填过的设备型号是 DEV-5611，尚待核实。\n[turn=1; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=20; user] 请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。\n[turn=20; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，请把费用明细单独列出。需要先确认配件库存。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，工作日晚上有人接电话。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 116,
+        "prompt_tokens": 1013,
+        "total_tokens": 1129
+      },
+      "output": {
+        "answer": "PACK-5601",
+        "sources": [
+          {
+            "turn_id": 20,
+            "role": "user",
+            "quote": "法蓄电，充电后很快耗尽，型号 PACK-5601。"
+          },
+          {
+            "turn_id": 20,
+            "role": "user",
+            "quote": "请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3582,
+          "input_estimate": 3582,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 2471.776599995792
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 139,
+      "prompt_tokens": 1243,
+      "total_tokens": 1382
+    },
+    {
+      "completion_tokens": 116,
+      "prompt_tokens": 1013,
+      "total_tokens": 1129
+    }
+  ],
+  "answer": {
+    "answer": "PACK-5601",
+    "sources": [
+      {
+        "turn_id": 20,
+        "role": "user",
+        "quote": "法蓄电，充电后很快耗尽，型号 PACK-5601。"
+      },
+      {
+        "turn_id": 20,
+        "role": "user",
+        "quote": "请按本次实际情况登记2：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5601。"
+      }
+    ]
+  }
+}

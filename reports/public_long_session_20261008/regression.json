@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-10-08T04:46:07.699904+00:00",
+  "elapsed_seconds": 169.31,
+  "exit_code": 0,
+  "summary": "3883 passed, 1 skipped, 1 warning in 167.26s (0:02:47)",
+  "counts": {
+    "passed": 3883,
+    "skipped": 1
+  },
+  "runtime_and_test_code_unchanged": true,
+  "documentation_updates_after_regression": [
+    "docs/LONG_SESSION_AGENT_EXPERIMENT_20261008.md",
+    "README.md"
+  ],
+  "note": "Existing full regression; publication adds documentation and an offline export helper only."
+}

@@ -1,0 +1,399 @@
+{
+  "schema": 1,
+  "task_id": "test_early_identifier_00__traversal__main",
+  "case": "test_early_identifier_00",
+  "case_sha256": "02e585f8acf222f8b96eba3658095a516a1dd6353c4ac8d6cd5d665bd1c40031",
+  "category": "early_identifier",
+  "split": "test",
+  "turns": 40,
+  "strategy": "traversal",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2707,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 280.6328000151552,
+  "query_ms": 347.440000041388,
+  "qa_ms": 1600.650200038217,
+  "context_plus_answer_ms": 1948.090200079605,
+  "cold_context_plus_answer_ms": 8824.478200112935,
+  "shared_tree_build": {
+    "elapsed_ms": 6876.38800003333,
+    "attempts": 7,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "ValueError",
+        "reason": "tree critical fact absent from selected quotes"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "a1867f3c6ccc886b286ee8f6",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5310，尚待核实。\n[中间内容已省略]\n[turn=3; user] 现场复核记录1：维修单编号 CASE-5300，约定下周送检。\n[中间内容已省略]\n[turn=6; user] 快递单号 LOG-5300，不是维修单号。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=6; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=7; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "33f237ccafb2f4fecafd4b6b",
+                  "quote": "邻居设备曾出现 ERR-5320，不是我的故障记录。",
+                  "turn_id": 7,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "59d977aaa3fe880b73f65bf9",
+                  "quote": "快递单号 LOG-5300，不是维修单号。",
+                  "turn_id": 6,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "fc81dd9d461f0110e0325c88",
+                  "quote": "现场复核记录1：维修单编号 CASE-5300，约定下周送检。",
+                  "turn_id": 3,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "578f6ef35e28188936403a41",
+                  "quote": "最早填过的设备型号是 DEV-5310，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "934966c10ce3cf0e6809dbb2",
+                  "quote": "需要先确认配件库存。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "934966c10ce3cf0e6809dbb2",
+                  "quote": "第37次补充，请把费用明细单独列出。需要先确认配件库存。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "919932d875ea77ac1f4d0abe",
+                  "quote": "把费用明细单独列出。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "919932d875ea77ac1f4d0abe",
+                  "quote": "第36次补充，说明书封面有磨损。请把费用明细单独列出。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 150,
+          "prompt_tokens": 1224,
+          "total_tokens": 1374
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "a1867f3c6ccc886b286ee8f6",
+              "text": "DEV-5310待核实，CASE-5300约定下周送检，LOG-5300非维修单号。",
+              "sources": [
+                {
+                  "leaf_id": "fc81dd9d461f0110e0325c88",
+                  "quote": "现场复核记录1：维修单编号 CASE-5300"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4377,
+            "input_estimate": 4377,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1981.6693000029773
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 6876.38800003333,
+    "attempts": 7,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "ValueError",
+        "reason": "tree critical fact absent from selected quotes"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "a1867f3c6ccc886b286ee8f6",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-5310，尚待核实。\n[中间内容已省略]\n[turn=3; user] 现场复核记录1：维修单编号 CASE-5300，约定下周送检。\n[中间内容已省略]\n[turn=6; user] 快递单号 LOG-5300，不是维修单号。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=6; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[turn=7; assistant] 补充信息已记录。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n请继续确认实际观察，建议需由您执行后才能记录结果。\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "33f237ccafb2f4fecafd4b6b",
+                  "quote": "邻居设备曾出现 ERR-5320，不是我的故障记录。",
+                  "turn_id": 7,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "59d977aaa3fe880b73f65bf9",
+                  "quote": "快递单号 LOG-5300，不是维修单号。",
+                  "turn_id": 6,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "fc81dd9d461f0110e0325c88",
+                  "quote": "现场复核记录1：维修单编号 CASE-5300，约定下周送检。",
+                  "turn_id": 3,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "578f6ef35e28188936403a41",
+                  "quote": "最早填过的设备型号是 DEV-5310，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "934966c10ce3cf0e6809dbb2",
+                  "quote": "需要先确认配件库存。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "934966c10ce3cf0e6809dbb2",
+                  "quote": "第37次补充，请把费用明细单独列出。需要先确认配件库存。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "919932d875ea77ac1f4d0abe",
+                  "quote": "把费用明细单独列出。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "919932d875ea77ac1f4d0abe",
+                  "quote": "第36次补充，说明书封面有磨损。请把费用明细单独列出。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": {
+          "completion_tokens": 150,
+          "prompt_tokens": 1224,
+          "total_tokens": 1374
+        },
+        "output": {
+          "nodes": [
+            {
+              "id": "a1867f3c6ccc886b286ee8f6",
+              "text": "DEV-5310待核实，CASE-5300约定下周送检，LOG-5300非维修单号。",
+              "sources": [
+                {
+                  "leaf_id": "fc81dd9d461f0110e0325c88",
+                  "quote": "现场复核记录1：维修单编号 CASE-5300"
+                }
+              ]
+            }
+          ]
+        },
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4377,
+            "input_estimate": 4377,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1981.6693000029773
+      }
+    ]
+  },
+  "build_performed_this_task": false,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "ValueError",
+      "reason": "tree critical fact absent from selected quotes"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "之前登记的维修单编号是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=863d1e0ced9a858d44250fc5; level=1; rule_fallback]\n[turn=6; user; leaf=59d977aaa3fe880b73f65bf9] 快递单号 LOG-5300，不是维修单号。\n[turn=3; user; leaf=fc81dd9d461f0110e0325c88] 现场复核记录1：维修单编号 CASE-5300，约定下周送检。\n[turn=31; user; leaf=ba34f0eb9e8430030c2a0761] 作日晚上有人接电话。本条没有新增排障执行结果。\n[turn=31; user; leaf=ba34f0eb9e8430030c2a0761] 第31次补充，说明书封面有磨损。工作日晚上有人接电话。本条没有新增排障执行结果。\n\n[中间内容已省略]\n\n[turn=6; user] 快递单号 LOG-5300，不是维修单号。\n[turn=14; user] 第14次补充，今天暂不安排上门。收件地点暂定单位前台。本条没有新增排障执行结果。\n[turn=31; user] 第31次补充，说明书封面有磨损。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=3; user] 现场复核记录1：维修单编号 CASE-5300，约定下周送检。\n[turn=3; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=6; user] 快递单号 LOG-5300，不是维修单号。\n[turn=6; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，今天暂不安排上门。需要先确认配件库存。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，备用设备在另一处房间。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，备用设备在另一处房间。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 67,
+        "prompt_tokens": 1042,
+        "total_tokens": 1109
+      },
+      "output": {
+        "answer": "CASE-5300",
+        "sources": [
+          {
+            "turn_id": 3,
+            "role": "user",
+            "quote": "现场复核记录1：维修单编号 CASE-5300，约定下周送检。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3633,
+          "input_estimate": 3633,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1600.4773000022396
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 67,
+      "prompt_tokens": 1042,
+      "total_tokens": 1109
+    }
+  ],
+  "answer": {
+    "answer": "CASE-5300",
+    "sources": [
+      {
+        "turn_id": 3,
+        "role": "user",
+        "quote": "现场复核记录1：维修单编号 CASE-5300，约定下周送检。"
+      }
+    ]
+  }
+}

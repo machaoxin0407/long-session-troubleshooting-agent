@@ -1,0 +1,4 @@
+--index-url https://download.pytorch.org/whl/cu128
+
+# Verified on Ubuntu 22.04, Python 3.10, driver 580.159.03, and RTX 4090.
+torch==2.7.0

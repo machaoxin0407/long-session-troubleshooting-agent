@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=91ee26dd5143992328d94440; level=0; original]\n[turn=7; user; leaf=91ee26dd5143992328d94440] 邻居设备曾出现 ERR-5626，不是我的故障记录。\n[turn=7; user; leaf=91ee26dd5143992328d94440] 邻居设备曾出现 ERR-5626，不是我的故障记录。\n邻居设备曾出现 ERR-5626，不是我的故障记录。\n[node=32929ae00a83baa40d95e7f9; level=1; rule_fallback]\n[turn=7; user; leaf=91ee26dd5143992328d94440] 邻居设备曾出现 ERR-5626，不是我的故障记录。\n[turn=81; user; leaf=f30cdab43208515dd1c10797] 用设备在另一处房间。本条没有新增排障执行结果。\n\n[中间内容已省略]\n备用设备在另一处房间。本条没有新增排障执行结果。\n[turn=7; user] 邻居设备曾出现 ERR-5626，不是我的故障记录。\n[turn=81; user] 第81次补充，说明书封面有磨损。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=1; user] 最早填过的设备型号是 DEV-5616，尚待核实。\n[turn=1; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=3; user] 现场复核记录7：电池已经无法蓄电，充电后很快耗尽，型号 PACK-5606。\n[turn=3; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第158次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "user",
+    "content": "第159次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "user",
+    "content": "第160次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  }
+]

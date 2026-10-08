@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=0c50bf3d633efa58644147dc; level=0; original]\n[turn=47; assistant未核验; leaf=0c50bf3d633efa58644147dc] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[node=0eb492c4551fe7a48f2a8d88; level=0; original]\n[turn=5; assistant未核验; leaf=0eb492c4551fe7a48f2a8d88] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[node=2e9ba1614fa52fe9611c0c5d; level=0; original]\n\n[中间内容已省略]\n\n补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=2; user] 本条没有新增排障执行结果。\n[turn=2; assistant未核验] 建议先断电重连，再决定是否更换部件。\n[turn=3; user] 请按本次实际情况登记8：我还没有核实相关信息，请不要把建议或别人的情况当作我的确认。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第158次补充，需要先确认配件库存。工作日晚上有人接电话。本条没有新增排障执行结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "user",
+    "content": "第159次补充，请把费用明细单独列出。需要先确认配件库存。本条没有新增排障执行结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "user",
+    "content": "第160次补充，运输时会用泡沫保护边角。今天暂不安排上门。本条没有新增排障执行结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  }
+]

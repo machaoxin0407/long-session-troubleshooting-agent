@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "task_id": "test_action_status_07__collapsed__main",
+  "case": "test_action_status_07",
+  "case_sha256": "2b9c2246efbd72e8bc852fa9aed73ef1ecd6ab85da2fa23c90de401d1ae8dd2d",
+  "category": "action_status",
+  "split": "test",
+  "turns": 160,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": false,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2608,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": null,
+  "build_ms": 145.19160002237186,
+  "query_ms": 327.0679000415839,
+  "qa_ms": 1401.4343000017107,
+  "context_plus_answer_ms": 1728.5022000432946,
+  "cold_context_plus_answer_ms": 6271.588200004771,
+  "shared_tree_build": {
+    "elapsed_ms": 4543.085999961477,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 4543.085999961477,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": false,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "建议的断电操作我到底执行过了吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=cd3301462a884b3d40306a2d; level=0; original]\n[turn=2; assistant未核验; leaf=cd3301462a884b3d40306a2d] 建议先断电重连，再决定是否更换部件。\n建议先断电重连，再决定是否更换部件。\n[node=cf535d944b7c96298ae52da9; level=1; rule_fallback]\n[turn=7; user; leaf=e47a44b6bd0b7548c85b1aab] 邻居设备曾出现 ERR-5227，不是我的故障记录。\n[turn=1; user; leaf=a8bc33ac35d2f2c371e46c3b] 最早填过的设备型号是 DEV-5217，尚待核实。\n\n[中间内容已省略]\n\n[turn=3; user] 请按本次实际情况登记8：我还没有核实相关信息，请不要把建议或别人的情况当作我的确认。\n[turn=7; user] 邻居设备曾出现 ERR-5227，不是我的故障记录。\n[node=08c95f21c3d4d48fbe6bd3a3; level=0; original]\n\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=2; user] 本条没有新增排障执行结果。\n[turn=2; assistant未核验] 建议先断电重连，再决定是否更换部件。\n[turn=3; user] 请按本次实际情况登记8：我还没有核实相关信息，请不要把建议或别人的情况当作我的确认。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第158次补充，需要先确认配件库存。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "user",
+            "content": "第159次补充，请把费用明细单独列出。需要先确认配件库存。本条没有新增排障执行结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "user",
+            "content": "第160次补充，运输时会用泡沫保护边角。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 1015,
+        "total_tokens": 1030
+      },
+      "output": {
+        "answer": "未知",
+        "sources": []
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3544,
+          "input_estimate": 3544,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1401.2820000061765
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 15,
+      "prompt_tokens": 1015,
+      "total_tokens": 1030
+    }
+  ],
+  "answer": {
+    "answer": "未知",
+    "sources": []
+  }
+}

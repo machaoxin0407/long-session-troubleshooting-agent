@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=c29c6fb19f5224c39beb0f95; level=0; original]\n[turn=7; user; leaf=c29c6fb19f5224c39beb0f95] 快递单号 LOG-5307，不是维修单号。\n[turn=7; user; leaf=c29c6fb19f5224c39beb0f95] 快递单号 LOG-5307，不是维修单号。\n快递单号 LOG-5307，不是维修单号。\n[node=62638691ffc20e3d0cef4628; level=2; rule_fallback]\n[turn=7; user; leaf=c29c6fb19f5224c39beb0f95] 快递单号 LOG-5307，不是维修单号。\n[turn=1; user; leaf=1ae0168ca042204497c8b710] 最早填过的设备型号是 DEV-5317，尚待核实。\n\n[中间内容已省略]\n[turn=7; user] 快递单号 LOG-5307，不是维修单号。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=4; user] 请按本次实际情况登记8：我还没有核实相关信息，请不要把建议或别人的情况当作我的确认。\n[turn=4; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=7; user] 快递单号 LOG-5307，不是维修单号。\n[turn=7; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第158次补充，工作日晚上有人接电话。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=158; unix=1000.000]",
+    "turn_id": 158
+  },
+  {
+    "role": "user",
+    "content": "第159次补充，备用设备在另一处房间。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=159; unix=1000.000]",
+    "turn_id": 159
+  },
+  {
+    "role": "user",
+    "content": "第160次补充，今天暂不安排上门。说明书封面有磨损。本条没有新增排障执行结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=160; unix=1000.000]",
+    "turn_id": 160
+  }
+]

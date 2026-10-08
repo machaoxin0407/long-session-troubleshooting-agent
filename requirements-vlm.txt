@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# Isolated offline scene captioning environment. Versions are pinned so the
+# generated research manifests can be reproduced independently of ASR/OCR.
+torch==2.7.0+cu128
+torchvision==0.22.0+cu128
+accelerate==1.11.0
+huggingface-hub==0.36.0
+imageio-ffmpeg==0.6.0
+pillow==11.3.0
+qwen-vl-utils==0.0.14
+safetensors==0.6.2
+transformers==4.57.1

@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=88063808c7222a58b7e17d86; level=0; original]\n[turn=4; user; leaf=88063808c7222a58b7e17d86] 次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n[turn=4; user; leaf=88063808c7222a58b7e17d86] 请按本次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n请按本次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n[node=c6cbe9cceabfd8541d142f0f; level=2; rule_fallback]\n[turn=4; user; leaf=88063808c7222a58b7e17d86] 次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n\n[中间内容已省略]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=4; user] 请按本次实际情况登记5：维修单编号 CASE-5304，约定下周送检。\n[turn=4; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=7; user] 快递单号 LOG-5304，不是维修单号。\n[turn=7; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第78次补充，需要先确认配件库存。工作日晚上有人接电话。本条没有新增排障执行结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "user",
+    "content": "第79次补充，请把费用明细单独列出。说明书封面有磨损。本条没有新增排障执行结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "user",
+    "content": "第80次补充，今天暂不安排上门。收件地点暂定单位前台。本条没有新增排障执行结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  }
+]

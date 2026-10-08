@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=fc6747966cdd0bada2e647c8; level=0; original]\n[turn=39; assistant未核验; leaf=fc6747966cdd0bada2e647c8] 您已经恢复出厂设置。\n您已经恢复出厂设置。\n[node=a4f5c0a6e531e5cde544d97b; level=1; rule_fallback]\n[turn=40; user; leaf=f7ec10a4fe27beb50d1b9353] 清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[turn=40; user; leaf=f7ec10a4fe27beb50d1b9353] 我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[turn=39; assistant未核验; leaf=fc6747966cdd0bada2e647c8] 您已经恢复出厂设置。\n[turn=39; assistant] 您已经恢复出厂设置。\n[turn=40; user] 我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[node=f7ec10a4fe27beb50d1b9353; level=0; original]\n\n[中间内容已省略]\n",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=39; user] 需要先确认配件库存。\n[turn=39; assistant未核验] 您已经恢复出厂设置。\n[turn=40; user] 我把上次不清楚的地方说明一下3：我没有恢复出厂设置，仅询问步骤。\n[turn=40; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第78次补充，需要先确认配件库存。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "user",
+    "content": "第79次补充，运输时会用泡沫保护边角。备用设备在另一处房间。本条没有新增排障执行结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "user",
+    "content": "第80次补充，工作日晚上有人接电话。请把费用明细单独列出。本条没有新增排障执行结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  }
+]

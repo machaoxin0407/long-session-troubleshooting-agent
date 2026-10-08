@@ -1,0 +1,2 @@
+# Preserve frozen source and synthetic evidence bytes across platforms.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

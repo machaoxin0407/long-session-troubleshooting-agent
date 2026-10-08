@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "task_id": "test_paraphrase_04__window__main",
+  "case": "test_paraphrase_04",
+  "case_sha256": "e9e9feb0966d8e65664a9649c1109986b4fd6fbebb5f0ea764776061b5d139ed",
+  "category": "paraphrase",
+  "split": "test",
+  "turns": 80,
+  "strategy": "window",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 5182,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": false,
+  "build_ms": 0.8119000121951103,
+  "query_ms": 0.7599999662488699,
+  "qa_ms": 1068.542700028047,
+  "context_plus_answer_ms": 1069.3026999942958,
+  "cold_context_plus_answer_ms": 1070.114600006491,
+  "shared_tree_build": null,
+  "shared_build": null,
+  "build_performed_this_task": true,
+  "vector_method": null,
+  "tree_model_nodes": null,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": false,
+    "citation_check": false,
+    "passed": false,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "之前提过的续航很差的电池型号是什么？",
+        "history": [
+          {
+            "role": "user",
+            "content": "第68次补充，需要先确认配件库存。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=68; unix=1000.000]",
+            "turn_id": 68
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=68; unix=1000.000]",
+            "turn_id": 68
+          },
+          {
+            "role": "user",
+            "content": "第69次补充，备用设备在另一处房间。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "source": " [turn=69; unix=1000.000]",
+            "turn_id": 69
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=69; unix=1000.000]",
+            "turn_id": 69
+          },
+          {
+            "role": "user",
+            "content": "第70次补充，请把费用明细单独列出。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=70; unix=1000.000]",
+            "turn_id": 70
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=70; unix=1000.000]",
+            "turn_id": 70
+          },
+          {
+            "role": "user",
+            "content": "第71次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=71; unix=1000.000]",
+            "turn_id": 71
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=71; unix=1000.000]",
+            "turn_id": 71
+          },
+          {
+            "role": "user",
+            "content": "第72次补充，运输时会用泡沫保护边角。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=72; unix=1000.000]",
+            "turn_id": 72
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=72; unix=1000.000]",
+            "turn_id": 72
+          },
+          {
+            "role": "user",
+            "content": "第73次补充，说明书封面有磨损。运输时会用泡沫保护边角。本条没有新增排障执行结果。",
+            "source": " [turn=73; unix=1000.000]",
+            "turn_id": 73
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=73; unix=1000.000]",
+            "turn_id": 73
+          },
+          {
+            "role": "user",
+            "content": "第74次补充，运输时会用泡沫保护边角。需要先确认配件库存。本条没有新增排障执行结果。",
+            "source": " [turn=74; unix=1000.000]",
+            "turn_id": 74
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=74; unix=1000.000]",
+            "turn_id": 74
+          },
+          {
+            "role": "user",
+            "content": "第75次补充，请把费用明细单独列出。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=75; unix=1000.000]",
+            "turn_id": 75
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=75; unix=1000.000]",
+            "turn_id": 75
+          },
+          {
+            "role": "user",
+            "content": "第76次补充，运输时会用泡沫保护边角。请把费用明细单独列出。本条没有新增排障执行结果。",
+            "source": " [turn=76; unix=1000.000]",
+            "turn_id": 76
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=76; unix=1000.000]",
+            "turn_id": 76
+          },
+          {
+            "role": "user",
+            "content": "第77次补充，工作日晚上有人接电话。今天暂不安排上门。本条没有新增排障执行结果。",
+            "source": " [turn=77; unix=1000.000]",
+            "turn_id": 77
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=77; unix=1000.000]",
+            "turn_id": 77
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，工作日晚上有人接电话。备用设备在另一处房间。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，运输时会用泡沫保护边角。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，请把费用明细单独列出。工作日晚上有人接电话。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 17,
+        "prompt_tokens": 1804,
+        "total_tokens": 1821
+      },
+      "output": {
+        "answer": "未知",
+        "sources": []
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 6366,
+          "input_estimate": 6366,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1068.3130999677815
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 17,
+      "prompt_tokens": 1804,
+      "total_tokens": 1821
+    }
+  ],
+  "answer": {
+    "answer": "未知",
+    "sources": []
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "task_id": "development_assistant_trap_01__collapsed__main",
+  "case": "development_assistant_trap_01",
+  "case_sha256": "2089daa4582ccc55db1b6488889893eed9587db97f3d02fea560f8d8c2ac96f9",
+  "category": "assistant_trap",
+  "split": "development",
+  "turns": 80,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2577,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 600.2644999534823,
+  "query_ms": 391.13619999261573,
+  "qa_ms": 1535.1808000123128,
+  "context_plus_answer_ms": 1926.3170000049286,
+  "cold_context_plus_answer_ms": 9444.177000026684,
+  "shared_tree_build": {
+    "elapsed_ms": 7517.860000021756,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 7517.860000021756,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": false,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "依据我自己的确认，我恢复过出厂设置吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=5a7294b6964abeb8101f3b4c; level=0; original]\n[turn=2; assistant未核验; leaf=5a7294b6964abeb8101f3b4c] 您没有恢复出厂设置。\n[turn=2; assistant未核验; leaf=5a7294b6964abeb8101f3b4c] 您没有恢复出厂设置。\n您没有恢复出厂设置。\n[node=159e868d21b58db46d096449; level=0; original]\n[turn=3; user; leaf=159e868d21b58db46d096449] 已经恢复出厂设置，但故障没有消失。\n[turn=3; user; leaf=159e868d21b58db46d096449] 补充第2份现场记录：我确实已经恢复出厂设置，但故障没有消失。\n补充第2份现场记录：我确实已经恢复出厂设置，但故障没有消失。\n[node=970d4da2e900efdc44a415a1; level=1; rule_fallback]\n\n[中间内容已省略]\n\n[turn=7; user] 邻居设备曾出现 ERR-1521，不是我的故障记录。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=2; user] 第2次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。\n[turn=2; assistant未核验] 您没有恢复出厂设置。\n[turn=3; user] 补充第2份现场记录：我确实已经恢复出厂设置，但故障没有消失。\n[turn=3; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第78次补充，还在寻找购机凭证。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=78; unix=1000.000]",
+            "turn_id": 78
+          },
+          {
+            "role": "user",
+            "content": "第79次补充，预约时间需要改到周末。外壳有轻微划痕。本条没有新增排障执行结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=79; unix=1000.000]",
+            "turn_id": 79
+          },
+          {
+            "role": "user",
+            "content": "第80次补充，预约时间需要改到周末。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=80; unix=1000.000]",
+            "turn_id": 80
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 69,
+        "prompt_tokens": 1027,
+        "total_tokens": 1096
+      },
+      "output": {
+        "answer": "是，您确认已经恢复出厂设置。",
+        "sources": [
+          {
+            "turn_id": 3,
+            "role": "user",
+            "quote": "补充第2份现场记录：我确实已经恢复出厂设置，但故障没有消失。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3520,
+          "input_estimate": 3520,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1535.0353000103496
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 69,
+      "prompt_tokens": 1027,
+      "total_tokens": 1096
+    }
+  ],
+  "answer": {
+    "answer": "是，您确认已经恢复出厂设置。",
+    "sources": [
+      {
+        "turn_id": 3,
+        "role": "user",
+        "quote": "补充第2份现场记录：我确实已经恢复出厂设置，但故障没有消失。"
+      }
+    ]
+  }
+}

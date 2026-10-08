@@ -1,0 +1,453 @@
+{
+  "schema": 1,
+  "task_id": "development_middle_of_long_turn_00__traversal__main",
+  "case": "development_middle_of_long_turn_00",
+  "case_sha256": "5383d791035c56d0095c6472e2d88732a96402e81daa5f52561406a4090a8f2d",
+  "category": "middle_of_long_turn",
+  "split": "development",
+  "turns": 40,
+  "strategy": "traversal",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2782,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 8310.516300029121,
+  "query_ms": 807.9373000073247,
+  "qa_ms": 3490.8569999970496,
+  "context_plus_answer_ms": 4298.794300004374,
+  "cold_context_plus_answer_ms": 12111.624100012705,
+  "shared_tree_build": {
+    "elapsed_ms": 7812.8298000083305,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "26d59b3b5c1cca7ff48513a6",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1410，尚待核实。\n[中间内容已省略]\n关键错误码 ERR-1400，仅在启动时出现。\n[中间内容已省略]\n[turn=24; user] 邻居设备曾出现 ERR-1420，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "eae7afea7872f2c4f1c337c1",
+                  "quote": "邻居设备曾出现 ERR-1420，不是我的故障记录。",
+                  "turn_id": 24,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "6fc4adfdd6991e6168e57d16",
+                  "quote": "和预约安排仍待确认。关键错误码 ERR-1400，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和",
+                  "turn_id": 20,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "6fc4adfdd6991e6168e57d16",
+                  "quote": "装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。关键错误码 ERR-1400，仅在启动时出现。配件库存和运输",
+                  "turn_id": 20,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "39943c12efc94b2275601292",
+                  "quote": "最早填过的设备型号是 DEV-1410，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4d04a556986d671d326d8c33",
+                  "quote": "。还在寻找购机凭证。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4d04a556986d671d326d8c33",
+                  "quote": "第37次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "6831004d121cc03242b10d0a",
+                  "quote": "约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "6831004d121cc03242b10d0a",
+                  "quote": "第36次补充，包装盒放在储物间。预约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": null,
+        "error_type": "TimeoutError",
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4778,
+            "input_estimate": 4778,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1228.1122999847867
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 7812.8298000083305,
+    "attempts": 9,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "26d59b3b5c1cca7ff48513a6",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1410，尚待核实。\n[中间内容已省略]\n关键错误码 ERR-1400，仅在启动时出现。\n[中间内容已省略]\n[turn=24; user] 邻居设备曾出现 ERR-1420，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "eae7afea7872f2c4f1c337c1",
+                  "quote": "邻居设备曾出现 ERR-1420，不是我的故障记录。",
+                  "turn_id": 24,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "6fc4adfdd6991e6168e57d16",
+                  "quote": "和预约安排仍待确认。关键错误码 ERR-1400，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和",
+                  "turn_id": 20,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "6fc4adfdd6991e6168e57d16",
+                  "quote": "装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。关键错误码 ERR-1400，仅在启动时出现。配件库存和运输",
+                  "turn_id": 20,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "39943c12efc94b2275601292",
+                  "quote": "最早填过的设备型号是 DEV-1410，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4d04a556986d671d326d8c33",
+                  "quote": "。还在寻找购机凭证。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "4d04a556986d671d326d8c33",
+                  "quote": "第37次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "6831004d121cc03242b10d0a",
+                  "quote": "约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "6831004d121cc03242b10d0a",
+                  "quote": "第36次补充，包装盒放在储物间。预约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": null,
+        "error_type": "TimeoutError",
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4778,
+            "input_estimate": 4778,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 1228.1122999847867
+      }
+    ]
+  },
+  "build_performed_this_task": true,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 9,
+  "query_attempts": 1,
+  "total_attempts_this_task": 11,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "tree_summary",
+      "input": {
+        "groups": [
+          {
+            "id": "26d59b3b5c1cca7ff48513a6",
+            "children": [
+              {
+                "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1410，尚待核实。\n[中间内容已省略]\n关键错误码 ERR-1400，仅在启动时出现。\n[中间内容已省略]\n[turn=24; user] 邻居设备曾出现 ERR-1420，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+              },
+              {
+                "text": "\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+              }
+            ],
+            "evidence": [
+              {
+                "leaf_id": "eae7afea7872f2c4f1c337c1",
+                "quote": "邻居设备曾出现 ERR-1420，不是我的故障记录。",
+                "turn_id": 24,
+                "role": "user"
+              },
+              {
+                "leaf_id": "6fc4adfdd6991e6168e57d16",
+                "quote": "和预约安排仍待确认。关键错误码 ERR-1400，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和",
+                "turn_id": 20,
+                "role": "user"
+              },
+              {
+                "leaf_id": "6fc4adfdd6991e6168e57d16",
+                "quote": "装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。关键错误码 ERR-1400，仅在启动时出现。配件库存和运输",
+                "turn_id": 20,
+                "role": "user"
+              },
+              {
+                "leaf_id": "39943c12efc94b2275601292",
+                "quote": "最早填过的设备型号是 DEV-1410，尚待核实。",
+                "turn_id": 1,
+                "role": "user"
+              },
+              {
+                "leaf_id": "4d04a556986d671d326d8c33",
+                "quote": "。还在寻找购机凭证。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "4d04a556986d671d326d8c33",
+                "quote": "第37次补充，包装盒放在储物间。还在寻找购机凭证。本条没有新增排障执行结果。",
+                "turn_id": 37,
+                "role": "user"
+              },
+              {
+                "leaf_id": "6831004d121cc03242b10d0a",
+                "quote": "约时间需要改到周末。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              },
+              {
+                "leaf_id": "6831004d121cc03242b10d0a",
+                "quote": "第36次补充，包装盒放在储物间。预约时间需要改到周末。本条没有新增排障执行结果。",
+                "turn_id": 36,
+                "role": "user"
+              }
+            ]
+          }
+        ]
+      },
+      "usage": null,
+      "error_type": "TimeoutError",
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 4778,
+          "input_estimate": 4778,
+          "output_reserved": 1200,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1228.1122999847867
+    },
+    {
+      "kind": "qa",
+      "input": {
+        "question": "仅在启动时出现的那个错误码是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=c97c00d29ec70778967a3577; level=3; rule_fallback]\n[turn=24; user; leaf=eae7afea7872f2c4f1c337c1] 邻居设备曾出现 ERR-1420，不是我的故障记录。\n[turn=20; user; leaf=6fc4adfdd6991e6168e57d16] 和预约安排仍待确认。关键错误码 ERR-1400，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和\n[turn=20; user; leaf=6fc4adfdd6991e6168e57d16] 装和预约安排仍待确认。外包装和预约安排仍待确认。\n[中间内容已省略]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=20; user] 关键错误码 ERR-1400，仅在启动时出现。\n[turn=20; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=24; user] 邻居设备曾出现 ERR-1420，不是我的故障记录。\n[turn=24; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，外壳有轻微划痕。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，包装盒放在储物间。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，包装盒放在储物间。预约时间需要改到周末。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 71,
+        "prompt_tokens": 1021,
+        "total_tokens": 1092
+      },
+      "output": {
+        "answer": "ERR-1400",
+        "sources": [
+          {
+            "turn_id": 20,
+            "role": "user",
+            "quote": "关键错误码 ERR-1400，仅在启动时出现。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3726,
+          "input_estimate": 3726,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 3490.6715999823064
+    }
+  ],
+  "provider_usage": [
+    null,
+    {
+      "completion_tokens": 71,
+      "prompt_tokens": 1021,
+      "total_tokens": 1092
+    }
+  ],
+  "answer": {
+    "answer": "ERR-1400",
+    "sources": [
+      {
+        "turn_id": 20,
+        "role": "user",
+        "quote": "关键错误码 ERR-1400，仅在启动时出现。"
+      }
+    ]
+  }
+}

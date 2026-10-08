@@ -1,0 +1,47 @@
+[
+  {
+    "role": "memory",
+    "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=ed7e1d766304e2be381417be; level=0; original]\n[turn=4; user; leaf=ed7e1d766304e2be381417be] 充第2份现场记录：维修单编号 CASE-1301，约定下周送检。\n[turn=4; user; leaf=ed7e1d766304e2be381417be] 补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。\n补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。\n[node=7f0f494075104bdb1a1adaa1; level=0; original]\n[turn=7; user; leaf=7f0f494075104bdb1a1adaa1] 快递单号 LOG-1301，不是维修单号。\n[turn=7; user; leaf=7f0f494075104bdb1a1adaa1] 快递单号 LOG-1301，不是维修单号。\n快递单号 LOG-1301，不是维修单号。\n[node=bb4f494c64f5d5952b26213a; level=0; original]\n\n[中间内容已省略]\n\n第31次补充，还在寻找购机凭证。外壳有轻微划痕。本条没有新增排障执行结果。",
+    "compression": "tree_summary"
+  },
+  {
+    "role": "recall",
+    "content": "[turn=4; user] 补充第2份现场记录：维修单编号 CASE-1301，约定下周送检。\n[turn=4; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=7; user] 快递单号 LOG-1301，不是维修单号。\n[turn=7; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+  },
+  {
+    "role": "user",
+    "content": "第78次补充，外壳有轻微划痕。还在寻找购机凭证。本条没有新增排障执行结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=78; unix=1000.000]",
+    "turn_id": 78
+  },
+  {
+    "role": "user",
+    "content": "第79次补充，预约时间需要改到周末。还在寻找购机凭证。本条没有新增排障执行结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=79; unix=1000.000]",
+    "turn_id": 79
+  },
+  {
+    "role": "user",
+    "content": "第80次补充，预约时间需要改到周末。外壳有轻微划痕。本条没有新增排障执行结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  },
+  {
+    "role": "assistant",
+    "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+    "source": " [turn=80; unix=1000.000]",
+    "turn_id": 80
+  }
+]

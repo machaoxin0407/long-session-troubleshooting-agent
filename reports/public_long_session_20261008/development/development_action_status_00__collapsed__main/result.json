@@ -1,0 +1,362 @@
+{
+  "schema": 1,
+  "task_id": "development_action_status_00__collapsed__main",
+  "case": "development_action_status_00",
+  "case_sha256": "d6d785f31e132af12c999dbfcbecad7c9327b7009f46f0437cecf42f88553968",
+  "category": "action_status",
+  "split": "development",
+  "turns": 40,
+  "strategy": "collapsed",
+  "variant": "main",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2577,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 292.3018000437878,
+  "query_ms": 355.7761000120081,
+  "qa_ms": 1364.2921999562532,
+  "context_plus_answer_ms": 1720.0682999682613,
+  "cold_context_plus_answer_ms": 8930.05219992483,
+  "shared_tree_build": {
+    "elapsed_ms": 7209.983899956569,
+    "attempts": 6,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "07427d89224cdaa37784251b",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1210，尚待核实。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[turn=35; user] 邻居设备曾出现 ERR-1220，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[turn=31; user] 补充第1份现场记录：我尚未执行断电操作，只记录了建议。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "fd55ebd2e022785b7721241f",
+                  "quote": "邻居设备曾出现 ERR-1220，不是我的故障记录。",
+                  "turn_id": 35,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "a5a20c820ae1ad2179cf810f",
+                  "quote": "最早填过的设备型号是 DEV-1210，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "24aafb9a5ee3d468ecadb61b",
+                  "quote": "证。外壳有轻微划痕。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "24aafb9a5ee3d468ecadb61b",
+                  "quote": "第37次补充，还在寻找购机凭证。外壳有轻微划痕。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "20b45284e500ce2282e74232",
+                  "quote": "。包装盒放在储物间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "20b45284e500ce2282e74232",
+                  "quote": "第36次补充，还在寻找购机凭证。包装盒放在储物间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "3e5a839bd80b03d44f844ff3",
+                  "quote": "约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 34,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "3e5a839bd80b03d44f844ff3",
+                  "quote": "第34次补充，包装盒放在储物间。预约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 34,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": null,
+        "error_type": "TimeoutError",
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4418,
+            "input_estimate": 4418,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 2355.9310999698937
+      }
+    ]
+  },
+  "shared_build": {
+    "elapsed_ms": 7209.983899956569,
+    "attempts": 6,
+    "vectors": "semantic",
+    "fallbacks": [
+      {
+        "stage": "summary",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": [
+      {
+        "kind": "tree_summary",
+        "input": {
+          "groups": [
+            {
+              "id": "07427d89224cdaa37784251b",
+              "children": [
+                {
+                  "text": "\n[中间内容已省略]\n[turn=1; user] 最早填过的设备型号是 DEV-1210，尚待核实。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n[turn=35; user] 邻居设备曾出现 ERR-1220，不是我的故障记录。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                },
+                {
+                  "text": "\n[中间内容已省略]\n[turn=31; user] 补充第1份现场记录：我尚未执行断电操作，只记录了建议。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n"
+                }
+              ],
+              "evidence": [
+                {
+                  "leaf_id": "fd55ebd2e022785b7721241f",
+                  "quote": "邻居设备曾出现 ERR-1220，不是我的故障记录。",
+                  "turn_id": 35,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "a5a20c820ae1ad2179cf810f",
+                  "quote": "最早填过的设备型号是 DEV-1210，尚待核实。",
+                  "turn_id": 1,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "24aafb9a5ee3d468ecadb61b",
+                  "quote": "证。外壳有轻微划痕。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "24aafb9a5ee3d468ecadb61b",
+                  "quote": "第37次补充，还在寻找购机凭证。外壳有轻微划痕。本条没有新增排障执行结果。",
+                  "turn_id": 37,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "20b45284e500ce2282e74232",
+                  "quote": "。包装盒放在储物间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "20b45284e500ce2282e74232",
+                  "quote": "第36次补充，还在寻找购机凭证。包装盒放在储物间。本条没有新增排障执行结果。",
+                  "turn_id": 36,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "3e5a839bd80b03d44f844ff3",
+                  "quote": "约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 34,
+                  "role": "user"
+                },
+                {
+                  "leaf_id": "3e5a839bd80b03d44f844ff3",
+                  "quote": "第34次补充，包装盒放在储物间。预约时间需要改到周末。本条没有新增排障执行结果。",
+                  "turn_id": 34,
+                  "role": "user"
+                }
+              ]
+            }
+          ]
+        },
+        "usage": null,
+        "error_type": "TimeoutError",
+        "request_budget_events": [
+          {
+            "counter": "utf8_byte_estimate",
+            "window": 32768,
+            "before": 4418,
+            "input_estimate": 4418,
+            "output_reserved": 1200,
+            "safety_reserved": 1024,
+            "images": 0,
+            "image_reserved_each": 8192,
+            "removed_tool_exchanges": 0,
+            "removed_optional_parts": 0,
+            "trimmed_tool_results": 0,
+            "duplicate_retrieval_blocks": 0,
+            "omitted_retrieval_blocks": 0,
+            "within_budget": true,
+            "reason": "unchanged"
+          }
+        ],
+        "elapsed_ms": 2355.9310999698937
+      }
+    ]
+  },
+  "build_performed_this_task": false,
+  "vector_method": "semantic",
+  "tree_model_nodes": 0,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [
+    {
+      "stage": "summary",
+      "error_type": "TimeoutError"
+    },
+    {
+      "stage": "summary",
+      "error_type": "NoAcceptedModelRoot"
+    }
+  ],
+  "root_removal_applied": null,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": false,
+    "citation_check": true,
+    "passed": false,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "建议的断电操作我到底执行过了吗？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=3dc0ca4247e860c8dd6ec60f; level=0; original]\n[turn=31; user; leaf=3dc0ca4247e860c8dd6ec60f] 补充第1份现场记录：我尚未执行断电操作，只记录了建议。\n[turn=31; user; leaf=3dc0ca4247e860c8dd6ec60f] 补充第1份现场记录：我尚未执行断电操作，只记录了建议。\n补充第1份现场记录：我尚未执行断电操作，只记录了建议。\n[node=b7a756a8b157b4e7c1228d82; level=1; rule_fallback]\n[turn=31; user; leaf=3dc0ca4247e860c8dd6ec60f] 补充第1份现场记录：我尚未执行断电操作，只记录了建议。\n[turn=30; assistant未核验; leaf=8a6263953110ad426b179d56] 建议先断电重连，再决定是否更换部件。\n[turn=30; assistant] 建议先断电重连，再决定是否更换部件。\n[turn=31; user] 补充第1份现场记录：我尚未执行断电操作，只记录了建议。",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=30; user] 本条没有新增排障执行结果。\n[turn=30; assistant未核验] 建议先断电重连，再决定是否更换部件。\n[turn=31; user] 补充第1份现场记录：我尚未执行断电操作，只记录了建议。\n[turn=31; assistant未核验] 请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第38次补充，还在寻找购机凭证。包装盒放在储物间。本条没有新增排障执行结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=38; unix=1000.000]",
+            "turn_id": 38
+          },
+          {
+            "role": "user",
+            "content": "第39次补充，预约时间需要改到周末。还在寻找购机凭证。本条没有新增排障执行结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=39; unix=1000.000]",
+            "turn_id": 39
+          },
+          {
+            "role": "user",
+            "content": "第40次补充，预约时间需要改到周末。外壳有轻微划痕。本条没有新增排障执行结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=40; unix=1000.000]",
+            "turn_id": 40
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 1003,
+        "total_tokens": 1064
+      },
+      "output": {
+        "answer": "未执行",
+        "sources": [
+          {
+            "turn_id": 31,
+            "role": "user",
+            "quote": "补充第1份现场记录：我尚未执行断电操作，只记录了建议。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3507,
+          "input_estimate": 3507,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1364.1301000025123
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 61,
+      "prompt_tokens": 1003,
+      "total_tokens": 1064
+    }
+  ],
+  "answer": {
+    "answer": "未执行",
+    "sources": [
+      {
+        "turn_id": 31,
+        "role": "user",
+        "quote": "补充第1份现场记录：我尚未执行断电操作，只记录了建议。"
+      }
+    ]
+  }
+}

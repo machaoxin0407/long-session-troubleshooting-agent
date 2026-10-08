@@ -1,0 +1,19 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# Pinned to the official Qwen3-VL-Embedding implementation requirements.
+torch==2.8.0+cu128
+torchvision==0.23.0+cu128
+transformers==4.57.3
+accelerate==1.12.0
+qwen-vl-utils==0.0.14
+decord==0.6.0
+opencv-python-headless==4.12.0.88
+pillow==12.0.0
+numpy==2.2.6
+huggingface-hub==0.36.0
+safetensors==0.6.2
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+pydantic==2.11.7
+requests==2.34.2
+rank-bm25==0.2.2

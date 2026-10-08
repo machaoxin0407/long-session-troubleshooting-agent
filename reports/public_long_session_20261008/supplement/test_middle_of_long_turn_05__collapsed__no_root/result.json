@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "task_id": "test_middle_of_long_turn_05__collapsed__no_root",
+  "case": "test_middle_of_long_turn_05",
+  "case_sha256": "f10fbe7b6e2d7eda23937efd048750dd7503d3cc320aa01d61c4d0420caf4cf6",
+  "category": "middle_of_long_turn",
+  "split": "test",
+  "turns": 160,
+  "strategy": "collapsed",
+  "variant": "no_root",
+  "online": true,
+  "answerable": true,
+  "history_budget_ok": true,
+  "context_utf8_bytes": 2736,
+  "trimmed_history_bytes": 0,
+  "source_text_coverage": true,
+  "build_ms": 273.3666999847628,
+  "query_ms": 362.8827999928035,
+  "qa_ms": 1429.5049000065774,
+  "context_plus_answer_ms": 1792.3876999993809,
+  "cold_context_plus_answer_ms": 6355.839099967852,
+  "shared_tree_build": {
+    "elapsed_ms": 4563.451399968471,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "shared_build": {
+    "elapsed_ms": 4563.451399968471,
+    "attempts": 7,
+    "vectors": "lexical_tfidf",
+    "fallbacks": [
+      {
+        "stage": "embedding",
+        "error_type": "TimeoutError"
+      }
+    ],
+    "model_nodes": 0,
+    "observations": []
+  },
+  "build_performed_this_task": false,
+  "vector_method": "lexical_tfidf",
+  "tree_model_nodes": 0,
+  "build_attempts": 0,
+  "query_attempts": 0,
+  "total_attempts_this_task": 1,
+  "fallbacks": [
+    {
+      "stage": "embedding",
+      "error_type": "TimeoutError"
+    }
+  ],
+  "root_removal_applied": false,
+  "answer_check": {
+    "scorer_version": "long-session-rules-v1",
+    "fact_check": true,
+    "citation_check": true,
+    "passed": true,
+    "human_semantic_review": null
+  },
+  "answer_error_type": null,
+  "observations": [
+    {
+      "kind": "qa",
+      "input": {
+        "question": "仅在启动时出现的那个错误码是什么？",
+        "history": [
+          {
+            "role": "memory",
+            "content": "多层会话记忆（未核验；用户当前更正优先，旧客服建议不是事实）：\n[node=6c6b7d565c89a7e3c952f1de; level=2; rule_fallback]\n[turn=3; user; leaf=9ccadb916d84003957ef4736] 和预约安排仍待确认。关键错误码 ERR-5405，仅在启动时出现。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和运输方式之后再说。配件库存和\n[turn=3; user; leaf=9ccadb916d84003957ef4736] 待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。外包装和预约安排仍待确认。\n[中间内容已省略]\n\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n关键错误码 ERR-5405，仅在启动时出现。\n[中间内容已省略]\n本条没有新增排障执行结果。\n[中间内容已省略]\n",
+            "compression": "tree_summary"
+          },
+          {
+            "role": "recall",
+            "content": "[turn=3; user] 关键错误码 ERR-5405，仅在启动时出现。\n[turn=3; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。\n[turn=7; user] 邻居设备曾出现 ERR-5425，不是我的故障记录。\n[turn=7; assistant未核验] 补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。"
+          },
+          {
+            "role": "user",
+            "content": "第158次补充，请把费用明细单独列出。需要先确认配件库存。本条没有新增排障执行结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=158; unix=1000.000]",
+            "turn_id": 158
+          },
+          {
+            "role": "user",
+            "content": "第159次补充，备用设备在另一处房间。收件地点暂定单位前台。本条没有新增排障执行结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=159; unix=1000.000]",
+            "turn_id": 159
+          },
+          {
+            "role": "user",
+            "content": "第160次补充，今天暂不安排上门。说明书封面有磨损。本条没有新增排障执行结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          },
+          {
+            "role": "assistant",
+            "content": "补充信息已记录。请继续确认实际观察，建议需由您执行后才能记录结果。",
+            "source": " [turn=160; unix=1000.000]",
+            "turn_id": 160
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 62,
+        "prompt_tokens": 991,
+        "total_tokens": 1053
+      },
+      "output": {
+        "answer": "ERR-5405",
+        "sources": [
+          {
+            "turn_id": 3,
+            "role": "user",
+            "quote": "关键错误码 ERR-5405，仅在启动时出现。"
+          }
+        ]
+      },
+      "request_budget_events": [
+        {
+          "counter": "utf8_byte_estimate",
+          "window": 32768,
+          "before": 3677,
+          "input_estimate": 3677,
+          "output_reserved": 400,
+          "safety_reserved": 1024,
+          "images": 0,
+          "image_reserved_each": 8192,
+          "removed_tool_exchanges": 0,
+          "removed_optional_parts": 0,
+          "trimmed_tool_results": 0,
+          "duplicate_retrieval_blocks": 0,
+          "omitted_retrieval_blocks": 0,
+          "within_budget": true,
+          "reason": "unchanged"
+        }
+      ],
+      "elapsed_ms": 1429.2822999996133
+    }
+  ],
+  "provider_usage": [
+    {
+      "completion_tokens": 62,
+      "prompt_tokens": 991,
+      "total_tokens": 1053
+    }
+  ],
+  "answer": {
+    "answer": "ERR-5405",
+    "sources": [
+      {
+        "turn_id": 3,
+        "role": "user",
+        "quote": "关键错误码 ERR-5405，仅在启动时出现。"
+      }
+    ]
+  }
+}
